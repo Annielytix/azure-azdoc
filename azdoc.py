@@ -105,7 +105,7 @@ class AzureDocScraper:
         self.write_lines(lines, outfile)
 
     def get(self, url, f):
-        time.sleep(0.5)
+        time.sleep(0.5)  # be nice to the web server; throttle requests to it
         if self.debug:
             print("get {} -> {}".format(url, f))
         else:

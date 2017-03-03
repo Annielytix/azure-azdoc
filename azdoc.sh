@@ -1,11 +1,7 @@
 #!/bin/bash
 
-# Bash script to invoke python to Scrape/Spider for Azure PDF documentation.
+# Bash script to Web Spider and generate curl scripts.
 # Chris Joakim, Microsoft, 2017/03/03
-
-mkdir -p azdoc/pdf/
-
-rm azdoc/*.txt
 
 source bin/activate
 
