@@ -28,7 +28,7 @@ I'll try to keep them updated, so that you don't have to execute the Web Spideri
 process.
 
 The downloaded PDF file names all begin with the prefix **azdoc-** so that you can
-easily located them in your tablet/iPad/reader device.
+easily locate them in your tablet/iPad/reader device.
 
 ### Windows
 
