@@ -33,6 +33,7 @@ In PowerShell, setup:
 ```
 cd <your directory of choice>
 git clone https://github.com/cjoakim/azure-azdoc.git
+cd .\azure-azdoc\
 ```
 
 Execute the script, the downloaded PDF files are put in the pdf\ directory.
@@ -46,6 +47,7 @@ In Terminal, setup:
 ```
 cd <your directory of choice>
 git clone https://github.com/cjoakim/azure-azdoc.git
+cd azure-azdoc/
 ```
 
 Execute the script, the downloaded PDF files are put in the pdf/ directory.
