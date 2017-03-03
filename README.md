@@ -27,6 +27,9 @@ The above two generated curl scripts are already present in this GitHub reposito
 I'll try to keep them updated, so that you don't have to execute the Web Spidering
 process.
 
+The downloaded PDF file names all begin with the prefix **azdoc-** so that you can
+easily located them in your tablet/iPad/reader device.
+
 ### Windows
 
 In PowerShell, setup:
@@ -141,5 +144,4 @@ Execute the Web Spider with curl script generation:
     159168 Mar  3 07:50 azdoc-virtual-machines.pdf
    9020848 Mar  3 07:50 azdoc-virtual-network.pdf
    4592291 Mar  3 07:50 azdoc-vpn-gateway.pdf
-
 ```
