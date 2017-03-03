@@ -17,8 +17,8 @@ This current base URL is:
 http://azureplatform.azurewebsites.net/en-us/
 
 This utility is thus a two-step process:
-1) Web Spider and generate curl scripts.
-2) Execute the curl scripts to download the PDF docs.
+- Web Spider and generate curl scripts.
+- Execute the curl scripts to download the PDF docs.
 
 
 ## Downloading the Azure PDF Docs with the current scripts
@@ -73,7 +73,7 @@ Execute the Web Spider with curl script generation:
 
 ### macOS or Linix
 
-In Terminal; create a virtual environment and install the necessary python libraries:
+In Terminal; create a python virtual environment and install the necessary python libraries:
 ```
 ./azdoc_py_venv.sh
 ```
