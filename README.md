@@ -151,8 +151,9 @@ azdoc-vpn-gateway.pdf
 
 ## Inventory and Diffs
 
-### Capturing the current list files
+### Capturing the current Inventory of PDF files on your system
 
+This command creates a timestamped JSON inventory file in your data/ subdirectory.
 ```
 Format:
 python azdoc.py inventory <username>
