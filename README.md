@@ -158,7 +158,6 @@ Format:
 python azdoc.py inventory <username>
 
 Example:
-$ python azdoc.py inventory <username>
 $ python azdoc.py inventory cjoakim
 
 AzdocUtil.inventory for user: cjoakim
