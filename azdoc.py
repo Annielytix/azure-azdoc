@@ -1,3 +1,6 @@
+
+import json
+import os
 import sys
 import time
 
@@ -12,7 +15,7 @@ from bs4 import BeautifulSoup
 
 # This class attempts to define all relevant configuration in one place.
 
-class AzureDocConfig:
+class AzdocConfig:
 
     def __init__(self):
         self.root_url = 'http://azureplatform.azurewebsites.net/en-us/'
@@ -24,12 +27,12 @@ class AzureDocConfig:
 
 
 # This class does the actual web scraping and curl script generation,
-# using the above AzureDocConfig values.
+# using the above AzdocConfig values.
 
-class AzureDocScraper:
+class AzdocUtil:
 
     def __init__(self):
-        self.config   = AzureDocConfig()
+        self.config   = AzdocConfig()
         self.root_url = self.config.root_url
         self.pdf_base = self.config.pdf_base
         self.out_dir  = self.config.out_dir
@@ -39,13 +42,40 @@ class AzureDocScraper:
         self.doc_urls = list()
         self.pdf_urls = dict()
 
-
     def scrape(self):
-        print('AzureDocScraper.scrape...')
+        print('AzdocUtil.scrape...')
         self.get_parse_root_page()
         self.get_parse_doc_urls()
         self.gen_curl_pdfs_script('bash')
         self.gen_curl_pdfs_script('powershell')
+
+    def inventory(self, user):
+        print('AzdocUtil.inventory for user: {}'.format(user))
+        pdf_files = list()
+        utc   = arrow.utcnow()
+        local = utc.to('America/New_York')
+        for root, dirnames, filenames in os.walk(self.pdf_dir):
+            for basename in filenames:
+                if basename.endswith('.pdf'):
+                    entry = dict()
+                    path  = "{}/{}".format(root, basename)
+                    stats = os.stat(path)
+                    entry['path']  = path
+                    entry['base']  = basename
+                    entry['size']  = stats.st_size
+                    entry['epoch'] = stats.st_ctime
+                    entry['date']  = arrow.get(stats.st_ctime).format('YYYY-MM-DD HH:mm:ss ZZ')
+                    pdf_files.append(entry)
+
+        lines = list()
+        lines.append(json.dumps(pdf_files, sort_keys=True, indent=2))
+        d = local.format('YYYY-MM-DD').replace('-','').strip()
+        h = local.format('HH:mm').replace(':','').strip()
+        outfile = "{}/inventory-{}-{}-{}.json".format('data', user, d, h)
+        self.write_lines(lines, outfile)
+
+    def diff(self):
+        print('AzdocUtil.diff...')
 
     def get_parse_root_page(self):
         print('get_parse_root_page start')
@@ -158,8 +188,17 @@ if __name__ == "__main__":
         func = sys.argv[1].lower()
 
         if func == 'scrape':
-            s = AzureDocScraper()
+            s = AzdocUtil()
             s.scrape()
+
+        elif func == 'inventory':
+            user = sys.argv[2].lower()
+            s = AzdocUtil()
+            s.inventory(user)
+
+        elif func == 'diff':
+            s = AzdocUtil()
+            s.diff()
 
         else:
             print("Unknown function: {}".format(func))
