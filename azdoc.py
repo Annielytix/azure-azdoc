@@ -7,7 +7,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Python 3 script to Scrape/Spider for Azure PDF documentation.
-# Chris Joakim, Microsoft, 2017/03/03
+# Chris Joakim, Microsoft, 2017/03/05
 
 
 # This class attempts to define all relevant configuration in one place.
@@ -140,7 +140,7 @@ class AzureDocScraper:
         return '{}/{}-{}.txt'.format(self.out_dir, base, self.epoch())
 
     def current_timestamp(self):
-        return arrow.utcnow().format('YYYY-MM-DD HH:mm:ss')
+        return arrow.utcnow().format('dddd YYYY-MM-DD')
 
     def epoch(self):
         return time.time()
