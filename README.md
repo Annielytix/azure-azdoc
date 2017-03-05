@@ -151,13 +151,14 @@ azdoc-vpn-gateway.pdf
 
 ## Inventory and Diffs
 
-### Capturing the current list files
+### Capturing the current Inventory of PDF files on your system
 
-Format: python azdoc.py inventory <username>
+This command creates a timestamped JSON inventory file in your data/ subdirectory.
+```
+Format:
+python azdoc.py inventory <username>
 
 Example:
-```
-$ python azdoc.py inventory <username>
 $ python azdoc.py inventory cjoakim
 
 AzdocUtil.inventory for user: cjoakim
@@ -166,11 +167,12 @@ file written: data/inventory-cjoakim-20170305-0825.json
 
 ### Diffs - comparing two inventory files to see what changed
 
-Provide a filesize tolerance, and two previously captured inventory filenames.
+Provide a filesize difference tolerance, and two previously captured inventory filenames.
 
-Format: python azdoc.py diff <tolerance> <inventory filename 1> <inventory filename 2>
+```
+Format:
+python azdoc.py diff <tolerance> <inventory filename 1> <inventory filename 2>
 
 Example:
-```
 $ python azdoc.py diff 100 data/inventory-cjoakim-20170305-0825.json data/inventory-cjoakim-20170305-0843-test.json
 ```
