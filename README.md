@@ -167,7 +167,7 @@ file written: data/inventory-cjoakim-20170305-0825.json
 
 ### Diffs - comparing two inventory files to see what changed
 
-Provide a filesize tolerance, and two previously captured inventory filenames.
+Provide a filesize difference tolerance, and two previously captured inventory filenames.
 
 ```
 Format:
