@@ -74,8 +74,45 @@ class AzdocUtil:
         outfile = "{}/inventory-{}-{}-{}.json".format('data', user, d, h)
         self.write_lines(lines, outfile)
 
-    def diff(self):
+    def diff(self, tolerance, file1, file2):
         print('AzdocUtil.diff...')
+        inv1  = self.read_parse_json_file(file1)
+        inv2  = self.read_parse_json_file(file2)
+        print('inventory files loaded; size1: {} size2: {}'.format(len(inv1), len(inv2)))
+        self.names   = dict()
+        self.entries = dict()
+        self.collect_inventory_entries('inventory1', file1)
+        self.collect_inventory_entries('inventory2', file2)
+        sorted_names = sorted(self.names.keys())
+        for name in sorted_names:
+            key1 = self.inventory_key('inventory1', name)
+            key2 = self.inventory_key('inventory2', name)
+            size1, size2 = None, None
+            if key1 in self.entries:
+                size1 = int(self.entries[key1]['size'])
+            else:
+                print("absent in inventory1: {}".format(key1))
+            if key2 in self.entries:
+                size2 = int(self.entries[key2]['size'])
+            else:
+                print("absent in inventory2: {}".format(key2))
+            if size1 and size2:
+                size_diff = abs(size1 - size2)
+                if size_diff > tolerance:
+                    print('filesize difference of {} in {}'.format(size_diff, name))
+
+    def collect_inventory_entries(self, inventory_name, json_inventory_file):
+        inv = self.read_parse_json_file(json_inventory_file)
+
+        for idx, entry in enumerate(inv):
+            name = entry['base']
+            size = int(entry['size'])
+            key  = self.inventory_key(inventory_name, name)
+            self.names[name] = name
+            self.entries[key] = entry
+
+    def inventory_key(self, inventory_name, name):
+        return '{} {}'.format(inventory_name, name)
 
     def get_parse_root_page(self):
         print('get_parse_root_page start')
@@ -175,6 +212,10 @@ class AzdocUtil:
     def epoch(self):
         return time.time()
 
+    def read_parse_json_file(self, infile):
+        with open(infile) as f:
+            return json.loads(f.read())
+
     def write_lines(self, lines, outfile):
         with open(outfile, "w", newline="\n") as out:
             for line in lines:
@@ -197,8 +238,11 @@ if __name__ == "__main__":
             s.inventory(user)
 
         elif func == 'diff':
+            tolerance = int(sys.argv[2])
+            file1 = sys.argv[3]
+            file2 = sys.argv[4]
             s = AzdocUtil()
-            s.diff()
+            s.diff(tolerance, file1, file2)
 
         else:
             print("Unknown function: {}".format(func))

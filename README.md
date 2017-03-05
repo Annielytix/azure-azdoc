@@ -153,7 +153,11 @@ azdoc-vpn-gateway.pdf
 
 ### Capturing the current list files
 
+Format: python azdoc.py inventory <username>
+
+Example:
 ```
+$ python azdoc.py inventory <username>
 $ python azdoc.py inventory cjoakim
 
 AzdocUtil.inventory for user: cjoakim
@@ -162,6 +166,11 @@ file written: data/inventory-cjoakim-20170305-0825.json
 
 ### Diffs - comparing two inventory files to see what changed
 
+Provide a filesize tolerance, and two previously captured inventory filenames.
+
+Format: python azdoc.py diff <tolerance> <inventory filename 1> <inventory filename 2>
+
+Example:
 ```
-$ python azdoc.py diff cjoakim data/inventory-cjoakim-20170303-1130.json data/inventory-cjoakim-20170305-0825.json
+$ python azdoc.py diff 100 data/inventory-cjoakim-20170305-0825.json data/inventory-cjoakim-20170305-0843-test.json
 ```
