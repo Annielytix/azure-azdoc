@@ -88,7 +88,7 @@ Execute the Web Spider with curl script generation:
 
 ## Latest list of PDF files
 
-55 files downloaded on 2017/03/05
+55 files downloaded on 2017/03/11
 ```
 azdoc-active-directory-b2c.pdf
 azdoc-active-directory.pdf
@@ -174,5 +174,5 @@ Format:
 python azdoc.py diff <tolerance> <inventory filename 1> <inventory filename 2>
 
 Example:
-$ python azdoc.py diff 100 data/inventory-cjoakim-20170305-0825.json data/inventory-cjoakim-20170305-0843-test.json
+$ python azdoc.py diff 100 data/inventory-cjoakim-20170305-0825.json data/inventory-cjoakim-20170311-1047.json
 ```

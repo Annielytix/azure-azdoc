@@ -8,7 +8,7 @@ out/*.log
 out/*.txt
 
 pdf/*.pdf
-
+pdf_previous/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

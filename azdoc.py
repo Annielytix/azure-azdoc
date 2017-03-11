@@ -10,7 +10,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Python 3 script to Scrape/Spider for Azure PDF documentation.
-# Chris Joakim, Microsoft, 2017/03/05
+# Chris Joakim, Microsoft, 2017/03/11
 
 
 # This class attempts to define all relevant configuration in one place.
@@ -23,7 +23,7 @@ class AzdocConfig:
         self.out_dir  = 'out'
         self.pdf_dir  = 'pdf'
         self.max_docs = 100
-        self.debug    = False
+        self.debug    = True
 
 
 # This class does the actual web scraping and curl script generation,
@@ -123,9 +123,9 @@ class AzdocUtil:
         for link in links:
             try:
                 href = link['href']
-                text = '{}'.format(link.get_text()).strip()
+                text = '{}'.format(link.get_text()).strip().lower()
                 if href:
-                    if text == 'Documentation':
+                    if text == 'documentation':
                         self.doc_urls.append(href)
             except:
                 pass
@@ -140,6 +140,8 @@ class AzdocUtil:
                 lines = r.text.split('\n')
                 for line_idx, line in enumerate(lines):
                     if 'pdf_url_template' in line:
+                        if self.debug:
+                            print(line)
                         name = self.parse_pdf_url_template_name(line)
                         if name:
                             self.pdf_urls[name] = self.pdf_url(name)
@@ -179,16 +181,16 @@ class AzdocUtil:
             print("get {}".format(url))
         r = requests.get(url)
         if self.debug:
-            self.capture_response(f)
+            self.capture_response(url, r, f)
         return r
 
-    def capture_response(self, f):
+    def capture_response(self, url, r, f):
         with open(f, 'wt') as out:
-            out.write("url:          {}\n".format(self.u))
-            out.write("status_code:  {}\n".format(self.r.status_code))
-            out.write("content-type: {}\n".format(self.r.headers['content-type']))
-            out.write("text:\n\n{}\n".format(self.r.text))
-        print("{} {} {}".format(self.r.status_code, self.u, len(self.r.text)))
+            out.write("url:          {}\n".format(url))
+            out.write("status_code:  {}\n".format(r.status_code))
+            out.write("content-type: {}\n".format(r.headers['content-type']))
+            out.write("text:\n\n{}\n".format(r.text))
+        print("{} {} {}".format(r.status_code, url, len(r.text)))
 
     def parse_pdf_url_template_name(self, line):
         # In lines that look like this:
