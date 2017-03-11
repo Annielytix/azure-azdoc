@@ -205,6 +205,18 @@ class AzdocUtil:
                 return n.strip()
         return None
 
+    def gen_sharepoint_content(self):
+        infile = 'azdoc_curl_pdfs.sh'
+        with open(infile) as f:
+            for line in f:
+                if 'curl' in line:
+                    line_tokens = line.split()
+                    url = line_tokens[1] 
+                    url_tokens = url.split("/")
+                    basename = url.split("/")[-1]
+                    docname = basename.split(".")[0]
+                    print("<a href='{}'>{}</a>".format(url, docname))
+
     def txt_outfile(self, base):
         return '{}/{}-{}.txt'.format(self.out_dir, base, self.epoch())
 
@@ -245,6 +257,10 @@ if __name__ == "__main__":
             file2 = sys.argv[4]
             s = AzdocUtil()
             s.diff(tolerance, file1, file2)
+
+        elif func == 'sharepoint':
+            s = AzdocUtil()
+            s.gen_sharepoint_content()
 
         else:
             print("Unknown function: {}".format(func))
