@@ -2,7 +2,7 @@
 
 # Recreate the virtual environment and reinstall libs.
 # Requires Python 3; version 3.6 recommended.
-# Chris Joakim, Microsoft, 2017/03/05
+# Chris Joakim, Microsoft, 2017/03/12
 
 echo 'deleting previous venv...'
 rm -rf bin/
@@ -19,6 +19,8 @@ echo 'installing/upgrading libs...'
 pip install --upgrade pip-tools
 pip install --upgrade arrow
 pip install --upgrade beautifulsoup4
+pip install --upgrade docopt
+pip install --upgrade Jinja2
 pip install --upgrade requests
 
 echo 'done'
