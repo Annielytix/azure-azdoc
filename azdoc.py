@@ -10,7 +10,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Python 3 script to Scrape/Spider for Azure PDF documentation.
-# Chris Joakim, Microsoft, 2017/03/11
+# Chris Joakim, Microsoft, 2017/03/12
 
 
 # This class attempts to define all relevant configuration in one place.
@@ -207,6 +207,23 @@ class AzdocUtil:
 
     def gen_sharepoint_content(self):
         infile = 'azdoc_curl_pdfs.sh'
+        lines  = list()
+        lines.append('<!DOCTYPE html>\n')
+        lines.append('<html lang="en">\n')
+
+        lines.append('<head>\n')
+        lines.append('<style>\n')
+        lines.append('body {align:center; color: darkgray;}\n')
+        lines.append('a:link {text-decoration: none;}\n')
+        lines.append('a:hover {color: red; text-decoration: underline;}\n')
+        lines.append('\n')
+        lines.append('</style>\n')
+        lines.append('</head>\n')        
+
+        lines.append('<body align="center">\n')
+        lines.append('<h1 align="center">Azure PDF Documentation</h1>\n')
+        lines.append('<h3 align="center">As of Sat 3/11/2017</h3>\n')
+        lines.append('<table width="15%" align="center" border="0">\n')
         with open(infile) as f:
             for line in f:
                 if 'curl' in line:
@@ -215,7 +232,16 @@ class AzdocUtil:
                     url_tokens = url.split("/")
                     basename = url.split("/")[-1]
                     docname = basename.split(".")[0]
-                    print("<a href='{}'>{}</a>".format(url, docname))
+                    lines.append("<tr><td align='center'><a href='{}'>{}</a></td></tr>\n".format(url, docname))
+        lines.append('</table>\n')
+
+        lines.append('<h1>&nbsp;</h1>\n')
+        lines.append('<h4 align="center"><a href="https://github.com/cjoakim/azure-azdoc">This page created by the azdoc utility</a></h4>\n')
+        lines.append('<h1>&nbsp;</h1>\n')
+
+        lines.append('</body>\n')
+        lines.append('</html>\n')
+        self.write_lines(lines, 'doc/azure-azdoc-pdf-files-list.html')
 
     def txt_outfile(self, base):
         return '{}/{}-{}.txt'.format(self.out_dir, base, self.epoch())
