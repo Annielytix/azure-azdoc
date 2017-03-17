@@ -1,5 +1,5 @@
 # Chris Joakim, Microsoft
-# Generated on Saturday 2017-03-11
+# Generated on Fri 2017-03-17
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/active-directory-b2c.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/active-directory-b2c.pdf -OutFile pdf/azdoc-active-directory-b2c.pdf

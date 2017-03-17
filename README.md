@@ -88,7 +88,7 @@ Execute the Web Spider with curl script generation:
 
 ## Latest list of PDF files
 
-55 files downloaded on 2017/03/11
+55 files downloaded on 2017/03/17
 ```
 azdoc-active-directory-b2c.pdf
 azdoc-active-directory.pdf
@@ -175,51 +175,54 @@ python azdoc.py diff <tolerance> <inventory filename 1> <inventory filename 2>
 
 Example:
 $ python azdoc.py diff 100 data/inventory-cjoakim-20170305-0825.json data/inventory-cjoakim-20170311-1047.json
+$ python azdoc.py diff 100 data/inventory-cjoakim-20170311-1047.json data/inventory-cjoakim-20170317-1725.json
 ```
 
-### Latest Changes - 3/5 vs 3/11
+### Latest Changes - 3/11 vs 3/17
 
 ```
 AzdocUtil.diff...
 inventory files loaded; size1: 55 size2: 55
-filesize difference of 41070 in azdoc-active-directory-b2c.pdf
-filesize difference of 274573 in azdoc-active-directory.pdf
-filesize difference of 7646 in azdoc-api-management.pdf
-filesize difference of 1631 in azdoc-application-gateway.pdf
-filesize difference of 27985 in azdoc-application-insights.pdf
-filesize difference of 969 in azdoc-automation.pdf
-filesize difference of 1432 in azdoc-azure-functions.pdf
-filesize difference of 629138 in azdoc-backup.pdf
-filesize difference of 8448 in azdoc-batch.pdf
-filesize difference of 968 in azdoc-cloud-services.pdf
-filesize difference of 152813 in azdoc-container-service.pdf
-filesize difference of 128 in azdoc-data-factory.pdf
-filesize difference of 3559 in azdoc-data-lake-analytics.pdf
-filesize difference of 21994 in azdoc-data-lake-store.pdf
-filesize difference of 67511 in azdoc-devtest-lab.pdf
-filesize difference of 101475 in azdoc-documentdb.pdf
-filesize difference of 58862 in azdoc-event-hubs.pdf
-filesize difference of 1342 in azdoc-expressroute.pdf
-filesize difference of 275996 in azdoc-hdinsight.pdf
-filesize difference of 100265 in azdoc-iot-hub.pdf
-filesize difference of 34041 in azdoc-load-balancer.pdf
-filesize difference of 114275 in azdoc-log-analytics.pdf
-filesize difference of 286977 in azdoc-logic-apps.pdf
-filesize difference of 255798 in azdoc-media-services.pdf
-filesize difference of 598943 in azdoc-mobile-engagement.pdf
-filesize difference of 15610 in azdoc-multi-factor-authentication.pdf
-filesize difference of 8315 in azdoc-redis-cache.pdf
-filesize difference of 3274 in azdoc-search.pdf
-filesize difference of 56486 in azdoc-security-center.pdf
-filesize difference of 229888 in azdoc-service-fabric.pdf
-filesize difference of 1976707 in azdoc-site-recovery.pdf
-filesize difference of 2035 in azdoc-sql-data-warehouse.pdf
-filesize difference of 2142858 in azdoc-sql-database.pdf
-filesize difference of 12096 in azdoc-storage.pdf
-filesize difference of 2413609 in azdoc-storsimple.pdf
-filesize difference of 582 in azdoc-stream-analytics.pdf
-filesize difference of 229 in azdoc-traffic-manager.pdf
-filesize difference of 136821 in azdoc-virtual-machine-scale-sets.pdf
-filesize difference of 552 in azdoc-virtual-network.pdf
-filesize difference of 20016 in azdoc-vpn-gateway.pdf
+filesize difference of 25782 in azdoc-active-directory-b2c.pdf
+filesize difference of 154879 in azdoc-active-directory.pdf
+filesize difference of 377 in azdoc-api-management.pdf
+filesize difference of 942 in azdoc-application-gateway.pdf
+filesize difference of 5354 in azdoc-application-insights.pdf
+filesize difference of 787703 in azdoc-automation.pdf
+filesize difference of 191122 in azdoc-azure-functions.pdf
+filesize difference of 853192 in azdoc-backup.pdf
+filesize difference of 12235 in azdoc-batch.pdf
+filesize difference of 104285 in azdoc-cloud-services.pdf
+filesize difference of 134477 in azdoc-data-factory.pdf
+filesize difference of 319 in azdoc-data-lake-analytics.pdf
+filesize difference of 209 in azdoc-data-lake-store.pdf
+filesize difference of 27165 in azdoc-devtest-lab.pdf
+filesize difference of 36485 in azdoc-documentdb.pdf
+filesize difference of 497 in azdoc-event-hubs.pdf
+filesize difference of 4015 in azdoc-expressroute.pdf
+filesize difference of 1586861 in azdoc-hdinsight.pdf
+filesize difference of 3580041 in azdoc-iot-hub.pdf
+filesize difference of 1292 in azdoc-key-vault.pdf
+filesize difference of 85225 in azdoc-load-balancer.pdf
+filesize difference of 515976 in azdoc-log-analytics.pdf
+filesize difference of 179062 in azdoc-logic-apps.pdf
+filesize difference of 62662 in azdoc-machine-learning.pdf
+filesize difference of 30628 in azdoc-media-services.pdf
+filesize difference of 598568 in azdoc-mobile-engagement.pdf
+filesize difference of 4123 in azdoc-multi-factor-authentication.pdf
+filesize difference of 170 in azdoc-notification-hubs.pdf
+filesize difference of 630487 in azdoc-power-bi-embedded.pdf
+filesize difference of 55346 in azdoc-search.pdf
+filesize difference of 52421 in azdoc-security-center.pdf
+filesize difference of 44400 in azdoc-service-fabric.pdf
+filesize difference of 663633 in azdoc-site-recovery.pdf
+filesize difference of 6193 in azdoc-sql-data-warehouse.pdf
+filesize difference of 228867 in azdoc-sql-database.pdf
+filesize difference of 19873 in azdoc-storage.pdf
+filesize difference of 878737 in azdoc-storsimple.pdf
+filesize difference of 267665 in azdoc-traffic-manager.pdf
+filesize difference of 1283 in azdoc-virtual-machine-scale-sets.pdf
+filesize difference of 532 in azdoc-virtual-machines.pdf
+filesize difference of 146974 in azdoc-virtual-network.pdf
+filesize difference of 240750 in azdoc-vpn-gateway.pdf
 ```
