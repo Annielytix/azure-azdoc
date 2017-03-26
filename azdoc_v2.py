@@ -56,15 +56,74 @@ class AzdocUtil:
         self.pdf_dir  = self.config.pdf_dir
         self.max_docs = self.config.max_docs
         self.debug    = self.config.debug
-        self.doc_urls = list()
-        self.pdf_urls = dict()
+        self.pdf_names = list()
 
     def scrape(self):
         print('AzdocUtil.scrape...')
         self.get_parse_root_page()
-        self.get_parse_doc_urls()
         self.gen_curl_pdfs_script('bash')
-        self.gen_curl_pdfs_script('powershell')
+        # self.gen_curl_pdfs_script('powershell')
+
+    def get_parse_root_page(self):
+        print('get_parse_root_page start')
+        f  = self.txt_outfile('root')
+        r  = self.get(self.root_url, f);
+        bs = BeautifulSoup(r.text, "html.parser")
+        links = bs.find_all("a")
+        for link in links:
+            try:
+                href = link['href']
+                text = '{}'.format(link.get_text()).strip().lower()
+                if href:
+                    if text == 'documentation':
+                        print('root href: {}'.format(href))
+                        tokens = href.split('/')
+                        print(tokens)
+                        pdf_name = tokens[-2]
+                        print('pdf_name: {}'.format(pdf_name))
+                        self.pdf_names.append(pdf_name)
+            except:
+                pass
+        print('get_parse_root_page complete; count: {}'.format(len(self.pdf_names)))
+
+    def gen_curl_pdfs_script(self, shell_name):
+        lines   = list()
+        outfile = None
+
+        if shell_name == 'bash':
+            lines.append('#!/bin/bash\n\n')
+            outfile = 'azdoc_curl_pdfs.sh'
+        else:
+            outfile = 'azdoc_curl_pdfs.ps1'
+
+        lines.append("# Chris Joakim, Microsoft\n")
+        lines.append("# Generated on {}\n".format(self.current_timestamp()))
+
+        for idx, name in enumerate(sorted(self.pdf_names)):
+            url = self.create_pdf_url(name)
+            lines.append("\n")
+            lines.append("echo 'fetching: {} ...'\n".format(url))
+            outpdf = "{}.pdf".format(name)
+            if shell_name == 'bash':
+                lines.append("curl {} > {}/azdoc-{}\n".format(url, self.pdf_dir, outpdf))
+            else:
+                lines.append("curl {} -OutFile {}/azdoc-{}\n".format(url, self.pdf_dir, outpdf))
+        lines.append('\necho "done"\n')
+        self.write_lines(lines, outfile)
+
+    def create_pdf_url(self, pdf_name):
+        return "{}{}.pdf".format(self.pdf_base, pdf_name)
+
+# azdoc-active-directory-ds.pdf
+# azdoc-api.pdf
+# azdoc-azure-bot-service.pdf
+# azdoc-cache.pdf
+# azdoc-functions.pdf
+# azdoc-logic.pdf
+# azdoc-mobile.pdf
+# azdoc-net.pdf
+# azdoc-overview.pdf
+# azdoc-web.pdf
 
     def inventory(self, user):
         print('AzdocUtil.inventory for user: {}'.format(user))
@@ -131,24 +190,6 @@ class AzdocUtil:
     def inventory_key(self, inventory_name, name):
         return '{} {}'.format(inventory_name, name)
 
-    def get_parse_root_page(self):
-        print('get_parse_root_page start')
-        f  = self.txt_outfile('root')
-        r  = self.get(self.root_url, f);
-        bs = BeautifulSoup(r.text, "html.parser")
-        links = bs.find_all("a")
-        for link in links:
-            try:
-                href = link['href']
-                text = '{}'.format(link.get_text()).strip().lower()
-                if href:
-                    if text == 'documentation':
-                        print('root href: {} {}'.format(text, href))
-                        self.doc_urls.append(href)
-            except:
-                pass
-        print('get_parse_root_page complete; count: {}'.format(len(self.doc_urls)))
-
     def get_parse_doc_urls(self):
         for idx, doc_url in enumerate(self.doc_urls):
             if idx < self.max_docs:
@@ -166,30 +207,6 @@ class AzdocUtil:
 
     def pdf_url(self, name):
         return self.pdf_base + name
-
-    def gen_curl_pdfs_script(self, shell_name):
-        lines   = list()
-        outfile = None
-
-        if shell_name == 'bash':
-            lines.append('#!/bin/bash\n\n')
-            outfile = 'azdoc_curl_pdfs.sh'
-        else:
-            outfile = 'azdoc_curl_pdfs.ps1'
-
-        lines.append("# Chris Joakim, Microsoft\n")
-        lines.append("# Generated on {}\n".format(self.current_timestamp()))
-
-        for idx, name in enumerate(sorted(self.pdf_urls.keys())):
-            url = self.pdf_urls[name]
-            lines.append("\n")
-            lines.append("echo 'fetching: {} ...'\n".format(url))
-            if shell_name == 'bash':
-                lines.append("curl {} > {}/azdoc-{}\n".format(url, self.pdf_dir, name))
-            else:
-                lines.append("curl {} -OutFile {}/azdoc-{}\n".format(url, self.pdf_dir, name))
-        lines.append('\necho "done"\n')
-        self.write_lines(lines, outfile)
 
     def get(self, url, f):
         time.sleep(0.5)  # be nice to the web server; throttle requests to it
@@ -242,7 +259,7 @@ class AzdocUtil:
 
         lines.append('<body align="center">\n')
         lines.append('<h1 align="center">Azure PDF Documentation</h1>\n')
-        lines.append('<h3 align="center">As of Sat 3/11/2017</h3>\n')
+        lines.append('<h3 align="center">As of Sun 3/26/2017</h3>\n')
         lines.append('<table width="15%" align="center" border="0">\n')
         with open(infile) as f:
             for line in f:
