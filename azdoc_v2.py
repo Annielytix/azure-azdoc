@@ -23,10 +23,10 @@ import requests
 from bs4 import BeautifulSoup
 from docopt import docopt
 
-VERSION = 'v20170326'
+VERSION = 'v20170331'
 
 # Python 3 script to Scrape/Spider for Azure PDF documentation.
-# Chris Joakim, Microsoft, 2017/03/26
+# Chris Joakim, Microsoft, 2017/03/31
 
 
 # This class attempts to define all relevant configuration in one place.
@@ -62,7 +62,7 @@ class AzdocUtil:
         print('AzdocUtil.scrape...')
         self.get_parse_root_page()
         self.gen_curl_pdfs_script('bash')
-        # self.gen_curl_pdfs_script('powershell')
+        self.gen_curl_pdfs_script('powershell')
 
     def get_parse_root_page(self):
         print('get_parse_root_page start')
@@ -76,15 +76,33 @@ class AzdocUtil:
                 text = '{}'.format(link.get_text()).strip().lower()
                 if href:
                     if text == 'documentation':
-                        print('root href: {}'.format(href))
+                        print('root_page - href: {}'.format(href))
                         tokens = href.split('/')
-                        print(tokens)
                         pdf_name = tokens[-2]
-                        print('pdf_name: {}'.format(pdf_name))
+                        print('root_page - pdf_name: {}'.format(pdf_name))
                         self.pdf_names.append(pdf_name)
             except:
                 pass
         print('get_parse_root_page complete; count: {}'.format(len(self.pdf_names)))
+
+        # manually augment the list for known problematic cases with inconsistent names:
+        self.pdf_names.append('app-service-api')
+        self.pdf_names.append('app-service-mobile')
+        self.pdf_names.append('app-service-web')
+        self.pdf_names.append('azure-functions')
+        self.pdf_names.append('data-lake-store')
+        self.pdf_names.append('logic-apps')
+        
+        # l | grep ' 215 ' | cut -c54-999
+        # azdoc-api.pdf
+        # azdoc-azure-bot-service.pdf
+        # azdoc-cache.pdf
+        # azdoc-functions.pdf
+        # azdoc-help.pdf
+        # azdoc-logic.pdf
+        # azdoc-mobile.pdf
+        # azdoc-net.pdf
+        # azdoc-web.pdf
 
     def gen_curl_pdfs_script(self, shell_name):
         lines   = list()
@@ -113,17 +131,6 @@ class AzdocUtil:
 
     def create_pdf_url(self, pdf_name):
         return "{}{}.pdf".format(self.pdf_base, pdf_name)
-
-# azdoc-active-directory-ds.pdf
-# azdoc-api.pdf
-# azdoc-azure-bot-service.pdf
-# azdoc-cache.pdf
-# azdoc-functions.pdf
-# azdoc-logic.pdf
-# azdoc-mobile.pdf
-# azdoc-net.pdf
-# azdoc-overview.pdf
-# azdoc-web.pdf
 
     def inventory(self, user):
         print('AzdocUtil.inventory for user: {}'.format(user))

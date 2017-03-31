@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Chris Joakim, Microsoft
-# Generated on Sun 2017-03-26
+# Generated on Fri 2017-03-31
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/active-directory.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/active-directory.pdf > pdf/azdoc-active-directory.pdf
@@ -21,6 +21,15 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/api-management.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/api-management.pdf > pdf/azdoc-api-management.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/app-service-api.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/app-service-api.pdf > pdf/azdoc-app-service-api.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/app-service-mobile.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/app-service-mobile.pdf > pdf/azdoc-app-service-mobile.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/app-service-web.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/app-service-web.pdf > pdf/azdoc-app-service-web.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/application-gateway.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/application-gateway.pdf > pdf/azdoc-application-gateway.pdf
 
@@ -32,6 +41,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/azure-bot-service.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/azure-bot-service.pdf > pdf/azdoc-azure-bot-service.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/azure-functions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/azure-functions.pdf > pdf/azdoc-azure-functions.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/backup.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/backup.pdf > pdf/azdoc-backup.pdf
@@ -68,6 +80,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/data-lake-analytics.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/data-lake-analytics.pdf > pdf/azdoc-data-lake-analytics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/data-lake-store.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/data-lake-store.pdf > pdf/azdoc-data-lake-store.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/data-lake-store.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/data-lake-store.pdf > pdf/azdoc-data-lake-store.pdf
@@ -110,6 +125,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/logic.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/logic.pdf > pdf/azdoc-logic.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/logic-apps.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/logic-apps.pdf > pdf/azdoc-logic-apps.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/machine-learning.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/machine-learning.pdf > pdf/azdoc-machine-learning.pdf
