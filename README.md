@@ -20,6 +20,15 @@ This utility is thus a two-step process:
 - Web Spider and generate curl scripts.
 - Execute the curl scripts to download the PDF docs.
 
+---
+
+**NOTE: 2017/04/07 - The Navigation of the Azure Document Site has significantly changed
+and it is now much more difficult to spider.  Links within the spidered pages are now
+created with dyanmic JavaScript rather than static HTML.**
+
+The algorithm in this project has therefore changed.  Only the first/main page is spidered,
+and PDF URL locations are inferred from the link names.  The PDF files seem to all be
+served from a public Azure Blob Container.
 
 ## Downloading the Azure PDF Docs with the current scripts
 
@@ -88,7 +97,7 @@ Execute the Web Spider with curl script generation:
 
 ## Latest list of PDF files
 
-57 files downloaded on 2017/03/31
+57 files downloaded on 2017/04/07
 ```
 azdoc-active-directory-b2c.pdf
 azdoc-active-directory.pdf

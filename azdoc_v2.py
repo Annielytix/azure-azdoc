@@ -23,10 +23,10 @@ import requests
 from bs4 import BeautifulSoup
 from docopt import docopt
 
-VERSION = 'v20170331'
+VERSION = 'v20170407'
 
 # Python 3 script to Scrape/Spider for Azure PDF documentation.
-# Chris Joakim, Microsoft, 2017/03/31
+# Chris Joakim, Microsoft, 2017/04/07
 
 
 # This class attempts to define all relevant configuration in one place.
