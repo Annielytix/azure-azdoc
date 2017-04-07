@@ -15,7 +15,7 @@ a:hover {color: red; text-decoration: underline;}
 <table width="15%" align="center" border="0">
 {% for doc in data['docs'] %}
   <tr>
-    <td align='center'><a href='{{doc["url"]}}'>{{doc["docname"]}}</a></td>
+    <td align='center'><a href='{{doc["url"]}}'>{{doc["name"]}}</a></td>
   </tr>
 {% endfor %}
 </table>
