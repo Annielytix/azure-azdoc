@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Chris Joakim, Microsoft
-# Generated on Fri 2017-04-07
+# Generated on Fri 2017-04-14
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/active-directory.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/active-directory.pdf > pdf/azdoc-active-directory.pdf

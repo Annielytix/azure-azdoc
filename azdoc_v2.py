@@ -1,10 +1,9 @@
 """
 Usage:
-  python azdoc.py scrape
-  python azdoc.py inventory <username>
-  python azdoc.py diff <tolerance> <inventory_file-1> <inventory_file-2>
-  python azdoc.py sharepoint
-  python azdoc.py sharepoint_jinga2
+  python azdoc_v2.py scrape
+  python azdoc_v2.py inventory <username>
+  python azdoc_v2.py diff <tolerance> <inventory_file-1> <inventory_file-2>
+  python azdoc.py sharepoint data/inventory-cjoakim-20170414-1145.json
 
 Options:
   -h --help     Show this screen.
@@ -23,7 +22,7 @@ import requests
 from bs4 import BeautifulSoup
 from docopt import docopt
 
-VERSION = 'v20170407'
+VERSION = 'v20170414'
 
 # Python 3 script to Scrape/Spider for Azure PDF documentation.
 # Chris Joakim, Microsoft, 2017/04/07
@@ -92,7 +91,7 @@ class AzdocUtil:
         self.pdf_names.append('azure-functions')
         self.pdf_names.append('data-lake-store')
         self.pdf_names.append('logic-apps')
-        
+
         # l | grep ' 215 ' | cut -c54-999
         # azdoc-api.pdf
         # azdoc-azure-bot-service.pdf
@@ -249,62 +248,19 @@ class AzdocUtil:
                 return n.strip()
         return None
 
-    def gen_sharepoint_content(self):
+    def gen_sharepoint_content(self, inventory_file):
+        docs = self.read_parse_json_file(inventory_file)
+        for doc in docs:
+            base = doc['base']
+            name = base[6:]
+            doc['name'] = name
+            doc['url']  = "{}{}".format(self.pdf_base, name)
+            print(doc)
+
         infile = 'azdoc_curl_pdfs.sh'
-        lines  = list()
-        lines.append('<!DOCTYPE html>\n')
-        lines.append('<html lang="en">\n')
-
-        lines.append('<head>\n')
-        lines.append('<style>\n')
-        lines.append('body {align:center; color: darkgray;}\n')
-        lines.append('a:link {text-decoration: none;}\n')
-        lines.append('a:hover {color: red; text-decoration: underline;}\n')
-        lines.append('\n')
-        lines.append('</style>\n')
-        lines.append('</head>\n')        
-
-        lines.append('<body align="center">\n')
-        lines.append('<h1 align="center">Azure PDF Documentation</h1>\n')
-        lines.append('<h3 align="center">As of Sun 3/26/2017</h3>\n')
-        lines.append('<table width="15%" align="center" border="0">\n')
-        with open(infile) as f:
-            for line in f:
-                if 'curl' in line:
-                    line_tokens = line.split()
-                    url = line_tokens[1] 
-                    url_tokens = url.split("/")
-                    basename = url.split("/")[-1]
-                    docname = basename.split(".")[0]
-                    lines.append("<tr><td align='center'><a href='{}'>{}</a></td></tr>\n".format(url, docname))
-        lines.append('</table>\n')
-
-        lines.append('<h1>&nbsp;</h1>\n')
-        lines.append('<h4 align="center"><a href="https://github.com/cjoakim/azure-azdoc">This page created by the azdoc utility</a></h4>\n')
-        lines.append('<h1>&nbsp;</h1>\n')
-
-        lines.append('</body>\n')
-        lines.append('</html>\n')
-        self.write_lines(lines, 'doc/azure-azdoc-pdf-files-list.html')
-
-    def gen_sharepoint_content_jinga2(self):
-        infile = 'azdoc_curl_pdfs.sh'
-        docs = list()
         data = dict()
         data['docs'] = docs
         data['date'] = arrow.utcnow().to('US/Eastern').format('ddd YYYY-MM-DD')
-        with open(infile) as f:
-            for line in f:
-                if 'curl' in line:
-                    doc = dict()
-                    line_tokens = line.split()
-                    url = line_tokens[1] 
-                    url_tokens = url.split("/")
-                    basename = url.split("/")[-1]
-                    doc['url'] = url
-                    doc['basename'] = basename
-                    doc['docname'] = basename.split(".")[0]
-                    docs.append(doc)
 
         html = self.render('azure-azdoc-pdf-files-list.html', data)
         self.write_lines([html], 'doc/azure-azdoc-pdf-files-list.html')

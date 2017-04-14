@@ -13,7 +13,7 @@ azdoc_curl_pdfs.ps1  <- Windows PowerShell
 azdoc_curl_pdfs.sh   <- Linux, macOS Bash
 ```
 
-This current base URL is: 
+This current base URL is:
 http://azureplatform.azurewebsites.net/en-us/
 
 This utility is thus a two-step process:
@@ -97,7 +97,7 @@ Execute the Web Spider with curl script generation:
 
 ## Latest list of PDF files
 
-57 files downloaded on 2017/04/07
+57 files downloaded on 2017/04/14
 ```
 azdoc-active-directory-b2c.pdf
 azdoc-active-directory.pdf
