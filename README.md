@@ -97,9 +97,10 @@ Execute the Web Spider with curl script generation:
 
 ## Latest list of PDF files
 
-57 files downloaded on 2017/04/14
+58 files downloaded on 2017/04/22
 ```
 azdoc-active-directory-b2c.pdf
+azdoc-active-directory-domain-services.pdf
 azdoc-active-directory.pdf
 azdoc-analysis-services.pdf
 azdoc-api-management.pdf
@@ -135,8 +136,8 @@ azdoc-log-analytics.pdf
 azdoc-logic-apps.pdf
 azdoc-machine-learning.pdf
 azdoc-media-services.pdf
-azdoc-mobile-engagement.pdf
 azdoc-multi-factor-authentication.pdf
+azdoc-network-watcher.pdf
 azdoc-notification-hubs.pdf
 azdoc-power-bi-embedded.pdf
 azdoc-scheduler.pdf
@@ -158,7 +159,7 @@ azdoc-virtual-network.pdf
 azdoc-vpn-gateway.pdf
 ```
 
-[Latest Inventory with file sizes](data/inventory-cjoakim-20170305-0825.json)
+[Latest Inventory with file sizes](data/inventory-cjoakim-20170422-0939.json)
 
 ## Inventory and Diffs
 
