@@ -1,7 +1,3 @@
-
-.
-..
-.DS_Store
 azdoc-active-directory-b2c.pdf
 azdoc-active-directory-domain-services.pdf
 azdoc-active-directory.pdf
@@ -60,5 +56,3 @@ azdoc-virtual-machine-scale-sets.pdf
 azdoc-virtual-machines.pdf
 azdoc-virtual-network.pdf
 azdoc-vpn-gateway.pdf
-list.txt
-readme

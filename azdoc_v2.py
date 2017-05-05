@@ -22,10 +22,10 @@ import requests
 from bs4 import BeautifulSoup
 from docopt import docopt
 
-VERSION = 'v20170414'
+VERSION = 'v20170505'
 
 # Python 3 script to Scrape/Spider for Azure PDF documentation.
-# Chris Joakim, Microsoft, 2017/04/07
+# Chris Joakim, Microsoft, 2017/05/05
 
 
 # This class attempts to define all relevant configuration in one place.
@@ -321,7 +321,8 @@ if __name__ == "__main__":
 
         elif func == 'sharepoint':
             s = AzdocUtil()
-            s.gen_sharepoint_content()
+            f = sys.argv[2]
+            s.gen_sharepoint_content(f)
 
         elif func == 'sharepoint_jinga2':
             s = AzdocUtil()
