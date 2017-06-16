@@ -1,7 +1,7 @@
 """
 Usage:
   python assets.py scrape
-
+  python assets.py generate_imagemagick_script
 Options:
   -h --help     Show this screen.
   --version     Show version.
@@ -24,7 +24,6 @@ VERSION = 'v20170616'
 # Python 3 script to Scrape/Spider for Azure Service Image Files.
 # Chris Joakim, Microsoft, 2017/06/16
 
-
 # This class attempts to define all relevant configuration in one place.
 
 class AssetsConfig:
@@ -32,9 +31,9 @@ class AssetsConfig:
     def __init__(self):
         self.services_url = 'https://docs.microsoft.com/en-us/azure/#pivot=services&panel=all'
         self.base_url = 'https://docs.microsoft.com/en-us/azure/'
-        self.html_dir = 'assets/html'
-        self.svg_dir  = 'assets/svg'
-        self.png_dir  = 'assets/png'
+        self.html_dir = 'assets/html/'
+        self.svg_dir  = 'assets/svg/'
+        self.png_dir  = 'assets/png/'
         self.debug    = True
 
 
@@ -56,12 +55,13 @@ class AssetsUtil:
     def scrape(self):
         print('AssetsUtil.scrape...')
         self.get_parse_services_page()
-        self.fetch_svg_images()
+        #self.fetch_svg_images()
+        self.generate_imagemagick_script()
 
     def get_parse_services_page(self):
         print('get_parse_root_page start')
         f  = self.html_outfile('services')
-        r  = self.get(self.services_url, f);
+        r  = self.get(self.services_url, f)
         bs = BeautifulSoup(r.text, "html.parser")
         image_tags = bs.find_all("img")
         for image_tag in image_tags:
@@ -73,16 +73,36 @@ class AssetsUtil:
                         self.svg_images.append(src)
             except:
                 pass
+        jstr = json.dumps(self.svg_images, sort_keys=True, indent=2)
         print('get_parse_root_page complete; count: {}'.format(len(self.svg_images)))
 
     def fetch_svg_images(self):
         for svg_image in self.svg_images:
             try:
+                basename = svg_image.split('/')[-1]
                 url = f'{self.base_url}{svg_image}'
-                print(url)
-
+                outfile = f'{self.svg_dir}{basename}'
+                print(f'url: {url} -> outfile: {outfile}')
+                self.get(url, outfile)
             except:
                 pass
+
+    def generate_imagemagick_script(self):
+        lines = list()
+        lines.append('#!/bin/bash\n\n')
+        lines.append("# Chris Joakim, Microsoft\n")
+        lines.append("# Generated on {}\n\n".format(self.current_timestamp()))
+
+        for root, dirnames, filenames in os.walk(self.svg_dir):
+            for basename in filenames:
+                if basename.endswith('.svg'):
+                    name   = basename.split('.')[0]
+                    infile  = f'{self.svg_dir}{basename}'
+                    outfile = f'{self.png_dir}{name}.png'
+                    lines.append(f'convert {infile} {outfile} \n')
+                    # convert front.jpg front_png.png
+
+        self.write_lines(lines, 'convert_resize_assets.sh')
 
     def get(self, url, f):
         time.sleep(0.5)  # be nice to the web server; throttle requests to it
@@ -91,8 +111,7 @@ class AssetsUtil:
         else:
             print("get {}".format(url))
         r = requests.get(url)
-        if self.debug:
-            self.capture_response(url, r, f)
+        self.capture_response(url, r, f)
         return r
 
     def capture_response(self, url, r, f):
@@ -141,8 +160,12 @@ if __name__ == "__main__":
         func = sys.argv[1].lower()
 
         if func == 'scrape':
-            s = AssetsUtil()
-            s.scrape()
+            util = AssetsUtil()
+            util.scrape()
+
+        elif func == 'generate_imagemagick_script':
+            util = AssetsUtil()
+            util.generate_imagemagick_script()
 
         else:
             print_options('Error: invalid function: {}'.format(func))
