@@ -55,8 +55,7 @@ class AssetsUtil:
     def scrape(self):
         print('AssetsUtil.scrape...')
         self.get_parse_services_page()
-        #self.fetch_svg_images()
-        self.generate_imagemagick_script()
+        self.fetch_svg_images()
 
     def get_parse_services_page(self):
         print('get_parse_root_page start')

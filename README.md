@@ -1,6 +1,7 @@
 # azure-azdoc
 
-Web spidering to identify Azure PDF documentation, and download it with curl
+Web spidering to identify Azure PDF documentation, and download it with curl.
+Also includes svg image fetching and resizing to several *.png files.
 
 ## Overview
 
@@ -190,4 +191,14 @@ $ python azdoc.py diff 100 data/inventory-cjoakim-20170305-0825.json data/invent
 $ python azdoc_v2.py diff 100 data/inventory-cjoakim-20170317-1725.json data/inventory-cjoakim-20170326-1021.json
 ```
 
-### Latest Changes
+## Assets
+
+Execute the following commands to scrape the svg image urls from URL
+'https://docs.microsoft.com/en-us/azure/#pivot=services&panel=all'
+and convert them to several resized png files.
+
+```
+python assets.py scrape
+python assets.py gen_image_conversion_script
+./image_conversion.sh
+```
