@@ -1,7 +1,7 @@
 """
 Usage:
   python assets.py scrape
-  python assets.py generate_imagemagick_script
+  python assets.py gen_image_conversion_script
 Options:
   -h --help     Show this screen.
   --version     Show version.
@@ -87,22 +87,37 @@ class AssetsUtil:
             except:
                 pass
 
-    def generate_imagemagick_script(self):
+    def gen_image_conversion_script(self):
         lines = list()
         lines.append('#!/bin/bash\n\n')
         lines.append("# Chris Joakim, Microsoft\n")
         lines.append("# Generated on {}\n\n".format(self.current_timestamp()))
+        lines.append(f"rm {self.png_dir}*.png \n\n")
+        lines.append(f"source bin/activate\n\n")
 
         for root, dirnames, filenames in os.walk(self.svg_dir):
             for basename in filenames:
-                if basename.endswith('.svg'):
-                    name   = basename.split('.')[0]
-                    infile  = f'{self.svg_dir}{basename}'
-                    outfile = f'{self.png_dir}{name}.png'
-                    lines.append(f'convert {infile} {outfile} \n')
-                    # convert front.jpg front_png.png
+                process_image = True
+                # if 'activedirectory' in basename:
+                #     process_image = True  
+                # if 'lake' in basename:
+                #     process_image = True  
 
-        self.write_lines(lines, 'convert_resize_assets.sh')
+                if process_image:
+                    name = basename.split('.')[0]
+                    svgfile = f'{self.svg_dir}{basename}'
+                    pngfile = f'{self.png_dir}{name}.png'
+                    pngfile50 = f'{self.png_dir}{name}-50.png'
+                    pngfile100 = f'{self.png_dir}{name}-100.png'
+                    pngfile200 = f'{self.png_dir}{name}-200.png'
+                    lines.append(f"echo 'converting {name} image ...' \n")
+                    lines.append(f'cairosvg {svgfile} -o {pngfile} \n')
+                    lines.append(f'convert -thumbnail  50 {pngfile} {pngfile50} \n')
+                    lines.append(f'convert -thumbnail 100 {pngfile} {pngfile100} \n')
+                    lines.append(f'\n')
+
+        lines.append("echo 'done'\n\n")
+        self.write_lines(lines, 'image_conversion.sh')
 
     def get(self, url, f):
         time.sleep(0.5)  # be nice to the web server; throttle requests to it
@@ -163,9 +178,9 @@ if __name__ == "__main__":
             util = AssetsUtil()
             util.scrape()
 
-        elif func == 'generate_imagemagick_script':
+        elif func == 'gen_image_conversion_script':
             util = AssetsUtil()
-            util.generate_imagemagick_script()
+            util.gen_image_conversion_script()
 
         else:
             print_options('Error: invalid function: {}'.format(func))
