@@ -1,9 +1,0 @@
--rw-r--r--   1 cjoakim  staff       215 Jun 26 13:25 azdoc-api.pdf
--rw-r--r--   1 cjoakim  staff       215 Jun 26 13:27 azdoc-azure-bot-service.pdf
--rw-r--r--   1 cjoakim  staff       215 Jun 26 13:28 azdoc-cache.pdf
--rw-r--r--   1 cjoakim  staff       215 Jun 26 13:29 azdoc-functions.pdf
--rw-r--r--   1 cjoakim  staff       215 Jun 26 13:30 azdoc-help.pdf
--rw-r--r--   1 cjoakim  staff       215 Jun 26 13:31 azdoc-logic.pdf
--rw-r--r--   1 cjoakim  staff       215 Jun 26 13:32 azdoc-mobile.pdf
--rw-r--r--   1 cjoakim  staff       215 Jun 26 13:32 azdoc-net.pdf
--rw-r--r--   1 cjoakim  staff       215 Jun 26 13:36 azdoc-web.pdf
