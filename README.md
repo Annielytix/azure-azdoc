@@ -98,7 +98,7 @@ Execute the Web Spider with curl script generation:
 
 ## Latest list of PDF files
 
-58 files downloaded on 2017/06/26
+58 files downloaded on 2017/07/11
 ```
 azdoc-active-directory-b2c.pdf
 azdoc-active-directory-domain-services.pdf

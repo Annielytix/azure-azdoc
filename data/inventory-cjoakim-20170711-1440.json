@@ -1,0 +1,408 @@
+[
+  {
+    "base": "azdoc-active-directory-b2c.pdf",
+    "date": "2017-07-11 18:25:12 +00:00",
+    "epoch": 1499797512.0,
+    "path": "pdf/azdoc-active-directory-b2c.pdf",
+    "size": 3070390
+  },
+  {
+    "base": "azdoc-active-directory-domain-services.pdf",
+    "date": "2017-07-11 18:25:15 +00:00",
+    "epoch": 1499797515.0,
+    "path": "pdf/azdoc-active-directory-domain-services.pdf",
+    "size": 6380620
+  },
+  {
+    "base": "azdoc-active-directory.pdf",
+    "date": "2017-07-11 18:25:09 +00:00",
+    "epoch": 1499797509.0,
+    "path": "pdf/azdoc-active-directory.pdf",
+    "size": 45105805
+  },
+  {
+    "base": "azdoc-analysis-services.pdf",
+    "date": "2017-07-11 18:25:17 +00:00",
+    "epoch": 1499797517.0,
+    "path": "pdf/azdoc-analysis-services.pdf",
+    "size": 1870016
+  },
+  {
+    "base": "azdoc-api-management.pdf",
+    "date": "2017-07-11 18:25:28 +00:00",
+    "epoch": 1499797528.0,
+    "path": "pdf/azdoc-api-management.pdf",
+    "size": 9643684
+  },
+  {
+    "base": "azdoc-app-service-api.pdf",
+    "date": "2017-07-11 18:25:35 +00:00",
+    "epoch": 1499797535.0,
+    "path": "pdf/azdoc-app-service-api.pdf",
+    "size": 25950049
+  },
+  {
+    "base": "azdoc-app-service-mobile.pdf",
+    "date": "2017-07-11 18:25:41 +00:00",
+    "epoch": 1499797541.0,
+    "path": "pdf/azdoc-app-service-mobile.pdf",
+    "size": 28546999
+  },
+  {
+    "base": "azdoc-app-service-web.pdf",
+    "date": "2017-07-11 18:25:48 +00:00",
+    "epoch": 1499797548.0,
+    "path": "pdf/azdoc-app-service-web.pdf",
+    "size": 27041886
+  },
+  {
+    "base": "azdoc-application-gateway.pdf",
+    "date": "2017-07-11 18:25:51 +00:00",
+    "epoch": 1499797551.0,
+    "path": "pdf/azdoc-application-gateway.pdf",
+    "size": 4397477
+  },
+  {
+    "base": "azdoc-application-insights.pdf",
+    "date": "2017-07-11 18:25:57 +00:00",
+    "epoch": 1499797557.0,
+    "path": "pdf/azdoc-application-insights.pdf",
+    "size": 21225738
+  },
+  {
+    "base": "azdoc-automation.pdf",
+    "date": "2017-07-11 18:26:01 +00:00",
+    "epoch": 1499797561.0,
+    "path": "pdf/azdoc-automation.pdf",
+    "size": 12708745
+  },
+  {
+    "base": "azdoc-azure-functions.pdf",
+    "date": "2017-07-11 18:26:06 +00:00",
+    "epoch": 1499797566.0,
+    "path": "pdf/azdoc-azure-functions.pdf",
+    "size": 10061734
+  },
+  {
+    "base": "azdoc-backup.pdf",
+    "date": "2017-07-11 18:26:15 +00:00",
+    "epoch": 1499797575.0,
+    "path": "pdf/azdoc-backup.pdf",
+    "size": 33515880
+  },
+  {
+    "base": "azdoc-batch.pdf",
+    "date": "2017-07-11 18:26:18 +00:00",
+    "epoch": 1499797578.0,
+    "path": "pdf/azdoc-batch.pdf",
+    "size": 4722445
+  },
+  {
+    "base": "azdoc-biztalk-services.pdf",
+    "date": "2017-07-11 18:26:19 +00:00",
+    "epoch": 1499797579.0,
+    "path": "pdf/azdoc-biztalk-services.pdf",
+    "size": 637451
+  },
+  {
+    "base": "azdoc-cdn.pdf",
+    "date": "2017-07-11 18:26:22 +00:00",
+    "epoch": 1499797582.0,
+    "path": "pdf/azdoc-cdn.pdf",
+    "size": 4530141
+  },
+  {
+    "base": "azdoc-cloud-services.pdf",
+    "date": "2017-07-11 18:26:26 +00:00",
+    "epoch": 1499797586.0,
+    "path": "pdf/azdoc-cloud-services.pdf",
+    "size": 10683065
+  },
+  {
+    "base": "azdoc-cognitive-services.pdf",
+    "date": "2017-07-11 18:26:29 +00:00",
+    "epoch": 1499797589.0,
+    "path": "pdf/azdoc-cognitive-services.pdf",
+    "size": 3806702
+  },
+  {
+    "base": "azdoc-container-registry.pdf",
+    "date": "2017-07-11 18:26:30 +00:00",
+    "epoch": 1499797590.0,
+    "path": "pdf/azdoc-container-registry.pdf",
+    "size": 677517
+  },
+  {
+    "base": "azdoc-container-service.pdf",
+    "date": "2017-07-11 18:26:34 +00:00",
+    "epoch": 1499797594.0,
+    "path": "pdf/azdoc-container-service.pdf",
+    "size": 10238581
+  },
+  {
+    "base": "azdoc-data-catalog.pdf",
+    "date": "2017-07-11 18:26:37 +00:00",
+    "epoch": 1499797597.0,
+    "path": "pdf/azdoc-data-catalog.pdf",
+    "size": 3100036
+  },
+  {
+    "base": "azdoc-data-factory.pdf",
+    "date": "2017-07-11 18:26:42 +00:00",
+    "epoch": 1499797602.0,
+    "path": "pdf/azdoc-data-factory.pdf",
+    "size": 19810129
+  },
+  {
+    "base": "azdoc-data-lake-analytics.pdf",
+    "date": "2017-07-11 18:26:44 +00:00",
+    "epoch": 1499797604.0,
+    "path": "pdf/azdoc-data-lake-analytics.pdf",
+    "size": 3277237
+  },
+  {
+    "base": "azdoc-data-lake-store.pdf",
+    "date": "2017-07-11 18:26:49 +00:00",
+    "epoch": 1499797609.0,
+    "path": "pdf/azdoc-data-lake-store.pdf",
+    "size": 4931587
+  },
+  {
+    "base": "azdoc-devtest-lab.pdf",
+    "date": "2017-07-11 18:26:52 +00:00",
+    "epoch": 1499797612.0,
+    "path": "pdf/azdoc-devtest-lab.pdf",
+    "size": 2295371
+  },
+  {
+    "base": "azdoc-dns.pdf",
+    "date": "2017-07-11 18:26:53 +00:00",
+    "epoch": 1499797613.0,
+    "path": "pdf/azdoc-dns.pdf",
+    "size": 1575684
+  },
+  {
+    "base": "azdoc-documentdb.pdf",
+    "date": "2017-07-11 18:26:59 +00:00",
+    "epoch": 1499797619.0,
+    "path": "pdf/azdoc-documentdb.pdf",
+    "size": 18303723
+  },
+  {
+    "base": "azdoc-event-hubs.pdf",
+    "date": "2017-07-11 18:27:01 +00:00",
+    "epoch": 1499797621.0,
+    "path": "pdf/azdoc-event-hubs.pdf",
+    "size": 2264603
+  },
+  {
+    "base": "azdoc-expressroute.pdf",
+    "date": "2017-07-11 18:27:04 +00:00",
+    "epoch": 1499797624.0,
+    "path": "pdf/azdoc-expressroute.pdf",
+    "size": 5486513
+  },
+  {
+    "base": "azdoc-hdinsight.pdf",
+    "date": "2017-07-11 18:27:13 +00:00",
+    "epoch": 1499797633.0,
+    "path": "pdf/azdoc-hdinsight.pdf",
+    "size": 29256993
+  },
+  {
+    "base": "azdoc-iot-hub.pdf",
+    "date": "2017-07-11 18:27:26 +00:00",
+    "epoch": 1499797646.0,
+    "path": "pdf/azdoc-iot-hub.pdf",
+    "size": 63583324
+  },
+  {
+    "base": "azdoc-key-vault.pdf",
+    "date": "2017-07-11 18:27:28 +00:00",
+    "epoch": 1499797648.0,
+    "path": "pdf/azdoc-key-vault.pdf",
+    "size": 1100163
+  },
+  {
+    "base": "azdoc-load-balancer.pdf",
+    "date": "2017-07-11 18:27:30 +00:00",
+    "epoch": 1499797650.0,
+    "path": "pdf/azdoc-load-balancer.pdf",
+    "size": 2221104
+  },
+  {
+    "base": "azdoc-log-analytics.pdf",
+    "date": "2017-07-11 18:27:36 +00:00",
+    "epoch": 1499797656.0,
+    "path": "pdf/azdoc-log-analytics.pdf",
+    "size": 25680922
+  },
+  {
+    "base": "azdoc-logic-apps.pdf",
+    "date": "2017-07-11 18:27:42 +00:00",
+    "epoch": 1499797662.0,
+    "path": "pdf/azdoc-logic-apps.pdf",
+    "size": 17974492
+  },
+  {
+    "base": "azdoc-machine-learning.pdf",
+    "date": "2017-07-11 18:27:49 +00:00",
+    "epoch": 1499797669.0,
+    "path": "pdf/azdoc-machine-learning.pdf",
+    "size": 31861981
+  },
+  {
+    "base": "azdoc-media-services.pdf",
+    "date": "2017-07-11 18:27:54 +00:00",
+    "epoch": 1499797674.0,
+    "path": "pdf/azdoc-media-services.pdf",
+    "size": 15409243
+  },
+  {
+    "base": "azdoc-multi-factor-authentication.pdf",
+    "date": "2017-07-11 18:27:57 +00:00",
+    "epoch": 1499797677.0,
+    "path": "pdf/azdoc-multi-factor-authentication.pdf",
+    "size": 4925889
+  },
+  {
+    "base": "azdoc-network-watcher.pdf",
+    "date": "2017-07-11 18:28:01 +00:00",
+    "epoch": 1499797681.0,
+    "path": "pdf/azdoc-network-watcher.pdf",
+    "size": 7075530
+  },
+  {
+    "base": "azdoc-notification-hubs.pdf",
+    "date": "2017-07-11 18:28:06 +00:00",
+    "epoch": 1499797686.0,
+    "path": "pdf/azdoc-notification-hubs.pdf",
+    "size": 15925612
+  },
+  {
+    "base": "azdoc-power-bi-embedded.pdf",
+    "date": "2017-07-11 18:28:08 +00:00",
+    "epoch": 1499797688.0,
+    "path": "pdf/azdoc-power-bi-embedded.pdf",
+    "size": 2092313
+  },
+  {
+    "base": "azdoc-scheduler.pdf",
+    "date": "2017-07-11 18:28:10 +00:00",
+    "epoch": 1499797690.0,
+    "path": "pdf/azdoc-scheduler.pdf",
+    "size": 599115
+  },
+  {
+    "base": "azdoc-search.pdf",
+    "date": "2017-07-11 18:28:12 +00:00",
+    "epoch": 1499797692.0,
+    "path": "pdf/azdoc-search.pdf",
+    "size": 3747446
+  },
+  {
+    "base": "azdoc-security-center.pdf",
+    "date": "2017-07-11 18:28:17 +00:00",
+    "epoch": 1499797697.0,
+    "path": "pdf/azdoc-security-center.pdf",
+    "size": 9760213
+  },
+  {
+    "base": "azdoc-service-bus.pdf",
+    "date": "2017-07-11 18:28:18 +00:00",
+    "epoch": 1499797698.0,
+    "path": "pdf/azdoc-service-bus.pdf",
+    "size": 10225
+  },
+  {
+    "base": "azdoc-service-fabric.pdf",
+    "date": "2017-07-11 18:28:24 +00:00",
+    "epoch": 1499797704.0,
+    "path": "pdf/azdoc-service-fabric.pdf",
+    "size": 18832976
+  },
+  {
+    "base": "azdoc-site-recovery.pdf",
+    "date": "2017-07-11 18:28:29 +00:00",
+    "epoch": 1499797709.0,
+    "path": "pdf/azdoc-site-recovery.pdf",
+    "size": 20672060
+  },
+  {
+    "base": "azdoc-sql-data-warehouse.pdf",
+    "date": "2017-07-11 18:28:37 +00:00",
+    "epoch": 1499797717.0,
+    "path": "pdf/azdoc-sql-data-warehouse.pdf",
+    "size": 8165452
+  },
+  {
+    "base": "azdoc-sql-database.pdf",
+    "date": "2017-07-11 18:28:44 +00:00",
+    "epoch": 1499797724.0,
+    "path": "pdf/azdoc-sql-database.pdf",
+    "size": 27282590
+  },
+  {
+    "base": "azdoc-sql-server-stretch-database.pdf",
+    "date": "2017-07-11 18:28:45 +00:00",
+    "epoch": 1499797725.0,
+    "path": "pdf/azdoc-sql-server-stretch-database.pdf",
+    "size": 18905
+  },
+  {
+    "base": "azdoc-storage.pdf",
+    "date": "2017-07-11 18:28:49 +00:00",
+    "epoch": 1499797729.0,
+    "path": "pdf/azdoc-storage.pdf",
+    "size": 11800752
+  },
+  {
+    "base": "azdoc-storsimple.pdf",
+    "date": "2017-07-11 18:29:13 +00:00",
+    "epoch": 1499797753.0,
+    "path": "pdf/azdoc-storsimple.pdf",
+    "size": 59913020
+  },
+  {
+    "base": "azdoc-stream-analytics.pdf",
+    "date": "2017-07-11 18:29:16 +00:00",
+    "epoch": 1499797756.0,
+    "path": "pdf/azdoc-stream-analytics.pdf",
+    "size": 5633356
+  },
+  {
+    "base": "azdoc-traffic-manager.pdf",
+    "date": "2017-07-11 18:29:19 +00:00",
+    "epoch": 1499797759.0,
+    "path": "pdf/azdoc-traffic-manager.pdf",
+    "size": 2234358
+  },
+  {
+    "base": "azdoc-virtual-machine-scale-sets.pdf",
+    "date": "2017-07-11 18:29:22 +00:00",
+    "epoch": 1499797762.0,
+    "path": "pdf/azdoc-virtual-machine-scale-sets.pdf",
+    "size": 1999786
+  },
+  {
+    "base": "azdoc-virtual-machines.pdf",
+    "date": "2017-07-11 18:29:24 +00:00",
+    "epoch": 1499797764.0,
+    "path": "pdf/azdoc-virtual-machines.pdf",
+    "size": 175728
+  },
+  {
+    "base": "azdoc-virtual-network.pdf",
+    "date": "2017-07-11 18:29:28 +00:00",
+    "epoch": 1499797768.0,
+    "path": "pdf/azdoc-virtual-network.pdf",
+    "size": 8145870
+  },
+  {
+    "base": "azdoc-vpn-gateway.pdf",
+    "date": "2017-07-11 18:29:31 +00:00",
+    "epoch": 1499797771.0,
+    "path": "pdf/azdoc-vpn-gateway.pdf",
+    "size": 5871242
+  }
+]
