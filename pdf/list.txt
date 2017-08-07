@@ -1,58 +1,58 @@
--rw-r--r--   1 cjoakim  staff   3076604 Jul 30 13:28 azdoc-active-directory-b2c.pdf
--rw-r--r--   1 cjoakim  staff   6380729 Jul 30 13:28 azdoc-active-directory-domain-services.pdf
--rw-r--r--   1 cjoakim  staff  41488126 Jul 30 13:28 azdoc-active-directory.pdf
--rw-r--r--   1 cjoakim  staff   2072673 Jul 30 13:28 azdoc-analysis-services.pdf
--rw-r--r--   1 cjoakim  staff   9650847 Jul 30 13:28 azdoc-api-management.pdf
--rw-r--r--   1 cjoakim  staff  26118961 Jul 30 13:29 azdoc-app-service-api.pdf
--rw-r--r--   1 cjoakim  staff  28703110 Jul 30 13:29 azdoc-app-service-mobile.pdf
--rw-r--r--   1 cjoakim  staff  27433395 Jul 30 13:29 azdoc-app-service-web.pdf
--rw-r--r--   1 cjoakim  staff   4561460 Jul 30 13:29 azdoc-application-gateway.pdf
--rw-r--r--   1 cjoakim  staff  21458412 Jul 30 13:29 azdoc-application-insights.pdf
--rw-r--r--   1 cjoakim  staff  12841939 Jul 30 13:29 azdoc-automation.pdf
--rw-r--r--   1 cjoakim  staff  10121890 Jul 30 13:29 azdoc-azure-functions.pdf
--rw-r--r--   1 cjoakim  staff  36048446 Jul 30 13:29 azdoc-backup.pdf
--rw-r--r--   1 cjoakim  staff   4794365 Jul 30 13:29 azdoc-batch.pdf
--rw-r--r--   1 cjoakim  staff    637749 Jul 30 13:30 azdoc-biztalk-services.pdf
--rw-r--r--   1 cjoakim  staff   4529722 Jul 30 13:30 azdoc-cdn.pdf
--rw-r--r--   1 cjoakim  staff   9090152 Jul 30 13:30 azdoc-cloud-services.pdf
--rw-r--r--   1 cjoakim  staff   3810114 Jul 30 13:30 azdoc-cognitive-services.pdf
--rw-r--r--   1 cjoakim  staff    866690 Jul 30 13:30 azdoc-container-registry.pdf
--rw-r--r--   1 cjoakim  staff    302505 Jul 30 13:30 azdoc-container-service.pdf
--rw-r--r--   1 cjoakim  staff   3100891 Jul 30 13:30 azdoc-data-catalog.pdf
--rw-r--r--   1 cjoakim  staff  19907054 Jul 30 13:30 azdoc-data-factory.pdf
--rw-r--r--   1 cjoakim  staff   4726259 Jul 30 13:30 azdoc-data-lake-analytics.pdf
--rw-r--r--   1 cjoakim  staff   4934296 Jul 30 13:30 azdoc-data-lake-store.pdf
--rw-r--r--   1 cjoakim  staff   2364770 Jul 30 13:30 azdoc-devtest-lab.pdf
--rw-r--r--   1 cjoakim  staff   2404977 Jul 30 13:30 azdoc-dns.pdf
--rw-r--r--   1 cjoakim  staff  18303723 Jul 30 13:31 azdoc-documentdb.pdf
--rw-r--r--   1 cjoakim  staff   2265966 Jul 30 13:31 azdoc-event-hubs.pdf
--rw-r--r--   1 cjoakim  staff   5577705 Jul 30 13:31 azdoc-expressroute.pdf
--rw-r--r--   1 cjoakim  staff  29598849 Jul 30 13:31 azdoc-hdinsight.pdf
--rw-r--r--   1 cjoakim  staff  64104073 Jul 30 13:32 azdoc-iot-hub.pdf
--rw-r--r--   1 cjoakim  staff   1097357 Jul 30 13:32 azdoc-key-vault.pdf
--rw-r--r--   1 cjoakim  staff   2224034 Jul 30 13:32 azdoc-load-balancer.pdf
--rw-r--r--   1 cjoakim  staff  27827671 Jul 30 13:32 azdoc-log-analytics.pdf
--rw-r--r--   1 cjoakim  staff  18775157 Jul 30 13:33 azdoc-logic-apps.pdf
--rw-r--r--   1 cjoakim  staff  31951706 Jul 30 13:33 azdoc-machine-learning.pdf
--rw-r--r--   1 cjoakim  staff  15463611 Jul 30 13:33 azdoc-media-services.pdf
--rw-r--r--   1 cjoakim  staff   4942144 Jul 30 13:33 azdoc-multi-factor-authentication.pdf
--rw-r--r--   1 cjoakim  staff   7215822 Jul 30 13:33 azdoc-network-watcher.pdf
--rw-r--r--   1 cjoakim  staff  15927557 Jul 30 13:33 azdoc-notification-hubs.pdf
--rw-r--r--   1 cjoakim  staff   2077560 Jul 30 13:33 azdoc-power-bi-embedded.pdf
--rw-r--r--   1 cjoakim  staff    599589 Jul 30 13:33 azdoc-scheduler.pdf
--rw-r--r--   1 cjoakim  staff   3788700 Jul 30 13:34 azdoc-search.pdf
--rw-r--r--   1 cjoakim  staff  11120091 Jul 30 13:34 azdoc-security-center.pdf
--rw-r--r--   1 cjoakim  staff     11009 Jul 30 13:34 azdoc-service-bus.pdf
--rw-r--r--   1 cjoakim  staff  22678616 Jul 30 13:34 azdoc-service-fabric.pdf
--rw-r--r--   1 cjoakim  staff  21361661 Jul 30 13:34 azdoc-site-recovery.pdf
--rw-r--r--   1 cjoakim  staff   8417120 Jul 30 13:34 azdoc-sql-data-warehouse.pdf
--rw-r--r--   1 cjoakim  staff  26080931 Jul 30 13:34 azdoc-sql-database.pdf
--rw-r--r--   1 cjoakim  staff     19978 Jul 30 13:34 azdoc-sql-server-stretch-database.pdf
--rw-r--r--   1 cjoakim  staff  11597825 Jul 30 13:35 azdoc-storage.pdf
--rw-r--r--   1 cjoakim  staff  74392134 Jul 30 13:36 azdoc-storsimple.pdf
--rw-r--r--   1 cjoakim  staff   5634139 Jul 30 13:36 azdoc-stream-analytics.pdf
--rw-r--r--   1 cjoakim  staff   2237468 Jul 30 13:36 azdoc-traffic-manager.pdf
--rw-r--r--   1 cjoakim  staff   2026052 Jul 30 13:36 azdoc-virtual-machine-scale-sets.pdf
--rw-r--r--   1 cjoakim  staff    176262 Jul 30 13:36 azdoc-virtual-machines.pdf
--rw-r--r--   1 cjoakim  staff   8280878 Jul 30 13:36 azdoc-virtual-network.pdf
--rw-r--r--   1 cjoakim  staff   5890582 Jul 30 13:36 azdoc-vpn-gateway.pdf
+azdoc-active-directory-b2c.pdf
+azdoc-active-directory-domain-services.pdf
+azdoc-active-directory.pdf
+azdoc-analysis-services.pdf
+azdoc-api-management.pdf
+azdoc-app-service-api.pdf
+azdoc-app-service-mobile.pdf
+azdoc-app-service-web.pdf
+azdoc-application-gateway.pdf
+azdoc-application-insights.pdf
+azdoc-automation.pdf
+azdoc-azure-functions.pdf
+azdoc-backup.pdf
+azdoc-batch.pdf
+azdoc-biztalk-services.pdf
+azdoc-cdn.pdf
+azdoc-cloud-services.pdf
+azdoc-cognitive-services.pdf
+azdoc-container-registry.pdf
+azdoc-container-service.pdf
+azdoc-data-catalog.pdf
+azdoc-data-factory.pdf
+azdoc-data-lake-analytics.pdf
+azdoc-data-lake-store.pdf
+azdoc-devtest-lab.pdf
+azdoc-dns.pdf
+azdoc-documentdb.pdf
+azdoc-event-hubs.pdf
+azdoc-expressroute.pdf
+azdoc-hdinsight.pdf
+azdoc-iot-hub.pdf
+azdoc-key-vault.pdf
+azdoc-load-balancer.pdf
+azdoc-log-analytics.pdf
+azdoc-logic-apps.pdf
+azdoc-machine-learning.pdf
+azdoc-media-services.pdf
+azdoc-multi-factor-authentication.pdf
+azdoc-network-watcher.pdf
+azdoc-notification-hubs.pdf
+azdoc-power-bi-embedded.pdf
+azdoc-scheduler.pdf
+azdoc-search.pdf
+azdoc-security-center.pdf
+azdoc-service-bus.pdf
+azdoc-service-fabric.pdf
+azdoc-site-recovery.pdf
+azdoc-sql-data-warehouse.pdf
+azdoc-sql-database.pdf
+azdoc-sql-server-stretch-database.pdf
+azdoc-storage.pdf
+azdoc-storsimple.pdf
+azdoc-stream-analytics.pdf
+azdoc-traffic-manager.pdf
+azdoc-virtual-machine-scale-sets.pdf
+azdoc-virtual-machines.pdf
+azdoc-virtual-network.pdf
+azdoc-vpn-gateway.pdf

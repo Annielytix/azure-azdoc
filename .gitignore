@@ -9,6 +9,7 @@ out/*.txt
 
 pdf/*.pdf
 pdf_previous/
+pdf/small/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
