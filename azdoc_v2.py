@@ -62,6 +62,7 @@ class AzdocUtil:
         self.get_parse_root_page()
         self.gen_curl_pdfs_script('bash')
         self.gen_curl_pdfs_script('powershell')
+        self.gen_py_code()
 
     def get_parse_root_page(self):
         print('get_parse_root_page start')
@@ -126,6 +127,14 @@ class AzdocUtil:
             else:
                 lines.append("curl {} -OutFile {}/azdoc-{}\n".format(url, self.pdf_dir, outpdf))
         lines.append('\necho "done"\n')
+        self.write_lines(lines, outfile)
+
+    def gen_py_code(self):
+        lines, outfile = list(), 'pdf-files-scraped.txt'
+
+        for idx, name in enumerate(sorted(self.pdf_names)):
+            lines.append("{}\n".format('{}.pdf'.format(name)))
+
         self.write_lines(lines, outfile)
 
     def create_pdf_url(self, pdf_name):

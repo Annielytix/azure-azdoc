@@ -64,6 +64,7 @@ class AzdocUtil:
         self.get_parse_doc_urls()
         self.gen_curl_pdfs_script('bash')
         self.gen_curl_pdfs_script('powershell')
+        self.gen_py_code()
 
     def inventory(self, user):
         print('AzdocUtil.inventory for user: {}'.format(user))
@@ -188,6 +189,16 @@ class AzdocUtil:
             else:
                 lines.append("curl {} -OutFile {}/azdoc-{}\n".format(url, self.pdf_dir, name))
         lines.append('\necho "done"\n')
+        self.write_lines(lines, outfile)
+
+    def gen_py_code():
+        lines   = list()
+        outfile = 'docs_list.py'
+
+        for idx, name in enumerate(sorted(self.pdf_urls.keys())):
+            url = self.pdf_urls[name]
+            lines.append(url)
+
         self.write_lines(lines, outfile)
 
     def get(self, url, f):
