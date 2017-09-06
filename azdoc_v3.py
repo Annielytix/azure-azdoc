@@ -1,8 +1,9 @@
 """
 Usage:
   python azdoc_v3.py get_blob_list
-  python azdoc_v3.py parse
-  python azdoc_v3.py parse_marker
+  python azdoc_v3.py parse1 tmp/response-0.xml
+  python azdoc_v3.py aggregate_responses
+
 Options:
   -h --help     Show this screen.
   --version     Show version.
@@ -24,23 +25,36 @@ class HttpClient:
         self.continue_to_get = True
         self.continuation_marker = ''
         self.last_response_code = 0
-        self.last_response_text = self.sample_xml_with_marker()
+        self.last_response_text = ''
+        self.captured_response_files = list()
 
     def get_blob_list(self):
         self.continue_to_get = True
-        for idx in range(1):
+        for idx in range(10):
             if self.continue_to_get:
                 self.get_next_list(idx)
+        self.write_files_list()
 
     def get_next_list(self, idx):
         print('get_next: {}'.format(idx))
-        url = self.build_url()
-        print('invoking url: {}'.format(url))
-        r = requests.get(url)
-        self.last_response_code = r.status_code
-        self.last_response_text = r.text
-        print(self.last_response_code)
-        print(self.last_response_text)
+        url = self.build_url(idx)
+        if url is None:
+            print('end of list pagination')
+            self.continue_to_get = False
+        else:
+            print('invoking url: {}'.format(url))
+            r = requests.get(url)
+            self.capture_response(url, r, idx)
+
+    def build_url(self, idx):
+        if idx < 1:
+            return self.base_url
+        else:
+            self.continuation_marker = self.parse_continuation_marker()
+            if len(self.continuation_marker) > 0:
+                return '{}&marker={}'.format(self.base_url, self.continuation_marker)
+            else:
+                return None
 
     def parse_continuation_marker(self):
         begin_tag, end_tag  = '<NextMarker>', '</NextMarker>'
@@ -54,20 +68,25 @@ class HttpClient:
             return ''
         else:
             start_idx = begin_idx + len(begin_tag)
-            print('xml       {} {}'.format(type(self.last_response_text), len(self.last_response_text)))
-            print('begin_idx {} {}'.format(type(begin_idx), begin_idx))
-            print('start_idx {} {}'.format(type(start_idx), start_idx))
-            print('end_idx   {} {}'.format(type(end_idx), end_idx))
-            marker = self.last_response_text[start_idx:end_idx]
-            print('marker|{}|'.format(marker))
-            return marker
+            return self.last_response_text[start_idx:end_idx]
 
-    def build_url(self):
-        self.continuation_marker = self.parse_continuation_marker()
-        if len(self.continuation_marker) > 0:
-            return '{}&marker={}'.format(self.base_url, self.continuation_marker)
-        else:
-            return self.base_url
+    def capture_response(self, url, r, idx):
+        outfile = 'tmp/response-{}.xml'.format(idx)
+        print('response, code: {} length: {} -> {}'.format(r.status_code, len(r.text), outfile))
+        self.last_response_text = r.text
+        with open(outfile, 'wt') as out:
+            out.write(r.text)
+            print('file written: {}'.format(outfile))
+
+        print("{} {} {}".format(r.status_code, url, len(r.text)))
+        self.captured_response_files.append(outfile)
+
+    def write_files_list(self):
+        jstr = json.dumps(self.captured_response_files, sort_keys=True, indent=2)
+        outfile = 'tmp/responses.json'
+        with open(outfile, 'wt') as out:
+            out.write(jstr)
+            print('file written: {}'.format(outfile))
 
     def index_of(self, substring):
         try:
@@ -96,8 +115,6 @@ class Blob(object):
             self.values[key.strip()] = value.strip()
 
     def __str__(self):
-        # template = "<Blob values count:{0}>"
-        # return template.format(len(self.values))
         return str(self.values)
 
     def __repr__(self):
@@ -118,8 +135,6 @@ class EnumerationResultsHandler(xml.sax.ContentHandler):
         self.end_reached = False
 
     def parse(self, filename):
-        # xml.sax.parse(open(filename), self)
-        # return self
         parser = xml.sax.make_parser()
         parser.setFeature(xml.sax.handler.feature_namespaces, 0)
         parser.setContentHandler(self)
@@ -130,13 +145,8 @@ class EnumerationResultsHandler(xml.sax.ContentHandler):
         self.completed = True
 
     def characters(self, chars):
-        print('characters: ' + str(chars))
+        # print('characters: ' + str(chars))
         self.curr_text = self.curr_text + str(chars)
-
-        # if len(self.curr_text) > 0:
-        #     self.curr_text = self.curr_text + chars
-        # else:
-        #     self.curr_text = chars
 
     def reset_curr_text(self):
         self.curr_text = ''
@@ -154,7 +164,7 @@ class EnumerationResultsHandler(xml.sax.ContentHandler):
         self.heirarchy.append(tag_name)
         self.reset_curr_text()
         path = self.curr_path()
-        print('startElement; tag: {}  path: {}'.format(tag_name, path))
+        # print('startElement; tag: {}  path: {}'.format(tag_name, path))
 
         if path == self.blob_path:
             self.curr_blob = Blob()
@@ -162,7 +172,7 @@ class EnumerationResultsHandler(xml.sax.ContentHandler):
 
     def endElement(self, tag_name):
         path = self.curr_path()
-        print('endElement; curr_text: {}'.format(self.curr_text))
+        # print('endElement; curr_text: {}'.format(self.curr_text))
 
         if self.blob_path in path:
             self.curr_blob.set(tag_name, str(self.curr_text))
@@ -174,6 +184,45 @@ class EnumerationResultsHandler(xml.sax.ContentHandler):
         self.reset_curr_text()
 
 
+class Aggregator(object):
+
+    def __init__(self):
+        self.response_files = list()
+        self.blobs = list()
+        self.azure_blobs = list()
+
+    def aggregate(self):
+        self.response_files = self.read_parse_json_file('tmp/responses.json')
+        for infile in self.response_files:
+            handler = EnumerationResultsHandler()
+            handler.parse(infile)
+            for blob in handler.blobs:
+                self.blobs.append(blob.values)
+
+        jstr = json.dumps(self.blobs, sort_keys=True, indent=2)
+        outfile = 'tmp/aggregated_blobs.json'
+        with open(outfile, 'wt') as out:
+            out.write(jstr)
+            print('file written: {}'.format(outfile))
+            print('blob count:   {}'.format(len(self.blobs)))
+
+        for blob in self.blobs:
+            url = blob['Url']
+            if '/en-us/Azure.azure-documents/live/' in url:
+                self.azure_blobs.append(url)
+
+        outfile = 'tmp/aggregated_azure_blobs.json'
+        jstr = json.dumps(self.azure_blobs, sort_keys=True, indent=2)
+        with open(outfile, 'wt') as out:
+            out.write(jstr)
+            print('file written: {}'.format(outfile))
+            print('blob count:   {}'.format(len(self.azure_blobs)))
+
+    def read_parse_json_file(self, infile):
+        with open(infile) as f:
+            return json.loads(f.read())
+
+
 if __name__ == "__main__":
 
     if len(sys.argv) > 1:
@@ -183,23 +232,19 @@ if __name__ == "__main__":
             client = HttpClient()
             client.get_blob_list()
 
-        elif func == 'parse_marker':
-            client = HttpClient()
-            marker = client.parse_continuation_marker()
-            print('marker|{}|'.format(marker))
-
-        elif func == 'parse':
-            infile = 'opbuildstorageprod_list.xml'
-            outfile = sys.argv[2]  # 'opbuildstorageprod_parsed.txt'
+        elif func == 'parse1':
+            infile  = sys.argv[2]
             handler = EnumerationResultsHandler()
             handler.parse(infile)
 
             for blob in handler.blobs:
-                print(blob.get('Name'))
+                print(blob.get('Url'))
 
-            # with open(outfile, 'wt') as f:
-            #     f.write((str(handler)))
             print('blob count: {}'.format(len(handler.blobs)))
+
+        elif func == 'aggregate_responses':
+            aggregator = Aggregator()
+            aggregator.aggregate()
 
         else:
             print_options('Error: invalid function: {}'.format(func))
