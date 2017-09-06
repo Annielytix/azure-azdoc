@@ -1,7 +1,8 @@
 """
 Usage:
+  python azdoc_v3.py get_blob_list
   python azdoc_v3.py parse
-
+  python azdoc_v3.py parse_marker
 Options:
   -h --help     Show this screen.
   --version     Show version.
@@ -11,6 +12,71 @@ import json
 import os
 import sys
 import xml.sax
+
+import requests
+
+
+class HttpClient:
+
+    def __init__(self):
+        self.base_url = 'https://opbuildstorageprod.blob.core.windows.net/output-pdf-files?restype=container&comp=list&maxresults=5000'
+        self.curr_url = self.base_url
+        self.continue_to_get = True
+        self.continuation_marker = ''
+        self.last_response_code = 0
+        self.last_response_text = self.sample_xml_with_marker()
+
+    def get_blob_list(self):
+        self.continue_to_get = True
+        for idx in range(1):
+            if self.continue_to_get:
+                self.get_next_list(idx)
+
+    def get_next_list(self, idx):
+        print('get_next: {}'.format(idx))
+        url = self.build_url()
+        print('invoking url: {}'.format(url))
+        r = requests.get(url)
+        self.last_response_code = r.status_code
+        self.last_response_text = r.text
+        print(self.last_response_code)
+        print(self.last_response_text)
+
+    def parse_continuation_marker(self):
+        begin_tag, end_tag  = '<NextMarker>', '</NextMarker>'
+        empty_tag1, empty_tag2 = '<NextMarker />', '<NextMarker/>'
+        begin_idx  = self.index_of(begin_tag)
+        end_idx    = self.index_of(end_tag)
+        empty_idx1 = self.index_of(empty_tag1)
+        empty_idx2 = self.index_of(empty_tag2)
+
+        if (empty_idx1 > 0) or (empty_idx2 > 0):
+            return ''
+        else:
+            start_idx = begin_idx + len(begin_tag)
+            print('xml       {} {}'.format(type(self.last_response_text), len(self.last_response_text)))
+            print('begin_idx {} {}'.format(type(begin_idx), begin_idx))
+            print('start_idx {} {}'.format(type(start_idx), start_idx))
+            print('end_idx   {} {}'.format(type(end_idx), end_idx))
+            marker = self.last_response_text[start_idx:end_idx]
+            print('marker|{}|'.format(marker))
+            return marker
+
+    def build_url(self):
+        self.continuation_marker = self.parse_continuation_marker()
+        if len(self.continuation_marker) > 0:
+            return '{}&marker={}'.format(self.base_url, self.continuation_marker)
+        else:
+            return self.base_url
+
+    def index_of(self, substring):
+        try:
+            return self.last_response_text.index(substring)
+        except:
+            return -1
+
+    def sample_xml_with_marker(self):
+        return '<NextMarker>2!164!MDAwMDc3IWVuLXVzL1ZTLmNvcmUtZG9jcy9saXZlL2FwaS9fc3BsaXR0ZWQvU3lzdGVtLldpbmRvd3MuTWVkaWEuVGV4dEZvcm1hdHRpbmcucGRmITAwMDAyOCE5OTk5LTEyLTMxVDIzOjU5OjU5Ljk5OTk5OTlaIQ--</NextMarker>'
 
 
 class Blob(object):
@@ -113,7 +179,16 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         func = sys.argv[1].lower()
 
-        if func == 'parse':
+        if func == 'get_blob_list':
+            client = HttpClient()
+            client.get_blob_list()
+
+        elif func == 'parse_marker':
+            client = HttpClient()
+            marker = client.parse_continuation_marker()
+            print('marker|{}|'.format(marker))
+
+        elif func == 'parse':
             infile = 'opbuildstorageprod_list.xml'
             outfile = sys.argv[2]  # 'opbuildstorageprod_parsed.txt'
             handler = EnumerationResultsHandler()
