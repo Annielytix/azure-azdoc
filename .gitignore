@@ -3,6 +3,7 @@ bin/
 lib/
 man/
 share/
+tmp/
 
 out/*.log
 out/*.txt
