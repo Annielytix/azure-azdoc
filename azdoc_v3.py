@@ -1,7 +1,7 @@
 """
 Usage:
   python azdoc_v3.py get_blob_list
-  python azdoc_v3.py parse1 tmp/response-0.xml
+  python azdoc_v3.py adhoc_parse_results_xml_file tmp/response-0.xml
   python azdoc_v3.py aggregate_responses
   python azdoc_v3.py generate_azure_curl_pdfs_bash_script
   python azdoc_v3.py generate_azure_curl_pdfs_powershell_script
@@ -22,16 +22,19 @@ import requests
 
 class AzdocConfig:
 
+    # This class defines all configuration values - directories, urls.
+
     def __init__(self):
-        self.base_url = 'https://opbuildstorageprod.blob.core.windows.net/output-pdf-files?restype=container&comp=list&maxresults=5000'
-        self.pdf_base = 'https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/'
-        self.out_dir  = 'out'
+        self.blob_query_base_url = 'https://opbuildstorageprod.blob.core.windows.net/output-pdf-files?restype=container&comp=list&maxresults=5000'
+        self.max_http_queries = 10
+        self.azure_url_subpath = '/output-pdf-files/en-us/Azure.azure-documents/live/'
         self.pdf_dir  = 'pdf'
-        self.max_docs = 100
-        self.debug    = True
+        self.tmp_dir  = 'tmp'
 
 
 class BaseObject:
+
+    # This class defines all filenames and file IO functions.
 
     def __init__(self):
         self.config = AzdocConfig()
@@ -39,9 +42,33 @@ class BaseObject:
     def current_timestamp(self):
         return arrow.utcnow().to('US/Eastern').format('ddd YYYY-MM-DD')
 
+    def index_of(self, substring):
+        try:
+            return self.last_response_text.index(substring)
+        except:
+            return -1
+
     def read_parse_json_file(self, infile):
         with open(infile) as f:
             return json.loads(f.read())
+
+    def blob_query_response_filename(self, idx):
+        return '{}/response-{}.xml'.format(self.config.tmp_dir, idx)
+
+    def aggregated_responses_filename(self):
+        return '{}/responses.json'.format(self.config.tmp_dir)
+
+    def aggregated_blobs_filename(self):
+        return '{}/aggregated_blobs.json'.format(self.config.tmp_dir)
+
+    def aggregated_azure_blobs_filename(self):
+        return '{}/aggregated_azure_blobs.json'.format(self.config.tmp_dir)
+
+    def curl_pdfs_bash_script_filename(self):
+        return 'azdoc_curl_pdfs.sh'
+
+    def curl_pdfs_powershell_script_filename(self):
+        return 'azdoc_curl_pdfs.ps1'
 
     def write_text(self, text, outfile):
         with open(outfile, 'wt') as out:
@@ -55,11 +82,12 @@ class BaseObject:
             print('file written: {}'.format(outfile))
 
 
-class HttpClient:
+class HttpClient(BaseObject):
 
     def __init__(self):
-        self.base_url = 'https://opbuildstorageprod.blob.core.windows.net/output-pdf-files?restype=container&comp=list&maxresults=5000'
-        self.curr_url = self.base_url
+        BaseObject.__init__(self)
+        self.blob_query_base_url = self.config.blob_query_base_url
+        self.curr_url = self.blob_query_base_url
         self.continue_to_get = True
         self.continuation_marker = ''
         self.last_response_code = 0
@@ -68,7 +96,7 @@ class HttpClient:
 
     def get_blob_list(self):
         self.continue_to_get = True
-        for idx in range(10):
+        for idx in range(self.config.max_http_queries):
             if self.continue_to_get:
                 self.get_next_list(idx)
         self.write_files_list()
@@ -86,11 +114,11 @@ class HttpClient:
 
     def build_url(self, idx):
         if idx < 1:
-            return self.base_url
+            return self.blob_query_base_url
         else:
             self.continuation_marker = self.parse_continuation_marker()
             if len(self.continuation_marker) > 0:
-                return '{}&marker={}'.format(self.base_url, self.continuation_marker)
+                return '{}&marker={}'.format(self.blob_query_base_url, self.continuation_marker)
             else:
                 return None
 
@@ -109,28 +137,18 @@ class HttpClient:
             return self.last_response_text[start_idx:end_idx]
 
     def capture_response(self, url, r, idx):
-        outfile = 'tmp/response-{}.xml'.format(idx)
+        outfile = self.blob_query_response_filename(idx)
         print('response, code: {} length: {} -> {}'.format(r.status_code, len(r.text), outfile))
         self.last_response_text = r.text
-        with open(outfile, 'wt') as out:
-            out.write(r.text)
-            print('file written: {}'.format(outfile))
+        self.write_text(self.last_response_text, outfile)
 
         print("{} {} {}".format(r.status_code, url, len(r.text)))
         self.captured_response_files.append(outfile)
 
     def write_files_list(self):
         jstr = json.dumps(self.captured_response_files, sort_keys=True, indent=2)
-        outfile = 'tmp/responses.json'
-        with open(outfile, 'wt') as out:
-            out.write(jstr)
-            print('file written: {}'.format(outfile))
-
-    def index_of(self, substring):
-        try:
-            return self.last_response_text.index(substring)
-        except:
-            return -1
+        outfile = self.aggregated_responses_filename()
+        self.write_text(jstr, outfile)
 
     def sample_xml_with_marker(self):
         return '<NextMarker>2!164!MDAwMDc3IWVuLXVzL1ZTLmNvcmUtZG9jcy9saXZlL2FwaS9fc3BsaXR0ZWQvU3lzdGVtLldpbmRvd3MuTWVkaWEuVGV4dEZvcm1hdHRpbmcucGRmITAwMDAyOCE5OTk5LTEyLTMxVDIzOjU5OjU5Ljk5OTk5OTlaIQ--</NextMarker>'
@@ -183,7 +201,6 @@ class EnumerationResultsHandler(xml.sax.ContentHandler):
         self.completed = True
 
     def characters(self, chars):
-        # print('characters: ' + str(chars))
         self.curr_text = self.curr_text + str(chars)
 
     def reset_curr_text(self):
@@ -202,7 +219,6 @@ class EnumerationResultsHandler(xml.sax.ContentHandler):
         self.heirarchy.append(tag_name)
         self.reset_curr_text()
         path = self.curr_path()
-        # print('startElement; tag: {}  path: {}'.format(tag_name, path))
 
         if path == self.blob_path:
             self.curr_blob = Blob()
@@ -210,13 +226,12 @@ class EnumerationResultsHandler(xml.sax.ContentHandler):
 
     def endElement(self, tag_name):
         path = self.curr_path()
-        # print('endElement; curr_text: {}'.format(self.curr_text))
 
         if self.blob_path in path:
             self.curr_blob.set(tag_name, str(self.curr_text))
 
-        if path == self.blob_path:
-            print(str(self.curr_blob))
+        # if path == self.blob_path:
+        #     print(str(self.curr_blob))
 
         self.heirarchy.pop()
         self.reset_curr_text()
@@ -229,11 +244,11 @@ class Aggregator(BaseObject):
         self.response_files = list()
         self.blobs = list()
         self.azure_blobs = list()
-        self.out_dir  = self.config.out_dir
         self.pdf_dir  = self.config.pdf_dir
 
     def aggregate(self):
-        self.response_files = self.read_parse_json_file('tmp/responses.json')
+        infile = self.aggregated_responses_filename()
+        self.response_files = self.read_parse_json_file(infile)
         for infile in self.response_files:
             handler = EnumerationResultsHandler()
             handler.parse(infile)
@@ -241,28 +256,31 @@ class Aggregator(BaseObject):
                 self.blobs.append(blob.values)
 
         jstr = json.dumps(self.blobs, sort_keys=True, indent=2)
-        outfile = 'tmp/aggregated_blobs.json'
-        with open(outfile, 'wt') as out:
-            out.write(jstr)
-            print('file written: {}'.format(outfile))
-            print('blob count:   {}'.format(len(self.blobs)))
+        outfile = self.aggregated_blobs_filename()
+        self.write_text(jstr, outfile)
 
         for blob in self.blobs:
             url = blob['Url']
-            if '/en-us/Azure.azure-documents/live/' in url:
+            if self.config.azure_url_subpath in url:
                 self.azure_blobs.append(url)
 
-        outfile = 'tmp/aggregated_azure_blobs.json'
+        outfile = self.aggregated_azure_blobs_filename()
         jstr = json.dumps(self.azure_blobs, sort_keys=True, indent=2)
-        with open(outfile, 'wt') as out:
-            out.write(jstr)
-            print('file written: {}'.format(outfile))
-            print('blob count:   {}'.format(len(self.azure_blobs)))
+        self.write_text(jstr, outfile)
 
-    def generate_curl_pdfs_script(self, shell_name, url_subpath, script_name):
+
+class Generator(BaseObject):
+
+    def __init__(self):
+        BaseObject.__init__(self)
+        self.pdf_dir  = self.config.pdf_dir
+
+    def generate_azure_curl_pdfs_script(self, shell_name):
         lines, pdf_urls, outfile = list(), list(), None
+        url_subpath = self.config.azure_url_subpath
 
-        blobs = self.read_parse_json_file('tmp/aggregated_blobs.json')
+        infile = self.aggregated_blobs_filename()
+        blobs  = self.read_parse_json_file(infile)
         for blob in blobs:
             url = blob['Url']
             if url_subpath in url:
@@ -270,14 +288,15 @@ class Aggregator(BaseObject):
                     pdf_urls.append(url)
         print('{} pdf files match url_subpath {}'.format(len(pdf_urls), url_subpath))
 
-        if shell_name == 'bash':
+        if shell_name.lower() == 'bash':
             lines.append('#!/bin/bash\n\n')
-            outfile = 'azdoc_curl_pdfs.sh'
+            outfile = self.curl_pdfs_bash_script_filename()
         else:
-            outfile = 'azdoc_curl_pdfs.ps1'
+            outfile = self.curl_pdfs_powershell_script_filename()
 
         lines.append("# Chris Joakim, Microsoft\n")
         lines.append("# Generated on {}\n".format(self.current_timestamp()))
+        lines.append("# {} pdf files match path: {}\n".format(len(pdf_urls), url_subpath))
 
         for idx, url in enumerate(sorted(pdf_urls)):
             lines.append("\n")
@@ -291,6 +310,9 @@ class Aggregator(BaseObject):
         lines.append('\necho "done"\n')
         self.write_lines(lines, outfile)
 
+    def generate_sharepoint_html(self):
+        print('todo - implement generate_sharepoint_html')
+
 
 if __name__ == "__main__":
 
@@ -301,14 +323,12 @@ if __name__ == "__main__":
             client = HttpClient()
             client.get_blob_list()
 
-        elif func == 'parse1':
+        elif func == 'adhoc_parse_results_xml_file':
             infile  = sys.argv[2]
             handler = EnumerationResultsHandler()
             handler.parse(infile)
-
             for blob in handler.blobs:
                 print(blob.get('Url'))
-
             print('blob count: {}'.format(len(handler.blobs)))
 
         elif func == 'aggregate_responses':
@@ -316,14 +336,16 @@ if __name__ == "__main__":
             aggregator.aggregate()
 
         elif func == 'generate_azure_curl_pdfs_bash_script':
-            aggregator = Aggregator()
-            url_subpath = '/output-pdf-files/en-us/Azure.azure-documents/live/'
-            aggregator.generate_curl_pdfs_script('bash', url_subpath, 'azure')
+            generator = Generator()
+            generator.generate_azure_curl_pdfs_script('bash')
 
         elif func == 'generate_azure_curl_pdfs_powershell_script':
-            aggregator = Aggregator()
-            url_subpath = '/output-pdf-files/en-us/Azure.azure-documents/live/'
-            aggregator.generate_curl_pdfs_script('bash', url_subpath, 'powershell')
+            generator = Generator()
+            generator.generate_azure_curl_pdfs_script('powershell')
+
+        elif func == 'generate_sharepoint_html':
+            generator = Generator()
+            generator.generate_sharepoint_html()
 
         else:
             print_options('Error: invalid function: {}'.format(func))
