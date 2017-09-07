@@ -33,7 +33,7 @@ The **azdoc.sh** will execute the following logic:
 Note: the previous web-scraping version of this logic has been deleted in favor of
 directly HTTP querying of the underlying **opbuildstorageprod** storage container.
 
-## List of Azure PDF files aavailable as of 2017/09/07:
+## List of 149 Azure PDF files aavailable as of 2017/09/07:
 
 ```
 Academic-Knowledge.pdf
