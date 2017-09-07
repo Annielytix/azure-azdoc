@@ -313,6 +313,22 @@ class Generator(BaseObject):
     def generate_sharepoint_html(self):
         print('todo - implement generate_sharepoint_html')
 
+        # docs = self.read_parse_json_file(inventory_file)
+        # for doc in docs:
+        #     base = doc['base']
+        #     name = base[6:]
+        #     doc['name'] = name
+        #     doc['url']  = "{}{}".format(self.pdf_base, name)
+        #     print(doc)
+
+        # infile = 'azdoc_curl_pdfs.sh'
+        # data = dict()
+        # data['docs'] = docs
+        # data['date'] = arrow.utcnow().to('US/Eastern').format('ddd YYYY-MM-DD')
+
+        # html = self.render('azure-azdoc-pdf-files-list.html', data)
+        # self.write_lines([html], 'doc/azure-azdoc-pdf-files-list.html')
+
 
 if __name__ == "__main__":
 

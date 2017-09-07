@@ -1,9 +1,0 @@
-azdoc-api.pdf
-azdoc-azure-bot-service.pdf
-azdoc-cache.pdf
-azdoc-functions.pdf
-azdoc-help.pdf
-azdoc-logic.pdf
-azdoc-mobile.pdf
-azdoc-net.pdf
-azdoc-web.pdf
