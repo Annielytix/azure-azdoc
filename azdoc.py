@@ -5,11 +5,14 @@ Usage:
   python azdoc.py aggregate_responses
   python azdoc.py generate_azure_curl_pdfs_bash_script
   python azdoc.py generate_azure_curl_pdfs_powershell_script
+  python azdoc.py generate_sharepoint_html
 
 Options:
   -h --help     Show this screen.
   --version     Show version.
 """
+
+# Chris Joakim, Microsoft, 2017/09/07
 
 import json
 import os
@@ -17,6 +20,7 @@ import sys
 import xml.sax
 
 import arrow
+import jinja2
 import requests
 
 
@@ -30,7 +34,8 @@ class AzdocConfig:
         self.azure_url_subpath = '/output-pdf-files/en-us/Azure.azure-documents/live/'
         self.pdf_dir  = 'pdf'
         self.data_dir = 'data'
-
+        self.azure_sharepoint_file = 'doc/azure-azdoc-pdf-files-list.html'
+        self.azure_pdf_files_list  = 'doc/azure-azdoc-pdf-files-list.txt'
 
 class BaseObject:
 
@@ -38,6 +43,9 @@ class BaseObject:
 
     def __init__(self):
         self.config = AzdocConfig()
+
+    def get_classname(self):
+        return self.__class__.__name__
 
     def current_timestamp(self):
         return arrow.utcnow().to('US/Eastern').format('ddd YYYY-MM-DD')
@@ -70,22 +78,31 @@ class BaseObject:
     def curl_pdfs_powershell_script_filename(self):
         return 'azdoc_curl_pdfs.ps1'
 
+    def render_template(self, template_name, data):
+        env = jinja2.Environment(loader=jinja2.FileSystemLoader('./templates'))
+        return env.get_template(template_name).render(data=data)
+
     def write_text(self, text, outfile):
         with open(outfile, 'wt') as out:
             out.write(text)
-            print('file written: {}'.format(outfile))
+            print('{} - file written: {}'.format(self.classname, outfile))
 
     def write_lines(self, lines, outfile):
         with open(outfile, "w", newline="\n") as out:
             for line in lines:
                 out.write(line)
-            print('file written: {}'.format(outfile))
+            print('{} - file written: {}'.format(self.classname, outfile))
 
 
 class HttpClient(BaseObject):
 
+    # This class queries the blobs, via HTTP, in the Microsoft "opbuildstorageprod"
+    # documentation storage container.
+    # see https://docs.microsoft.com/en-us/rest/api/storageservices/list-blobs
+
     def __init__(self):
         BaseObject.__init__(self)
+        self.classname = self.get_classname()
         self.blob_query_base_url = self.config.blob_query_base_url
         self.curr_url = self.blob_query_base_url
         self.continue_to_get = True
@@ -102,13 +119,13 @@ class HttpClient(BaseObject):
         self.write_files_list()
 
     def get_next_list(self, idx):
-        print('get_next: {}'.format(idx))
+        print('{} - get_next: {}'.format(self.classname, idx))
         url = self.build_url(idx)
         if url is None:
-            print('end of list pagination')
+            print('{} - end of list pagination'.format(self.classname))
             self.continue_to_get = False
         else:
-            print('invoking url: {}'.format(url))
+            print('{} - invoking url: {}'.format(self.classname, url))
             r = requests.get(url)
             self.capture_response(url, r, idx)
 
@@ -138,11 +155,11 @@ class HttpClient(BaseObject):
 
     def capture_response(self, url, r, idx):
         outfile = self.blob_query_response_filename(idx)
-        print('response, code: {} length: {} -> {}'.format(r.status_code, len(r.text), outfile))
+        print('{} - response, code: {} length: {} -> {}'.format(self.classname, r.status_code, len(r.text), outfile))
         self.last_response_text = r.text
         self.write_text(self.last_response_text, outfile)
 
-        print("{} {} {}".format(r.status_code, url, len(r.text)))
+        print("{} - {} {} {}".format(self.classname, r.status_code, url, len(r.text)))
         self.captured_response_files.append(outfile)
 
     def write_files_list(self):
@@ -155,6 +172,8 @@ class HttpClient(BaseObject):
 
 
 class Blob(object):
+
+    # Instances of this class represent a blob returned in the opbuildstorageprod XML HTTP queries.
 
     def __init__(self):
         self.values = dict()
@@ -178,6 +197,8 @@ class Blob(object):
 
 
 class EnumerationResultsHandler(xml.sax.ContentHandler):
+
+    # Instances of this class are SAX XML parsers, for parsing the captured opbuildstorageprod XML files.
 
     blob_path = "EnumerationResults|Blobs|Blob"
     blob_path_len = len(blob_path)
@@ -226,21 +247,20 @@ class EnumerationResultsHandler(xml.sax.ContentHandler):
 
     def endElement(self, tag_name):
         path = self.curr_path()
-
         if self.blob_path in path:
             self.curr_blob.set(tag_name, str(self.curr_text))
-
-        # if path == self.blob_path:
-        #     print(str(self.curr_blob))
-
         self.heirarchy.pop()
         self.reset_curr_text()
 
 
 class Aggregator(BaseObject):
 
+    # This class is used to aggregate the list of blobs in the several captured
+    # opbuildstorageprod XML files.  An aggregated json file is created.
+
     def __init__(self):
         BaseObject.__init__(self)
+        self.classname = self.get_classname()
         self.response_files = list()
         self.blobs = list()
         self.azure_blobs = list()
@@ -271,22 +291,18 @@ class Aggregator(BaseObject):
 
 class Generator(BaseObject):
 
+    # This class is used to generate bash and powershell curl scripts,
+    # as well as HTML reports.
+
     def __init__(self):
         BaseObject.__init__(self)
         self.pdf_dir  = self.config.pdf_dir
+        self.classname = self.get_classname()
 
     def generate_azure_curl_pdfs_script(self, shell_name):
-        lines, pdf_urls, outfile = list(), list(), None
+        lines, outfile = list(), None
         url_subpath = self.config.azure_url_subpath
-
-        infile = self.aggregated_blobs_filename()
-        blobs  = self.read_parse_json_file(infile)
-        for blob in blobs:
-            url = blob['Url']
-            if url_subpath in url:
-                if url.endswith('.pdf'):
-                    pdf_urls.append(url)
-        print('{} pdf files match url_subpath {}'.format(len(pdf_urls), url_subpath))
+        pdf_urls = self.azure_pdf_urls_list()
 
         if shell_name.lower() == 'bash':
             lines.append('#!/bin/bash\n\n')
@@ -311,23 +327,48 @@ class Generator(BaseObject):
         self.write_lines(lines, outfile)
 
     def generate_sharepoint_html(self):
-        print('todo - implement generate_sharepoint_html')
+        pdf_urls = self.azure_pdf_urls_list()
+        outfile = self.config.azure_sharepoint_file
+        data = dict()
+        docs = list()
+        data['docs'] = docs
+        data['date'] = arrow.utcnow().to('US/Eastern').format('ddd YYYY-MM-DD')
 
-        # docs = self.read_parse_json_file(inventory_file)
-        # for doc in docs:
-        #     base = doc['base']
-        #     name = base[6:]
-        #     doc['name'] = name
-        #     doc['url']  = "{}{}".format(self.pdf_base, name)
-        #     print(doc)
+        pdf_urls = self.azure_pdf_urls_list()
+        for url in pdf_urls:
+            doc = dict()
+            doc['name'] = url.split('/')[-1]
+            doc['url'] = url
+            docs.append(doc)
 
-        # infile = 'azdoc_curl_pdfs.sh'
-        # data = dict()
-        # data['docs'] = docs
-        # data['date'] = arrow.utcnow().to('US/Eastern').format('ddd YYYY-MM-DD')
+        html = self.render_template('azure-azdoc-pdf-files-list.html', data)
+        self.write_text(html, outfile)
 
-        # html = self.render('azure-azdoc-pdf-files-list.html', data)
-        # self.write_lines([html], 'doc/azure-azdoc-pdf-files-list.html')
+    def generate_azure_pdf_list(self):
+        pdf_urls = self.azure_pdf_urls_list()
+        outfile = self.config.azure_pdf_files_list
+        lines = list()
+
+        pdf_urls = self.azure_pdf_urls_list()
+        for url in pdf_urls:
+            name = url.split('/')[-1]
+            lines.append('{}\n'.format(name))
+
+        self.write_lines(sorted(lines), outfile)
+
+    def azure_pdf_urls_list(self):
+        pdf_urls = list()
+        infile = self.aggregated_blobs_filename()
+        blobs = self.read_parse_json_file(infile)
+        url_subpath = self.config.azure_url_subpath
+
+        for blob in blobs:
+            url = blob['Url']
+            if url_subpath in url:
+                if url.endswith('.pdf'):
+                    pdf_urls.append(url)
+        print('{} - {} pdf files match url_subpath {}'.format(self.classname, len(pdf_urls), url_subpath))
+        return pdf_urls
 
 
 if __name__ == "__main__":
@@ -362,6 +403,10 @@ if __name__ == "__main__":
         elif func == 'generate_sharepoint_html':
             generator = Generator()
             generator.generate_sharepoint_html()
+
+        elif func == 'generate_azure_pdf_list':
+            generator = Generator()
+            generator.generate_azure_pdf_list()
 
         else:
             print_options('Error: invalid function: {}'.format(func))

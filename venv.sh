@@ -2,7 +2,7 @@
 
 # Recreate the virtual environment and reinstall libs.
 # Requires Python 3; version 3.6 recommended.
-# Chris Joakim, Microsoft, 2017/09/06
+# Chris Joakim, Microsoft, 2017/09/07
 
 echo 'deleting previous venv...'
 rm -rf bin/
