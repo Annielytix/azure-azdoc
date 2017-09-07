@@ -1,10 +1,10 @@
 """
 Usage:
-  python azdoc_v3.py get_blob_list
-  python azdoc_v3.py adhoc_parse_results_xml_file tmp/response-0.xml
-  python azdoc_v3.py aggregate_responses
-  python azdoc_v3.py generate_azure_curl_pdfs_bash_script
-  python azdoc_v3.py generate_azure_curl_pdfs_powershell_script
+  python azdoc.py get_blob_list
+  python azdoc.py adhoc_parse_results_xml_file data/response-0.xml
+  python azdoc.py aggregate_responses
+  python azdoc.py generate_azure_curl_pdfs_bash_script
+  python azdoc.py generate_azure_curl_pdfs_powershell_script
 
 Options:
   -h --help     Show this screen.
@@ -29,7 +29,7 @@ class AzdocConfig:
         self.max_http_queries = 10
         self.azure_url_subpath = '/output-pdf-files/en-us/Azure.azure-documents/live/'
         self.pdf_dir  = 'pdf'
-        self.tmp_dir  = 'tmp'
+        self.data_dir = 'data'
 
 
 class BaseObject:
@@ -53,16 +53,16 @@ class BaseObject:
             return json.loads(f.read())
 
     def blob_query_response_filename(self, idx):
-        return '{}/response-{}.xml'.format(self.config.tmp_dir, idx)
+        return '{}/response-{}.xml'.format(self.config.data_dir, idx)
 
     def aggregated_responses_filename(self):
-        return '{}/responses.json'.format(self.config.tmp_dir)
+        return '{}/responses.json'.format(self.config.data_dir)
 
     def aggregated_blobs_filename(self):
-        return '{}/aggregated_blobs.json'.format(self.config.tmp_dir)
+        return '{}/aggregated_blobs.json'.format(self.config.data_dir)
 
     def aggregated_azure_blobs_filename(self):
-        return '{}/aggregated_azure_blobs.json'.format(self.config.tmp_dir)
+        return '{}/aggregated_azure_blobs.json'.format(self.config.data_dir)
 
     def curl_pdfs_bash_script_filename(self):
         return 'azdoc_curl_pdfs.sh'
