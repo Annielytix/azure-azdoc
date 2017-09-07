@@ -54,7 +54,7 @@
 
         <zip zipfile="${_zipFilename}"
              basedir="${_projectDir}"
-             excludes="**/.git, bin/, include/, lib/, man/, out/, **/*.pyc, **/txt_merged.txt" />
+             excludes="**/.git, bin/, include/, include/, lib/, man/, pdf/, pdf_all/, pdf_previous/, **/*.pyc, **/txt_merged.txt" />
 
         <echo message="file created: ${_zipFilename}" />
         <echo message="done." />
