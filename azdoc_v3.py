@@ -3,6 +3,8 @@ Usage:
   python azdoc_v3.py get_blob_list
   python azdoc_v3.py parse1 tmp/response-0.xml
   python azdoc_v3.py aggregate_responses
+  python azdoc_v3.py generate_azure_curl_pdfs_bash_script
+  python azdoc_v3.py generate_azure_curl_pdfs_powershell_script
 
 Options:
   -h --help     Show this screen.
@@ -14,7 +16,43 @@ import os
 import sys
 import xml.sax
 
+import arrow
 import requests
+
+
+class AzdocConfig:
+
+    def __init__(self):
+        self.base_url = 'https://opbuildstorageprod.blob.core.windows.net/output-pdf-files?restype=container&comp=list&maxresults=5000'
+        self.pdf_base = 'https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/'
+        self.out_dir  = 'out'
+        self.pdf_dir  = 'pdf'
+        self.max_docs = 100
+        self.debug    = True
+
+
+class BaseObject:
+
+    def __init__(self):
+        self.config = AzdocConfig()
+
+    def current_timestamp(self):
+        return arrow.utcnow().to('US/Eastern').format('ddd YYYY-MM-DD')
+
+    def read_parse_json_file(self, infile):
+        with open(infile) as f:
+            return json.loads(f.read())
+
+    def write_text(self, text, outfile):
+        with open(outfile, 'wt') as out:
+            out.write(text)
+            print('file written: {}'.format(outfile))
+
+    def write_lines(self, lines, outfile):
+        with open(outfile, "w", newline="\n") as out:
+            for line in lines:
+                out.write(line)
+            print('file written: {}'.format(outfile))
 
 
 class HttpClient:
@@ -184,12 +222,15 @@ class EnumerationResultsHandler(xml.sax.ContentHandler):
         self.reset_curr_text()
 
 
-class Aggregator(object):
+class Aggregator(BaseObject):
 
     def __init__(self):
+        BaseObject.__init__(self)
         self.response_files = list()
         self.blobs = list()
         self.azure_blobs = list()
+        self.out_dir  = self.config.out_dir
+        self.pdf_dir  = self.config.pdf_dir
 
     def aggregate(self):
         self.response_files = self.read_parse_json_file('tmp/responses.json')
@@ -218,9 +259,37 @@ class Aggregator(object):
             print('file written: {}'.format(outfile))
             print('blob count:   {}'.format(len(self.azure_blobs)))
 
-    def read_parse_json_file(self, infile):
-        with open(infile) as f:
-            return json.loads(f.read())
+    def generate_curl_pdfs_script(self, shell_name, url_subpath, script_name):
+        lines, pdf_urls, outfile = list(), list(), None
+
+        blobs = self.read_parse_json_file('tmp/aggregated_blobs.json')
+        for blob in blobs:
+            url = blob['Url']
+            if url_subpath in url:
+                if url.endswith('.pdf'):
+                    pdf_urls.append(url)
+        print('{} pdf files match url_subpath {}'.format(len(pdf_urls), url_subpath))
+
+        if shell_name == 'bash':
+            lines.append('#!/bin/bash\n\n')
+            outfile = 'azdoc_curl_pdfs.sh'
+        else:
+            outfile = 'azdoc_curl_pdfs.ps1'
+
+        lines.append("# Chris Joakim, Microsoft\n")
+        lines.append("# Generated on {}\n".format(self.current_timestamp()))
+
+        for idx, url in enumerate(sorted(pdf_urls)):
+            lines.append("\n")
+            lines.append("echo 'fetching: {} ...'\n".format(url))
+            outpdf = url.split('/')[-1]
+            if shell_name == 'bash':
+                lines.append("curl {} > {}/azdoc-{}\n".format(url, self.pdf_dir, outpdf))
+            else:
+                lines.append("curl {} -OutFile {}/azdoc-{}\n".format(url, self.pdf_dir, outpdf))
+
+        lines.append('\necho "done"\n')
+        self.write_lines(lines, outfile)
 
 
 if __name__ == "__main__":
@@ -245,6 +314,16 @@ if __name__ == "__main__":
         elif func == 'aggregate_responses':
             aggregator = Aggregator()
             aggregator.aggregate()
+
+        elif func == 'generate_azure_curl_pdfs_bash_script':
+            aggregator = Aggregator()
+            url_subpath = '/output-pdf-files/en-us/Azure.azure-documents/live/'
+            aggregator.generate_curl_pdfs_script('bash', url_subpath, 'azure')
+
+        elif func == 'generate_azure_curl_pdfs_powershell_script':
+            aggregator = Aggregator()
+            url_subpath = '/output-pdf-files/en-us/Azure.azure-documents/live/'
+            aggregator.generate_curl_pdfs_script('bash', url_subpath, 'powershell')
 
         else:
             print_options('Error: invalid function: {}'.format(func))
