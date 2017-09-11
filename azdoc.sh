@@ -6,8 +6,8 @@ rm data/response*.xml
 rm data/responses.json
 rm doc/azure-azdoc-pdf-files-list.html
 
-mkdir pdf/
-mkdir pdf_all/
+mkdir -p pdf/azure/
+mkdir -p pdf/all/
 
 echo 'activating the virtual env; Python 3.6.x is expected'
 source bin/activate

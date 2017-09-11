@@ -33,7 +33,8 @@ class AzdocConfig:
         self.max_http_queries = 10
         self.azure_url_subpath = '/output-pdf-files/en-us/Azure.azure-documents/live/'
         self.en_us_docs_subpath = 'https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/'
-        self.pdf_dir  = 'pdf'
+        self.pdf_azure_dir = 'pdf/azure/'
+        self.pdf_all_dir = 'pdf/all/'
         self.data_dir = 'data'
         self.azure_sharepoint_file = 'doc/azure-azdoc-pdf-files-list.html'
         self.azure_pdf_files_list  = 'doc/azure-azdoc-pdf-files-list.txt'
@@ -271,7 +272,8 @@ class Aggregator(BaseObject):
         self.response_files = list()
         self.blobs = list()
         self.azure_blobs = list()
-        self.pdf_dir  = self.config.pdf_dir
+        self.pdf_azure_dir = self.config.pdf_azure_dir
+        self.pdf_all_dir   = self.config.pdf_all_dir
 
     def aggregate(self):
         infile = self.aggregated_responses_filename()
@@ -303,8 +305,9 @@ class Generator(BaseObject):
 
     def __init__(self):
         BaseObject.__init__(self)
-        self.pdf_dir  = self.config.pdf_dir
-        self.classname = self.get_classname()
+        self.pdf_azure_dir = self.config.pdf_azure_dir
+        self.pdf_all_dir   = self.config.pdf_all_dir
+        self.classname     = self.get_classname()
 
     def generate_azure_curl_pdfs_script(self, shell_name):
         lines, outfile = list(), None
@@ -326,9 +329,9 @@ class Generator(BaseObject):
             lines.append("echo 'fetching: {} ...'\n".format(url))
             outpdf = url.split('/')[-1]
             if shell_name == 'bash':
-                lines.append("curl {} > {}/azdoc-{}\n".format(url, self.pdf_dir, outpdf))
+                lines.append("curl {} > {}azdoc-{}\n".format(url, self.pdf_azure_dir, outpdf))
             else:
-                lines.append("curl {} -OutFile {}/azdoc-{}\n".format(url, self.pdf_dir, outpdf))
+                lines.append("curl {} -OutFile {}azdoc-{}\n".format(url, self.pdf_azure_dir, outpdf))
 
         lines.append('\necho "done"\n')
         self.write_lines(lines, outfile)
@@ -354,7 +357,7 @@ class Generator(BaseObject):
                     path   = url[subpath_len:]
                     tokens = path.split('/')
                     base   = tokens.pop()
-                    dpath  = ('pdf/') + ('/'.join(tokens) + '/')
+                    dpath  = (self.pdf_all_dir) + ('/'.join(tokens) + '/')
                     dpaths[dpath] = url
                     blob['dpath'] = dpath
                     blob['base']  = base
@@ -367,7 +370,6 @@ class Generator(BaseObject):
         lines.append("\n")
         lines.append("# Create output directory structure.\n")
         for dpath in sorted(dpaths.keys()):
-            print("dpath: {}".format(dpath))
             if shell_name.lower() == 'bash':
                 lines.append('mkdir -p {}\n'.format(dpath))
             else:
@@ -379,6 +381,8 @@ class Generator(BaseObject):
             url   = blob['Url']
             dpath = blob['dpath']
             base  = blob['base']
+            lines.append("\n")
+            lines.append("echo 'fetching: {} ...'\n".format(url))
             if shell_name == 'bash':
                 lines.append("curl {} > {}azdoc-{}\n".format(url, dpath, base))
             else:
@@ -386,23 +390,6 @@ class Generator(BaseObject):
 
         lines.append('\necho "done"\n')
         self.write_lines(lines, outfile)
-
-        # lines, outfile = list(), None
-        # url_subpath = self.config.azure_url_subpath
-        # pdf_urls = self.azure_pdf_urls_list()
-
-
-        # for idx, url in enumerate(sorted(pdf_urls)):
-        #     lines.append("\n")
-        #     lines.append("echo 'fetching: {} ...'\n".format(url))
-        #     outpdf = url.split('/')[-1]
-        #     if shell_name == 'bash':
-        #         lines.append("curl {} > {}/azdoc-{}\n".format(url, self.pdf_dir, outpdf))
-        #     else:
-        #         lines.append("curl {} -OutFile {}/azdoc-{}\n".format(url, self.pdf_dir, outpdf))
-
-        # lines.append('\necho "done"\n')
-        # self.write_lines(lines, outfile)
 
     def generate_sharepoint_html(self):
         pdf_urls = self.azure_pdf_urls_list()

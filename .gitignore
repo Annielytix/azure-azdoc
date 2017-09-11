@@ -12,7 +12,8 @@ out/*.log
 out/*.txt
 
 pdf/*.pdf
-pdf_all/*.pdf
+pdf/all/*.pdf
+pdf/azure/*.pdf
 pdf_previous/
 
 # Byte-compiled / optimized / DLL files
