@@ -11,6 +11,7 @@ tmp/
 out/*.log
 out/*.txt
 
+pdf/all/
 pdf/*.pdf
 pdf/all/*.pdf
 pdf/azure/*.pdf

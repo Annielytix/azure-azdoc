@@ -1,6 +1,6 @@
 # azure-azdoc
 
-This project is used to identify and download useful pdf documentation,
+This project is used to identify and download useful PDF documentation,
 particularly Azure-related, from the public Microsoft download site in the
 following Azure Storage container:
 
@@ -10,30 +10,60 @@ opbuildstorageprod.blob.core.windows.net
 
 ## Setup
 
-Python 3.6.x is required/assumed.
+First, use the git program to clone this repository to your workstation.
 
 ```
-git clone git@github.com:cjoakim/azure-azdoc.git  # clone this repo
-cd azure-azdoc
-./venv.sh                                         # create the python virtualenv per the requirements.in file
-source bin/activate                               # activate the python virtualenv
-./azdoc.sh                                        # execute the process
+cd [your-directory-of-choice]
+git clone git@github.com:cjoakim/azure-azdoc.git
 ```
 
-## Processing
+## Execute the Pre-Generated Scripts
+
+To simply execue the scripts that have already been generated and put into this
+repository, execute your choice of the following in a PowerShell/Linux/Mac Terminal.
+
+```
+azdoc_azure_curl_pdfs.ps1
+azdoc_azure_curl_pdfs.sh
+azdoc_complete_curl_pdfs.ps1
+azdoc_complete_curl_pdfs.sh
+```
+
+These bash or PowerShell scripts will invoke the curl program to download PDF
+files to the pdf/azure or pdf/all directories within the root of the repository.
+Currently, there are 150 Azure PDF documents and 6435 in the complete set of PDFs.
+
+I strive to keep this repository updated and generate the above four scripts
+on a weekly basis.
+
+## Execute the "spidering" process
+
+"Advanced users" may want to execute the "spidering" logic to identify the available
+PDF files and generate the above four scripts.  Python 3.6.x is required.
+
+Execute the following steps from the root of the repository.
+
+```
+git reset --hard
+git pull                      # get the latest code from this repository
+./venv.sh                     # create the python virtualenv per the requirements.in file
+source bin/activate           # activate the python virtualenv
+./azdoc.sh                    # execute the process
+```
+
+Then, execute the above script(s) in the "Execute the Pre-Generated Scripts" section.
 
 The **azdoc.sh** will execute the following logic:
 
-- Use HTTP to query, including pagination, the list of blobs in the 'opbuildstorageprod' container.
+- Use HTTP to query, including pagination, the list of blobs in the 'opbuildstorageprod' container
 - Aggregate the list of all Blobs in this container in the several HTTP response files
-- Generate bash script **xxx** to download the Azure PDF files
-- Generate powershell script **xxx** to download the Azure PDF files
+- Generate the bash and PowerShell scripts to download the Azure PDF files with curl
 - Generate a HTML report listing the Azure PDF files
 
 Note: the previous web-scraping version of this logic has been deleted in favor of
 directly HTTP querying of the underlying **opbuildstorageprod** storage container.
 
-## List of 149 Azure PDF files aavailable as of 2017/09/07:
+## List of 150 Azure PDF files available as of 2017/09/11:
 
 ```
 Academic-Knowledge.pdf
@@ -103,6 +133,7 @@ connect.pdf
 container-instances.pdf
 container-registry.pdf
 container-service.pdf
+containers.pdf
 cosmos-db.pdf
 custom-decision-service.pdf
 data-catalog.pdf
