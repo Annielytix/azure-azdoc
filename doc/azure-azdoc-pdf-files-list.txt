@@ -65,6 +65,7 @@ connect.pdf
 container-instances.pdf
 container-registry.pdf
 container-service.pdf
+containers.pdf
 cosmos-db.pdf
 custom-decision-service.pdf
 data-catalog.pdf

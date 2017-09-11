@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Chris Joakim, Microsoft, 2017/09/07
+# Chris Joakim, Microsoft, 2017/09/11
 
 rm data/response*.xml
 rm data/responses.json
@@ -19,6 +19,9 @@ python azdoc.py aggregate_responses
 
 python azdoc.py generate_azure_curl_pdfs_bash_script
 python azdoc.py generate_azure_curl_pdfs_powershell_script
+
+python azdoc.py generate_complete_curl_pdfs_bash_script
+python azdoc.py generate_complete_curl_pdfs_powershell_script
 
 python azdoc.py generate_sharepoint_html
 

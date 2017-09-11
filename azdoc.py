@@ -12,7 +12,7 @@ Options:
   --version     Show version.
 """
 
-# Chris Joakim, Microsoft, 2017/09/07
+# Chris Joakim, Microsoft, 2017/09/11
 
 import json
 import os
@@ -32,6 +32,7 @@ class AzdocConfig:
         self.blob_query_base_url = 'https://opbuildstorageprod.blob.core.windows.net/output-pdf-files?restype=container&comp=list&maxresults=5000'
         self.max_http_queries = 10
         self.azure_url_subpath = '/output-pdf-files/en-us/Azure.azure-documents/live/'
+        self.en_us_docs_subpath = 'https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/'
         self.pdf_dir  = 'pdf'
         self.data_dir = 'data'
         self.azure_sharepoint_file = 'doc/azure-azdoc-pdf-files-list.html'
@@ -72,11 +73,17 @@ class BaseObject:
     def aggregated_azure_blobs_filename(self):
         return '{}/aggregated_azure_blobs.json'.format(self.config.data_dir)
 
-    def curl_pdfs_bash_script_filename(self):
-        return 'azdoc_curl_pdfs.sh'
+    def curl_azure_bash_script_filename(self):
+        return 'azdoc_azure_curl_pdfs.sh'
 
-    def curl_pdfs_powershell_script_filename(self):
-        return 'azdoc_curl_pdfs.ps1'
+    def curl_azure_powershell_script_filename(self):
+        return 'azdoc_azure_curl_pdfs.ps1'
+
+    def curl_complete_bash_script_filename(self):
+        return 'azdoc_complete_curl_pdfs.sh'
+
+    def curl_complete_powershell_script_filename(self):
+        return 'azdoc_complete_curl_pdfs.ps1'
 
     def render_template(self, template_name, data):
         env = jinja2.Environment(loader=jinja2.FileSystemLoader('./templates'))
@@ -306,9 +313,9 @@ class Generator(BaseObject):
 
         if shell_name.lower() == 'bash':
             lines.append('#!/bin/bash\n\n')
-            outfile = self.curl_pdfs_bash_script_filename()
+            outfile = self.curl_azure_bash_script_filename()
         else:
-            outfile = self.curl_pdfs_powershell_script_filename()
+            outfile = self.curl_azure_powershell_script_filename()
 
         lines.append("# Chris Joakim, Microsoft\n")
         lines.append("# Generated on {}\n".format(self.current_timestamp()))
@@ -325,6 +332,77 @@ class Generator(BaseObject):
 
         lines.append('\necho "done"\n')
         self.write_lines(lines, outfile)
+
+    def generate_complete_curl_pdfs_script(self, shell_name):
+        lines, outfile = list(), None
+        infile = self.aggregated_blobs_filename()
+        blobs  = self.read_parse_json_file(infile)
+        url_subpath = self.config.en_us_docs_subpath
+        subpath_len = len(url_subpath)
+        english_blobs, dpaths = list(), dict()
+
+        if shell_name.lower() == 'bash':
+            lines.append('#!/bin/bash\n\n')
+            outfile = self.curl_complete_bash_script_filename()
+        else:
+            outfile = self.curl_complete_powershell_script_filename()
+
+        for blob in blobs:
+            url = blob['Url']
+            if url_subpath in url:
+                if url.endswith('.pdf'):
+                    path   = url[subpath_len:]
+                    tokens = path.split('/')
+                    base   = tokens.pop()
+                    dpath  = ('pdf/') + ('/'.join(tokens) + '/')
+                    dpaths[dpath] = url
+                    blob['dpath'] = dpath
+                    blob['base']  = base
+                    english_blobs.append(blob)
+
+        lines.append("# Chris Joakim, Microsoft\n")
+        lines.append("# Generated on {}\n".format(self.current_timestamp()))
+        lines.append("# {} pdf files match path: {}\n".format(len(english_blobs), url_subpath))
+
+        lines.append("\n")
+        lines.append("# Create output directory structure.\n")
+        for dpath in sorted(dpaths.keys()):
+            print("dpath: {}".format(dpath))
+            if shell_name.lower() == 'bash':
+                lines.append('mkdir -p {}\n'.format(dpath))
+            else:
+                lines.append('New-Item {} -type directory -force\n'.format(dpath))
+
+        lines.append("\n")
+        lines.append("# \n")
+        for blob in english_blobs:
+            url   = blob['Url']
+            dpath = blob['dpath']
+            base  = blob['base']
+            if shell_name == 'bash':
+                lines.append("curl {} > {}azdoc-{}\n".format(url, dpath, base))
+            else:
+                lines.append("curl {} -OutFile {}azdoc-{}\n".format(url, dpath, base))
+
+        lines.append('\necho "done"\n')
+        self.write_lines(lines, outfile)
+
+        # lines, outfile = list(), None
+        # url_subpath = self.config.azure_url_subpath
+        # pdf_urls = self.azure_pdf_urls_list()
+
+
+        # for idx, url in enumerate(sorted(pdf_urls)):
+        #     lines.append("\n")
+        #     lines.append("echo 'fetching: {} ...'\n".format(url))
+        #     outpdf = url.split('/')[-1]
+        #     if shell_name == 'bash':
+        #         lines.append("curl {} > {}/azdoc-{}\n".format(url, self.pdf_dir, outpdf))
+        #     else:
+        #         lines.append("curl {} -OutFile {}/azdoc-{}\n".format(url, self.pdf_dir, outpdf))
+
+        # lines.append('\necho "done"\n')
+        # self.write_lines(lines, outfile)
 
     def generate_sharepoint_html(self):
         pdf_urls = self.azure_pdf_urls_list()
@@ -399,6 +477,14 @@ if __name__ == "__main__":
         elif func == 'generate_azure_curl_pdfs_powershell_script':
             generator = Generator()
             generator.generate_azure_curl_pdfs_script('powershell')
+
+        elif func == 'generate_complete_curl_pdfs_bash_script':
+            generator = Generator()
+            generator.generate_complete_curl_pdfs_script('bash')
+
+        elif func == 'generate_complete_curl_pdfs_powershell_script':
+            generator = Generator()
+            generator.generate_complete_curl_pdfs_script('powershell')
 
         elif func == 'generate_sharepoint_html':
             generator = Generator()
