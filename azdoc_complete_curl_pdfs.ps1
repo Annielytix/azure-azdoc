@@ -1,6 +1,6 @@
 # Chris Joakim, Microsoft
-# Generated on Mon 2017-09-11
-# 6435 pdf files match path: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/
+# Generated on Tue 2017-09-19
+# 6580 pdf files match path: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/
 
 # Create output directory structure.
 New-Item pdf/all/AX.openpublishing-test-reference/MergeAzureContent/ -type directory -force
@@ -147,6 +147,7 @@ New-Item pdf/all/MSDN.azure-architecture-center/ -type directory -force
 New-Item pdf/all/MSDN.azure-architecture-center/docs/ -type directory -force
 New-Item pdf/all/MSDN.azure-architecture-center/live/ -type directory -force
 New-Item pdf/all/MSDN.azure-architecture-center/live/building-blocks/ -type directory -force
+New-Item pdf/all/MSDN.azure-architecture-center/live/compliance/ -type directory -force
 New-Item pdf/all/MSDN.azure-csp/ -type directory -force
 New-Item pdf/all/MSDN.azure-csp/live/ -type directory -force
 New-Item pdf/all/MSDN.azure-csp/master/ -type directory -force
@@ -392,9 +393,79 @@ New-Item pdf/all/MSDN.surface-hub-VSTS/master/ -type directory -force
 New-Item pdf/all/MSDN.surface-hub-VSTS/msesdemo/ -type directory -force
 New-Item pdf/all/MSDN.sysinternals/ -type directory -force
 New-Item pdf/all/MSDN.sysinternals/live/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/accounts/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/articles/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/billing/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/build-release/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/build-release/test/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/collaborate/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/deploy-azure/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/ecosystem/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/ecosystem/sharepoint/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/extend/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/feedback/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/integrate/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/integrate/ide/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/load-test/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/manual-test/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/marketplace/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/notifications/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/report/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/report/powerbi/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/report/sql-reports/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/search/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/security/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/teams/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/tfs-server/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/user-guide/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/work/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/work/backlogs/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/work/customize/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/work/kanban/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/work/scale/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/work/scrum/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/work/track/ -type directory -force
+New-Item pdf/all/MSDN.team-services/live/work/work-items/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/accounts/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/articles/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/billing/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/build-release/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/build-release/test/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/collaborate/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/deploy-azure/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/ecosystem/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/ecosystem/sharepoint/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/extend/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/feedback/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/integrate/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/integrate/ide/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/load-test/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/manual-test/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/marketplace/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/notifications/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/release/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/report/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/report/powerbi/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/report/sql-reports/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/search/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/security/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/teams/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/tfs-server/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/user-guide/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/work/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/work/backlogs/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/work/customize/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/work/kanban/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/work/scale/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/work/scrum/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/work/track/ -type directory -force
+New-Item pdf/all/MSDN.team-services/master/work/work-items/ -type directory -force
 New-Item pdf/all/MSDN.teamblog/ -type directory -force
 New-Item pdf/all/MSDN.teamblog/live/ -type directory -force
 New-Item pdf/all/MSDN.teamblog/master/ -type directory -force
+New-Item pdf/all/MSDN.test8151/ -type directory -force
 New-Item pdf/all/MSDN.vba-offline/ -type directory -force
 New-Item pdf/all/MSDN.vba-offline/live/Office-Shared-VBA/ -type directory -force
 New-Item pdf/all/MSDN.wdkdocs-test/ -type directory -force
@@ -673,6 +744,7 @@ New-Item pdf/all/VS.openpublishing-test-op-technet/ -type directory -force
 New-Item pdf/all/VS.openpublishing-test-op-technet/MergeAzureContent/ -type directory -force
 New-Item pdf/all/VS.openpublishing-test-op/ -type directory -force
 New-Item pdf/all/VS.openpublishing-test-op/MergeAzureContent/ -type directory -force
+New-Item pdf/all/VS.release-notes/ -type directory -force
 New-Item pdf/all/VS.vcppdocs/ -type directory -force
 New-Item pdf/all/VS.vcppdocs/live/ -type directory -force
 New-Item pdf/all/VS.vcppdocs/master/ -type directory -force
@@ -1444,6 +1516,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/cognitive-services/custom-decision-service.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/cognitive-services/custom-decision-service.pdf -OutFile pdf/all/Azure.azure-documents/live/cognitive-services/azdoc-custom-decision-service.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/cognitive-services/text-analytics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/cognitive-services/text-analytics.pdf -OutFile pdf/all/Azure.azure-documents/live/cognitive-services/azdoc-text-analytics.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/cognitive-services/video-indexer.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/cognitive-services/video-indexer.pdf -OutFile pdf/all/Azure.azure-documents/live/cognitive-services/azdoc-video-indexer.pdf
@@ -2344,6 +2419,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/cognitive-services/custom-decision-service.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/cognitive-services/custom-decision-service.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/cognitive-services/azdoc-custom-decision-service.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/cognitive-services/text-analytics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/cognitive-services/text-analytics.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/cognitive-services/azdoc-text-analytics.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/cognitive-services/video-indexer.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/cognitive-services/video-indexer.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/cognitive-services/azdoc-video-indexer.pdf
@@ -4649,6 +4727,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.azure-architecture-center/live/checklist.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.azure-architecture-center/live/checklist.pdf -OutFile pdf/all/MSDN.azure-architecture-center/live/azdoc-checklist.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.azure-architecture-center/live/compliance/pci-dss.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.azure-architecture-center/live/compliance/pci-dss.pdf -OutFile pdf/all/MSDN.azure-architecture-center/live/compliance/azdoc-pci-dss.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.azure-architecture-center/live/elasticsearch.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.azure-architecture-center/live/elasticsearch.pdf -OutFile pdf/all/MSDN.azure-architecture-center/live/azdoc-elasticsearch.pdf
 
@@ -5137,6 +5218,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/cognitive-services/custom-decision-service.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/cognitive-services/custom-decision-service.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/cognitive-services/azdoc-custom-decision-service.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/cognitive-services/text-analytics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/cognitive-services/text-analytics.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/cognitive-services/azdoc-text-analytics.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/cognitive-services/video-indexer.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/cognitive-services/video-indexer.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/cognitive-services/azdoc-video-indexer.pdf
@@ -11300,6 +11384,420 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.sysinternals/live/bread.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.sysinternals/live/bread.pdf -OutFile pdf/all/MSDN.sysinternals/live/azdoc-bread.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/accounts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/accounts.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-accounts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/accounts/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/accounts/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/accounts/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/articles.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/articles.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-articles.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/articles/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/articles/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/articles/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/billing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/billing.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-billing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/billing/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/billing/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/billing/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/build-release.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/build-release.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-build-release.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/build-release/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/build-release/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/build-release/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/build-release/test.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/build-release/test.pdf -OutFile pdf/all/MSDN.team-services/live/build-release/azdoc-test.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/build-release/test/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/build-release/test/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/build-release/test/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/collaborate.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/collaborate.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-collaborate.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/collaborate/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/collaborate/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/collaborate/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/deploy-azure.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/deploy-azure.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-deploy-azure.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/deploy-azure/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/deploy-azure/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/deploy-azure/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/design.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/ecosystem/sharepoint.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/ecosystem/sharepoint.pdf -OutFile pdf/all/MSDN.team-services/live/ecosystem/azdoc-sharepoint.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/ecosystem/sharepoint/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/ecosystem/sharepoint/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/ecosystem/sharepoint/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/extend.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/extend.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-extend.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/extend/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/extend/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/extend/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/feedback.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/feedback.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-feedback.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/feedback/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/feedback/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/feedback/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/git.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/git.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-git.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/integrate.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/integrate.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-integrate.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/integrate/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/integrate/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/integrate/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/integrate/ide/extensions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/integrate/ide/extensions.pdf -OutFile pdf/all/MSDN.team-services/live/integrate/ide/azdoc-extensions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/load-test.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/load-test.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-load-test.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/load-test/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/load-test/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/load-test/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/manual-test.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/manual-test.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-manual-test.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/manual-test/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/manual-test/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/manual-test/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/marketplace.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/marketplace.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-marketplace.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/marketplace/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/marketplace/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/marketplace/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/notifications.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/notifications.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-notifications.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/notifications/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/notifications/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/notifications/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/package.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/package.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-package.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-report.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/report/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/powerbi.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/powerbi.pdf -OutFile pdf/all/MSDN.team-services/live/report/azdoc-powerbi.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/powerbi/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/powerbi/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/report/powerbi/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/sql-reports.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/sql-reports.pdf -OutFile pdf/all/MSDN.team-services/live/report/azdoc-sql-reports.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/sql-reports/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/sql-reports/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/report/sql-reports/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/search.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/search.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-search.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/search/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/search/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/search/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/security.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/security.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-security.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/security/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/security/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/security/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/service-hooks.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/service-hooks.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-service-hooks.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/teams.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/teams.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-teams.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/teams/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/teams/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/teams/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/tfs-server.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/tfs-server.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-tfs-server.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/tfs-server/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/tfs-server/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/tfs-server/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/tfvc.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/tfvc.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-tfvc.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/user-guide.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/user-guide.pdf -OutFile pdf/all/MSDN.team-services/live/azdoc-user-guide.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/user-guide/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/user-guide/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/user-guide/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/backlogs.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/backlogs.pdf -OutFile pdf/all/MSDN.team-services/live/work/azdoc-backlogs.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/backlogs/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/backlogs/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/work/backlogs/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/customize.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/customize.pdf -OutFile pdf/all/MSDN.team-services/live/work/azdoc-customize.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/customize/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/customize/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/work/customize/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/kanban.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/kanban.pdf -OutFile pdf/all/MSDN.team-services/live/work/azdoc-kanban.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/kanban/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/kanban/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/work/kanban/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/scale.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/scale.pdf -OutFile pdf/all/MSDN.team-services/live/work/azdoc-scale.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/scale/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/scale/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/work/scale/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/scrum.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/scrum.pdf -OutFile pdf/all/MSDN.team-services/live/work/azdoc-scrum.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/scrum/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/scrum/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/work/scrum/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/tfs-ps-sync.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/tfs-ps-sync.pdf -OutFile pdf/all/MSDN.team-services/live/work/azdoc-tfs-ps-sync.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/track.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/track.pdf -OutFile pdf/all/MSDN.team-services/live/work/azdoc-track.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/track/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/track/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/work/track/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/work-items.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/work-items.pdf -OutFile pdf/all/MSDN.team-services/live/work/azdoc-work-items.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/work-items/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/work/work-items/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/live/work/work-items/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/accounts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/accounts.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-accounts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/accounts/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/accounts/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/accounts/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/articles.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/articles.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-articles.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/articles/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/articles/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/articles/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/billing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/billing.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-billing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/billing/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/billing/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/billing/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/build-release.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/build-release.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-build-release.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/build-release/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/build-release/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/build-release/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/build-release/test.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/build-release/test.pdf -OutFile pdf/all/MSDN.team-services/master/build-release/azdoc-test.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/build-release/test/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/build-release/test/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/build-release/test/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/collaborate.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/collaborate.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-collaborate.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/collaborate/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/collaborate/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/collaborate/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/deploy-azure.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/deploy-azure.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-deploy-azure.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/deploy-azure/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/deploy-azure/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/deploy-azure/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/design.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/ecosystem/sharepoint.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/ecosystem/sharepoint.pdf -OutFile pdf/all/MSDN.team-services/master/ecosystem/azdoc-sharepoint.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/ecosystem/sharepoint/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/ecosystem/sharepoint/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/ecosystem/sharepoint/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/extend.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/extend.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-extend.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/extend/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/extend/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/extend/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/feedback.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/feedback.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-feedback.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/feedback/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/feedback/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/feedback/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/git.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/git.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-git.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/integrate.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/integrate.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-integrate.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/integrate/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/integrate/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/integrate/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/integrate/ide/extensions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/integrate/ide/extensions.pdf -OutFile pdf/all/MSDN.team-services/master/integrate/ide/azdoc-extensions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/load-test.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/load-test.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-load-test.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/load-test/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/load-test/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/load-test/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/manual-test.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/manual-test.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-manual-test.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/manual-test/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/manual-test/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/manual-test/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/marketplace.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/marketplace.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-marketplace.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/marketplace/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/marketplace/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/marketplace/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/notifications.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/notifications.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-notifications.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/notifications/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/notifications/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/notifications/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/package.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/package.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-package.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/release.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/release.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-release.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/release/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/release/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/release/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-report.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/report/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/powerbi.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/powerbi.pdf -OutFile pdf/all/MSDN.team-services/master/report/azdoc-powerbi.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/powerbi/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/powerbi/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/report/powerbi/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/sql-reports.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/sql-reports.pdf -OutFile pdf/all/MSDN.team-services/master/report/azdoc-sql-reports.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/sql-reports/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/sql-reports/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/report/sql-reports/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/search.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/search.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-search.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/search/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/search/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/search/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/security.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/security.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-security.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/security/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/security/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/security/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/service-hooks.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/service-hooks.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-service-hooks.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/teams.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/teams.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-teams.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/teams/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/teams/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/teams/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/tfs-server.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/tfs-server.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-tfs-server.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/tfs-server/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/tfs-server/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/tfs-server/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/tfvc.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/tfvc.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-tfvc.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/user-guide.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/user-guide.pdf -OutFile pdf/all/MSDN.team-services/master/azdoc-user-guide.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/user-guide/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/user-guide/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/user-guide/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/backlogs.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/backlogs.pdf -OutFile pdf/all/MSDN.team-services/master/work/azdoc-backlogs.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/backlogs/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/backlogs/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/work/backlogs/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/customize.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/customize.pdf -OutFile pdf/all/MSDN.team-services/master/work/azdoc-customize.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/customize/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/customize/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/work/customize/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/kanban.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/kanban.pdf -OutFile pdf/all/MSDN.team-services/master/work/azdoc-kanban.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/kanban/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/kanban/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/work/kanban/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/scale.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/scale.pdf -OutFile pdf/all/MSDN.team-services/master/work/azdoc-scale.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/scale/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/scale/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/work/scale/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/scrum.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/scrum.pdf -OutFile pdf/all/MSDN.team-services/master/work/azdoc-scrum.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/scrum/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/scrum/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/work/scrum/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/tfs-ps-sync.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/tfs-ps-sync.pdf -OutFile pdf/all/MSDN.team-services/master/work/azdoc-tfs-ps-sync.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/track.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/track.pdf -OutFile pdf/all/MSDN.team-services/master/work/azdoc-track.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/track/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/track/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/work/track/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/work-items.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/work-items.pdf -OutFile pdf/all/MSDN.team-services/master/work/azdoc-work-items.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/work-items/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/work/work-items/breadcrumb.pdf -OutFile pdf/all/MSDN.team-services/master/work/work-items/azdoc-breadcrumb.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.teamblog/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.teamblog/live.pdf -OutFile pdf/all/MSDN.teamblog/azdoc-live.pdf
 
@@ -11311,6 +11809,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.teamblog/master/extra.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.teamblog/master/extra.pdf -OutFile pdf/all/MSDN.teamblog/master/azdoc-extra.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.test8151/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.test8151/live.pdf -OutFile pdf/all/MSDN.test8151/azdoc-live.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.vba-offline/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.vba-offline/live.pdf -OutFile pdf/all/MSDN.vba-offline/azdoc-live.pdf
@@ -19036,6 +19537,12 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.openpublishing-test-op/MergeAzureContent/restapi.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.openpublishing-test-op/MergeAzureContent/restapi.pdf -OutFile pdf/all/VS.openpublishing-test-op/MergeAzureContent/azdoc-restapi.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.release-notes/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.release-notes/live.pdf -OutFile pdf/all/VS.release-notes/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.release-notes/master.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.release-notes/master.pdf -OutFile pdf/all/VS.release-notes/azdoc-master.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.vcppdocs/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.vcppdocs/live.pdf -OutFile pdf/all/VS.vcppdocs/azdoc-live.pdf

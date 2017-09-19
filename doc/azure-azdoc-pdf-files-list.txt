@@ -139,6 +139,7 @@ sqlclassic.pdf
 storage.pdf
 storsimple.pdf
 stream-analytics.pdf
+text-analytics.pdf
 time-series-insights.pdf
 traffic-manager.pdf
 video-indexer.pdf
