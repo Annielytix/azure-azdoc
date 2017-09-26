@@ -1,6 +1,6 @@
 # Chris Joakim, Microsoft
-# Generated on Tue 2017-09-19
-# 6580 pdf files match path: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/
+# Generated on Tue 2017-09-26
+# 6637 pdf files match path: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/
 
 # Create output directory structure.
 New-Item pdf/all/AX.openpublishing-test-reference/MergeAzureContent/ -type directory -force
@@ -32,9 +32,12 @@ New-Item pdf/all/Azure.azure-documents/live/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/live/active-directory/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/live/app-service-web/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/live/app-service/ -type directory -force
+New-Item pdf/all/Azure.azure-documents/live/azure-stack/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/live/cognitive-services/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/live/container-service/ -type directory -force
+New-Item pdf/all/Azure.azure-documents/live/data-factory/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/live/guides/ -type directory -force
+New-Item pdf/all/Azure.azure-documents/live/machine-learning/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/live/marketplace/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/live/multi-factor-authentication/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/live/storage/ -type directory -force
@@ -46,9 +49,12 @@ New-Item pdf/all/Azure.azure-documents/master/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/master/active-directory/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/master/app-service-web/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/master/app-service/ -type directory -force
+New-Item pdf/all/Azure.azure-documents/master/azure-stack/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/master/cognitive-services/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/master/container-service/ -type directory -force
+New-Item pdf/all/Azure.azure-documents/master/data-factory/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/master/guides/ -type directory -force
+New-Item pdf/all/Azure.azure-documents/master/machine-learning/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/master/marketplace/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/master/multi-factor-authentication/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/master/storage/ -type directory -force
@@ -75,6 +81,7 @@ New-Item pdf/all/Azure.azure-documents/test-pdf/multi-factor-authentication/ -ty
 New-Item pdf/all/Azure.azure-documents/test-pdf/virtual-machines/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/test-pdf/virtual-machines/linux/ -type directory -force
 New-Item pdf/all/Azure.azure-documents/test-pdf/virtual-machines/windows/ -type directory -force
+New-Item pdf/all/Azure.azure-iot-docs-sdk-typescript/ -type directory -force
 New-Item pdf/all/Azure.bot-framework/ -type directory -force
 New-Item pdf/all/Azure.bot-framework/live/ -type directory -force
 New-Item pdf/all/Azure.bot-framework/master/ -type directory -force
@@ -115,6 +122,8 @@ New-Item pdf/all/Azure.openpublishing-test-azure/TestPDF_Setting_None/multi-fact
 New-Item pdf/all/Azure.openpublishing-test-azure/TestPDF_Setting_None/virtual-machines/ -type directory -force
 New-Item pdf/all/Azure.openpublishing-test-azure/TestPDF_Setting_None/virtual-machines/linux/ -type directory -force
 New-Item pdf/all/Azure.openpublishing-test-azure/TestPDF_Setting_None/virtual-machines/windows/ -type directory -force
+New-Item pdf/all/BTS.biztalk/ -type directory -force
+New-Item pdf/all/BTS.biztalk/live/ -type directory -force
 New-Item pdf/all/MSDN.CTAS/ -type directory -force
 New-Item pdf/all/MSDN.E2E_RepoConfig_Dynamic_Prod/ -type directory -force
 New-Item pdf/all/MSDN.E2E_RepoConfig_Dynamic_Prod/branchMapping/ -type directory -force
@@ -186,9 +195,12 @@ New-Item pdf/all/MSDN.dynamics365-customer-insights/live/ -type directory -force
 New-Item pdf/all/MSDN.e2eprod-azure-documents/live/ -type directory -force
 New-Item pdf/all/MSDN.e2eprod-azure-documents/live/active-directory/ -type directory -force
 New-Item pdf/all/MSDN.e2eprod-azure-documents/live/app-service/ -type directory -force
+New-Item pdf/all/MSDN.e2eprod-azure-documents/live/azure-stack/ -type directory -force
 New-Item pdf/all/MSDN.e2eprod-azure-documents/live/cognitive-services/ -type directory -force
 New-Item pdf/all/MSDN.e2eprod-azure-documents/live/container-service/ -type directory -force
+New-Item pdf/all/MSDN.e2eprod-azure-documents/live/data-factory/ -type directory -force
 New-Item pdf/all/MSDN.e2eprod-azure-documents/live/guides/ -type directory -force
+New-Item pdf/all/MSDN.e2eprod-azure-documents/live/machine-learning/ -type directory -force
 New-Item pdf/all/MSDN.e2eprod-azure-documents/live/marketplace/ -type directory -force
 New-Item pdf/all/MSDN.e2eprod-azure-documents/live/multi-factor-authentication/ -type directory -force
 New-Item pdf/all/MSDN.e2eprod-azure-documents/live/storage/ -type directory -force
@@ -199,9 +211,12 @@ New-Item pdf/all/MSDN.e2eprod-azure-documents/live/virtual-machines/workloads/ -
 New-Item pdf/all/MSDN.e2eprod-azure-documents/master/ -type directory -force
 New-Item pdf/all/MSDN.e2eprod-azure-documents/master/active-directory/ -type directory -force
 New-Item pdf/all/MSDN.e2eprod-azure-documents/master/app-service/ -type directory -force
+New-Item pdf/all/MSDN.e2eprod-azure-documents/master/azure-stack/ -type directory -force
 New-Item pdf/all/MSDN.e2eprod-azure-documents/master/cognitive-services/ -type directory -force
 New-Item pdf/all/MSDN.e2eprod-azure-documents/master/container-service/ -type directory -force
+New-Item pdf/all/MSDN.e2eprod-azure-documents/master/data-factory/ -type directory -force
 New-Item pdf/all/MSDN.e2eprod-azure-documents/master/guides/ -type directory -force
+New-Item pdf/all/MSDN.e2eprod-azure-documents/master/machine-learning/ -type directory -force
 New-Item pdf/all/MSDN.e2eprod-azure-documents/master/marketplace/ -type directory -force
 New-Item pdf/all/MSDN.e2eprod-azure-documents/master/multi-factor-authentication/ -type directory -force
 New-Item pdf/all/MSDN.e2eprod-azure-documents/master/storage/ -type directory -force
@@ -324,6 +339,7 @@ New-Item pdf/all/MSDN.fenxu_msdn_modern_prod/ -type directory -force
 New-Item pdf/all/MSDN.fenxu_msdn_prod/ -type directory -force
 New-Item pdf/all/MSDN.fenxu_newportal_20170106_prod/ -type directory -force
 New-Item pdf/all/MSDN.fenxu_vs_modern_prod/ -type directory -force
+New-Item pdf/all/MSDN.gdpr/ -type directory -force
 New-Item pdf/all/MSDN.hellowordsaldana/ -type directory -force
 New-Item pdf/all/MSDN.hub/ -type directory -force
 New-Item pdf/all/MSDN.internet-explorer-VSTS/ -type directory -force
@@ -374,6 +390,7 @@ New-Item pdf/all/MSDN.smb-VSTS/ -type directory -force
 New-Item pdf/all/MSDN.smb-VSTS/live/ -type directory -force
 New-Item pdf/all/MSDN.smb-VSTS/master/ -type directory -force
 New-Item pdf/all/MSDN.smb-VSTS/msesdemo/ -type directory -force
+New-Item pdf/all/MSDN.sp-dev/ -type directory -force
 New-Item pdf/all/MSDN.spfx-temp-davech/ -type directory -force
 New-Item pdf/all/MSDN.store-for-business-VSTS/ -type directory -force
 New-Item pdf/all/MSDN.store-for-business-VSTS/live/ -type directory -force
@@ -1373,6 +1390,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/app-service/containers.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/app-service/containers.pdf -OutFile pdf/all/Azure.azure-documents/live/app-service/azdoc-containers.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/app-service/environment.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/app-service/environment.pdf -OutFile pdf/all/Azure.azure-documents/live/app-service/azdoc-environment.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/application-gateway.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/application-gateway.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-application-gateway.pdf
 
@@ -1382,11 +1402,17 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/automation.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/automation.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-automation.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/availability-zones.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/availability-zones.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-availability-zones.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/azure-functions.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/azure-functions.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-azure-functions.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/azure-government.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/azure-government.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-azure-government.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/azure-policy.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/azure-policy.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-azure-policy.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/azure-portal.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/azure-portal.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-azure-portal.pdf
@@ -1396,6 +1422,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/azure-stack.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/azure-stack.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-azure-stack.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/azure-stack/user.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/azure-stack/user.pdf -OutFile pdf/all/Azure.azure-documents/live/azure-stack/azdoc-user.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/backup.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/backup.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-backup.pdf
@@ -1541,11 +1570,17 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/cosmos-db.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/cosmos-db.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-cosmos-db.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/cost-management.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/cost-management.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-cost-management.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/data-catalog.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/data-catalog.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-data-catalog.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/data-factory.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/data-factory.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-data-factory.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/data-factory/v1.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/data-factory/v1.pdf -OutFile pdf/all/Azure.azure-documents/live/data-factory/azdoc-v1.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/data-lake-analytics.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/data-lake-analytics.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-data-lake-analytics.pdf
@@ -1618,6 +1653,18 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/machine-learning.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/machine-learning.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-machine-learning.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/machine-learning/data-science-virtual-machine.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/machine-learning/data-science-virtual-machine.pdf -OutFile pdf/all/Azure.azure-documents/live/machine-learning/azdoc-data-science-virtual-machine.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/machine-learning/preview.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/machine-learning/preview.pdf -OutFile pdf/all/Azure.azure-documents/live/machine-learning/azdoc-preview.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/machine-learning/studio.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/machine-learning/studio.pdf -OutFile pdf/all/Azure.azure-documents/live/machine-learning/azdoc-studio.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/machine-learning/team-data-science-process.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/machine-learning/team-data-science-process.pdf -OutFile pdf/all/Azure.azure-documents/live/machine-learning/azdoc-team-data-science-process.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/marketplace.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/marketplace.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-marketplace.pdf
@@ -1829,6 +1876,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/app-service/containers.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/app-service/containers.pdf -OutFile pdf/all/Azure.azure-documents/master/app-service/azdoc-containers.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/app-service/environment.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/app-service/environment.pdf -OutFile pdf/all/Azure.azure-documents/master/app-service/azdoc-environment.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/application-gateway.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/application-gateway.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-application-gateway.pdf
 
@@ -1838,11 +1888,17 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/automation.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/automation.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-automation.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/availability-zones.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/availability-zones.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-availability-zones.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/azure-functions.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/azure-functions.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-azure-functions.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/azure-government.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/azure-government.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-azure-government.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/azure-policy.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/azure-policy.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-azure-policy.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/azure-portal.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/azure-portal.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-azure-portal.pdf
@@ -1852,6 +1908,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/azure-stack.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/azure-stack.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-azure-stack.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/azure-stack/user.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/azure-stack/user.pdf -OutFile pdf/all/Azure.azure-documents/master/azure-stack/azdoc-user.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/backup.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/backup.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-backup.pdf
@@ -1997,11 +2056,17 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/cosmos-db.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/cosmos-db.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-cosmos-db.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/cost-management.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/cost-management.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-cost-management.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/data-catalog.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/data-catalog.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-data-catalog.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/data-factory.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/data-factory.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-data-factory.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/data-factory/v1.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/data-factory/v1.pdf -OutFile pdf/all/Azure.azure-documents/master/data-factory/azdoc-v1.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/data-lake-analytics.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/data-lake-analytics.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-data-lake-analytics.pdf
@@ -2074,6 +2139,18 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/machine-learning.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/machine-learning.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-machine-learning.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/machine-learning/data-science-virtual-machine.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/machine-learning/data-science-virtual-machine.pdf -OutFile pdf/all/Azure.azure-documents/master/machine-learning/azdoc-data-science-virtual-machine.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/machine-learning/preview.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/machine-learning/preview.pdf -OutFile pdf/all/Azure.azure-documents/master/machine-learning/azdoc-preview.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/machine-learning/studio.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/machine-learning/studio.pdf -OutFile pdf/all/Azure.azure-documents/master/machine-learning/azdoc-studio.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/machine-learning/team-data-science-process.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/machine-learning/team-data-science-process.pdf -OutFile pdf/all/Azure.azure-documents/master/machine-learning/azdoc-team-data-science-process.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/marketplace.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/marketplace.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-marketplace.pdf
@@ -2276,6 +2353,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/app-service/containers.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/app-service/containers.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/app-service/azdoc-containers.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/app-service/environment.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/app-service/environment.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/app-service/azdoc-environment.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/application-gateway.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/application-gateway.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/azdoc-application-gateway.pdf
 
@@ -2284,6 +2364,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/automation.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/automation.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/azdoc-automation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/availability-zones.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/availability-zones.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/azdoc-availability-zones.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/azure-functions.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/azure-functions.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/azdoc-azure-functions.pdf
@@ -2917,6 +3000,12 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/test-pdf/vpn-gateway.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/test-pdf/vpn-gateway.pdf -OutFile pdf/all/Azure.azure-documents/test-pdf/azdoc-vpn-gateway.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-iot-docs-sdk-typescript/master.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-iot-docs-sdk-typescript/master.pdf -OutFile pdf/all/Azure.azure-iot-docs-sdk-typescript/azdoc-master.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-iot-docs-sdk-typescript/siwtest.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-iot-docs-sdk-typescript/siwtest.pdf -OutFile pdf/all/Azure.azure-iot-docs-sdk-typescript/azdoc-siwtest.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.bot-framework/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.bot-framework/live.pdf -OutFile pdf/all/Azure.bot-framework/azdoc-live.pdf
@@ -4460,6 +4549,12 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.openpublishing-test-azure/TestPDF_Setting_None/vpn-gateway.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.openpublishing-test-azure/TestPDF_Setting_None/vpn-gateway.pdf -OutFile pdf/all/Azure.openpublishing-test-azure/TestPDF_Setting_None/azdoc-vpn-gateway.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/BTS.biztalk/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/BTS.biztalk/live.pdf -OutFile pdf/all/BTS.biztalk/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/BTS.biztalk/live/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/BTS.biztalk/live/breadcrumb.pdf -OutFile pdf/all/BTS.biztalk/live/azdoc-breadcrumb.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.CTAS/master.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.CTAS/master.pdf -OutFile pdf/all/MSDN.CTAS/azdoc-master.pdf
 
@@ -4958,11 +5053,17 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.customer-engagement/live/bc.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.customer-engagement/live/bc.pdf -OutFile pdf/all/MSDN.customer-engagement/live/azdoc-bc.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.customer-engagement/live/customer-insights.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.customer-engagement/live/customer-insights.pdf -OutFile pdf/all/MSDN.customer-engagement/live/azdoc-customer-insights.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.customer-engagement/live/developer.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.customer-engagement/live/developer.pdf -OutFile pdf/all/MSDN.customer-engagement/live/azdoc-developer.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.customer-engagement/live/gamification.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.customer-engagement/live/gamification.pdf -OutFile pdf/all/MSDN.customer-engagement/live/azdoc-gamification.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.customer-engagement/live/linkedin.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.customer-engagement/live/linkedin.pdf -OutFile pdf/all/MSDN.customer-engagement/live/azdoc-linkedin.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.customer-engagement/live/portals.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.customer-engagement/live/portals.pdf -OutFile pdf/all/MSDN.customer-engagement/live/azdoc-portals.pdf
@@ -5075,6 +5176,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/app-service/containers.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/app-service/containers.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/app-service/azdoc-containers.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/app-service/environment.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/app-service/environment.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/app-service/azdoc-environment.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/application-gateway.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/application-gateway.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-application-gateway.pdf
 
@@ -5084,11 +5188,17 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/automation.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/automation.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-automation.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/availability-zones.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/availability-zones.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-availability-zones.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/azure-functions.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/azure-functions.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-azure-functions.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/azure-government.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/azure-government.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-azure-government.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/azure-policy.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/azure-policy.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-azure-policy.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/azure-portal.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/azure-portal.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-azure-portal.pdf
@@ -5098,6 +5208,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/azure-stack.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/azure-stack.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-azure-stack.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/azure-stack/user.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/azure-stack/user.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azure-stack/azdoc-user.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/backup.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/backup.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-backup.pdf
@@ -5243,11 +5356,17 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/cosmos-db.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/cosmos-db.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-cosmos-db.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/cost-management.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/cost-management.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-cost-management.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/data-catalog.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/data-catalog.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-data-catalog.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/data-factory.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/data-factory.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-data-factory.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/data-factory/v1.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/data-factory/v1.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/data-factory/azdoc-v1.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/data-lake-analytics.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/data-lake-analytics.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-data-lake-analytics.pdf
@@ -5320,6 +5439,18 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/machine-learning.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/machine-learning.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-machine-learning.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/machine-learning/data-science-virtual-machine.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/machine-learning/data-science-virtual-machine.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/machine-learning/azdoc-data-science-virtual-machine.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/machine-learning/preview.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/machine-learning/preview.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/machine-learning/azdoc-preview.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/machine-learning/studio.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/machine-learning/studio.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/machine-learning/azdoc-studio.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/machine-learning/team-data-science-process.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/machine-learning/team-data-science-process.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/machine-learning/azdoc-team-data-science-process.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/marketplace.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/marketplace.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-marketplace.pdf
@@ -5522,6 +5653,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/app-service/containers.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/app-service/containers.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/app-service/azdoc-containers.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/app-service/environment.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/app-service/environment.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/app-service/azdoc-environment.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/application-gateway.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/application-gateway.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-application-gateway.pdf
 
@@ -5531,11 +5665,17 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/automation.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/automation.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-automation.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/availability-zones.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/availability-zones.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-availability-zones.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/azure-functions.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/azure-functions.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-azure-functions.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/azure-government.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/azure-government.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-azure-government.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/azure-policy.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/azure-policy.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-azure-policy.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/azure-portal.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/azure-portal.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-azure-portal.pdf
@@ -5545,6 +5685,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/azure-stack.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/azure-stack.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-azure-stack.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/azure-stack/user.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/azure-stack/user.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azure-stack/azdoc-user.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/backup.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/backup.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-backup.pdf
@@ -5690,11 +5833,17 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/cosmos-db.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/cosmos-db.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-cosmos-db.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/cost-management.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/cost-management.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-cost-management.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/data-catalog.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/data-catalog.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-data-catalog.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/data-factory.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/data-factory.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-data-factory.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/data-factory/v1.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/data-factory/v1.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/data-factory/azdoc-v1.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/data-lake-analytics.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/data-lake-analytics.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-data-lake-analytics.pdf
@@ -5767,6 +5916,18 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/machine-learning.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/machine-learning.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-machine-learning.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/machine-learning/data-science-virtual-machine.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/machine-learning/data-science-virtual-machine.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/machine-learning/azdoc-data-science-virtual-machine.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/machine-learning/preview.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/machine-learning/preview.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/machine-learning/azdoc-preview.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/machine-learning/studio.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/machine-learning/studio.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/machine-learning/azdoc-studio.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/machine-learning/team-data-science-process.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/machine-learning/team-data-science-process.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/machine-learning/azdoc-team-data-science-process.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/marketplace.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/marketplace.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-marketplace.pdf
@@ -8002,6 +8163,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-core-docs/live/csharp/programming-guide/xmldoc.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-core-docs/live/csharp/programming-guide/xmldoc.pdf -OutFile pdf/all/MSDN.e2eprod-core-docs/live/csharp/programming-guide/azdoc-xmldoc.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-core-docs/live/csharp/quick-starts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-core-docs/live/csharp/quick-starts.pdf -OutFile pdf/all/MSDN.e2eprod-core-docs/live/csharp/azdoc-quick-starts.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-core-docs/live/csharp/tour-of-csharp.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-core-docs/live/csharp/tour-of-csharp.pdf -OutFile pdf/all/MSDN.e2eprod-core-docs/live/csharp/azdoc-tour-of-csharp.pdf
@@ -10490,6 +10654,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-core-docs/master/csharp/programming-guide/xmldoc.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-core-docs/master/csharp/programming-guide/xmldoc.pdf -OutFile pdf/all/MSDN.e2eprod-core-docs/master/csharp/programming-guide/azdoc-xmldoc.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-core-docs/master/csharp/quick-starts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-core-docs/master/csharp/quick-starts.pdf -OutFile pdf/all/MSDN.e2eprod-core-docs/master/csharp/azdoc-quick-starts.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-core-docs/master/csharp/tour-of-csharp.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-core-docs/master/csharp/tour-of-csharp.pdf -OutFile pdf/all/MSDN.e2eprod-core-docs/master/csharp/azdoc-tour-of-csharp.pdf
 
@@ -10958,6 +11125,12 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.fenxu_vs_modern_prod/master.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.fenxu_vs_modern_prod/master.pdf -OutFile pdf/all/MSDN.fenxu_vs_modern_prod/azdoc-master.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.gdpr/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.gdpr/live.pdf -OutFile pdf/all/MSDN.gdpr/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.gdpr/master.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.gdpr/master.pdf -OutFile pdf/all/MSDN.gdpr/azdoc-master.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.hellowordsaldana/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.hellowordsaldana/live.pdf -OutFile pdf/all/MSDN.hellowordsaldana/azdoc-live.pdf
 
@@ -11240,6 +11413,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.oem-test/live/breadcrumbs.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.oem-test/live/breadcrumbs.pdf -OutFile pdf/all/MSDN.oem-test/live/azdoc-breadcrumbs.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.oem-test/live/hlk.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.oem-test/live/hlk.pdf -OutFile pdf/all/MSDN.oem-test/live/azdoc-hlk.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.openrating-service/master.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.openrating-service/master.pdf -OutFile pdf/all/MSDN.openrating-service/azdoc-master.pdf
 
@@ -11281,6 +11457,12 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.smb-VSTS/msesdemo/breadcrumb.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.smb-VSTS/msesdemo/breadcrumb.pdf -OutFile pdf/all/MSDN.smb-VSTS/msesdemo/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.sp-dev/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.sp-dev/live.pdf -OutFile pdf/all/MSDN.sp-dev/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.sp-dev/master.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.sp-dev/master.pdf -OutFile pdf/all/MSDN.sp-dev/azdoc-master.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.spfx-temp-davech/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.spfx-temp-davech/live.pdf -OutFile pdf/all/MSDN.spfx-temp-davech/azdoc-live.pdf
@@ -16616,6 +16798,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/live/csharp/programming-guide/xmldoc.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/live/csharp/programming-guide/xmldoc.pdf -OutFile pdf/all/VS.core-docs/live/csharp/programming-guide/azdoc-xmldoc.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/live/csharp/quick-starts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/live/csharp/quick-starts.pdf -OutFile pdf/all/VS.core-docs/live/csharp/azdoc-quick-starts.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/live/csharp/tour-of-csharp.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/live/csharp/tour-of-csharp.pdf -OutFile pdf/all/VS.core-docs/live/csharp/azdoc-tour-of-csharp.pdf
 
@@ -19111,6 +19296,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/master/csharp/programming-guide/xmldoc.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/master/csharp/programming-guide/xmldoc.pdf -OutFile pdf/all/VS.core-docs/master/csharp/programming-guide/azdoc-xmldoc.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/master/csharp/quick-starts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/master/csharp/quick-starts.pdf -OutFile pdf/all/VS.core-docs/master/csharp/azdoc-quick-starts.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/master/csharp/tour-of-csharp.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/master/csharp/tour-of-csharp.pdf -OutFile pdf/all/VS.core-docs/master/csharp/azdoc-tour-of-csharp.pdf

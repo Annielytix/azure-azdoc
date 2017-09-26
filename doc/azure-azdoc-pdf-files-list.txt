@@ -39,8 +39,10 @@ application-gateway.pdf
 application-insights.pdf
 aspnet.pdf
 automation.pdf
+availability-zones.pdf
 azure-functions.pdf
 azure-government.pdf
+azure-policy.pdf
 azure-portal.pdf
 azure-resource-manager.pdf
 azure-stack.pdf
@@ -67,11 +69,13 @@ container-registry.pdf
 container-service.pdf
 containers.pdf
 cosmos-db.pdf
+cost-management.pdf
 custom-decision-service.pdf
 data-catalog.pdf
 data-factory.pdf
 data-lake-analytics.pdf
 data-lake-store.pdf
+data-science-virtual-machine.pdf
 dcos-swarm.pdf
 develop.pdf
 developer.pdf
@@ -81,6 +85,7 @@ docker.pdf
 documentdb.pdf
 dotnet.pdf
 end-user.pdf
+environment.pdf
 event-grid.pdf
 event-hubs.pdf
 expressroute.pdf
@@ -115,6 +120,7 @@ oracle.pdf
 php.pdf
 postgresql.pdf
 power-bi-embedded.pdf
+preview.pdf
 privileged-identity-management.pdf
 queues.pdf
 redis-cache.pdf
@@ -139,9 +145,13 @@ sqlclassic.pdf
 storage.pdf
 storsimple.pdf
 stream-analytics.pdf
+studio.pdf
+team-data-science-process.pdf
 text-analytics.pdf
 time-series-insights.pdf
 traffic-manager.pdf
+user.pdf
+v1.pdf
 video-indexer.pdf
 video-indexer.pdf
 virtual-machine-scale-sets.pdf
