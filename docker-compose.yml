@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: .
+    image: cjoakim/azdoc
+    ports:
+     - "3000:80"
+    volumes:
+     - .:/usr/src/app/
