@@ -28,7 +28,34 @@ git clone git@github.com:cjoakim/azure-azdoc.git
 
 ## Option 1: Execute the Pre-Generated Linux/Mac bash scripts
 
+I strive to regenerate the curl scripts weekly, so they should be
+reasonable current for you to download and execute.
+
+From your Linux or Mac Terminal program, to download the Azure PDFs,
+execute the following from the root directory of this repository:
+
+```
+git pull
+./azdoc_azure_curl_pdfs.sh
+```
+
+To download all of the Documentation, execute the following.  
+**WARNING: this will download over 6000 files.**
+
+```
+./azdoc_complete_curl_pdfs.sh
+```
+
 ## Option 2: Execute the Pre-Generated Windows PowerShell script(s)
+
+Essentially the same as the above option.  Just execute **git pull**
+to download the latest PowerShell scripts, and execute them in a
+PowerShell window:
+
+```
+git pull
+.\azdoc_azure_curl_pdfs.ps1
+```
 
 ## Option 3: Execute Python3 to regenerate the download scripts
 
