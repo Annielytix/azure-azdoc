@@ -12,7 +12,7 @@ Options:
   --version     Show version.
 """
 
-# Chris Joakim, Microsoft, 2017/09/11
+# Chris Joakim, Microsoft, 2017/09/28
 
 import json
 import os
