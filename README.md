@@ -17,9 +17,10 @@ There are four ways to execute the downloads.  It's up to you which you choose.
 3. Execute Python3 to regenerate the download scripts, then execute them manually.
 4. Execute a Docker container.
 
-## Initial Setup
+## Initial Setup with Git
 
-First, use the **git** program to clone this repository to your workstation.
+If you use one of the first three options, start by using the **git** program
+to clone this repository to your workstation.
 
 ```
 cd [your-directory-of-choice]
