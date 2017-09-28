@@ -1,18 +1,21 @@
-FROM python:3.6.2
+FROM python:3
 MAINTAINER Chris Joakim
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .
+COPY azdoc.py ./
+COPY azdoc_docker.sh ./
 
 CMD [ "./azdoc_docker.sh" ]
 
+# shell scripts to build and execute this container:
+# docker_build.sh
+# docker_run.sh
+#
 # example docker commands:
-# docker build -t cjoakim/azdoc . 
-# docker run -d -p 80:3000 cjoakim/azdoc:latest
 # docker ps
 # docker stop -t 2 86b125ed43e5
 # docker push cjoakim/azdoc:latest

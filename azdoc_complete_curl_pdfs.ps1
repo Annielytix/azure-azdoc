@@ -1,6 +1,6 @@
 # Chris Joakim, Microsoft
 # Generated on Thu 2017-09-28
-# 6641 pdf files match path: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/
+# 6642 pdf files match path: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/
 
 # Create output directory structure.
 New-Item pdf/all/AX.openpublishing-test-reference/MergeAzureContent/ -type directory -force
@@ -137,6 +137,7 @@ New-Item pdf/all/MSDN.OPSDocs/ -type directory -force
 New-Item pdf/all/MSDN.OPSDocs/master/ -type directory -force
 New-Item pdf/all/MSDN.OPSDocs/master/partnerdocs/ -type directory -force
 New-Item pdf/all/MSDN.UWPCommunityToolkitDocs/ -type directory -force
+New-Item pdf/all/MSDN.UWPCommunityToolkitDocs/live/ -type directory -force
 New-Item pdf/all/MSDN.WindowsServerDocs-VSTS/ -type directory -force
 New-Item pdf/all/MSDN.WindowsServerDocs-VSTS/live/ -type directory -force
 New-Item pdf/all/MSDN.WindowsServerDocs-VSTS/live/administration/ -type directory -force
@@ -4631,6 +4632,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.UWPCommunityToolkitDocs/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.UWPCommunityToolkitDocs/live.pdf -OutFile pdf/all/MSDN.UWPCommunityToolkitDocs/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.UWPCommunityToolkitDocs/live/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.UWPCommunityToolkitDocs/live/breadcrumb.pdf -OutFile pdf/all/MSDN.UWPCommunityToolkitDocs/live/azdoc-breadcrumb.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.WindowsServerDocs-VSTS/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.WindowsServerDocs-VSTS/live.pdf -OutFile pdf/all/MSDN.WindowsServerDocs-VSTS/azdoc-live.pdf

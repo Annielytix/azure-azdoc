@@ -2,7 +2,7 @@
 
 # Chris Joakim, Microsoft
 # Generated on Thu 2017-09-28
-# 6641 pdf files match path: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/
+# 6642 pdf files match path: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/
 
 # Create output directory structure.
 mkdir -p pdf/all/AX.openpublishing-test-reference/MergeAzureContent/
@@ -139,6 +139,7 @@ mkdir -p pdf/all/MSDN.OPSDocs/
 mkdir -p pdf/all/MSDN.OPSDocs/master/
 mkdir -p pdf/all/MSDN.OPSDocs/master/partnerdocs/
 mkdir -p pdf/all/MSDN.UWPCommunityToolkitDocs/
+mkdir -p pdf/all/MSDN.UWPCommunityToolkitDocs/live/
 mkdir -p pdf/all/MSDN.WindowsServerDocs-VSTS/
 mkdir -p pdf/all/MSDN.WindowsServerDocs-VSTS/live/
 mkdir -p pdf/all/MSDN.WindowsServerDocs-VSTS/live/administration/
@@ -4633,6 +4634,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.UWPCommunityToolkitDocs/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.UWPCommunityToolkitDocs/live.pdf > pdf/all/MSDN.UWPCommunityToolkitDocs/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.UWPCommunityToolkitDocs/live/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.UWPCommunityToolkitDocs/live/breadcrumb.pdf > pdf/all/MSDN.UWPCommunityToolkitDocs/live/azdoc-breadcrumb.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.WindowsServerDocs-VSTS/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.WindowsServerDocs-VSTS/live.pdf > pdf/all/MSDN.WindowsServerDocs-VSTS/azdoc-live.pdf
