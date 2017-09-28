@@ -8,6 +8,16 @@ following Azure Storage container:
 opbuildstorageprod.blob.core.windows.net
 ```
 
+## Three Ways to Do It
+
+There are four ways to execute the downloads.  It's up to you which you choose.
+
+- Simply Execute the Pre-Generated Linux/Mac bash script(s).
+- Simply Execute the Pre-Generated Windows PowerShell script(s).
+- Execute Python3 to generate the download scripts, then execute them manually.
+- Like option 3, but execute it as a Docker container.
+
+
 ## Setup
 
 First, use the git program to clone this repository to your workstation.
