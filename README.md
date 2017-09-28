@@ -17,6 +17,14 @@ There are four ways to execute the downloads.  It's up to you which you choose.
 3. Execute Python3 to regenerate the download scripts, then execute them manually.
 4. Like option 3, but execute it as a Docker container.
 
+## Initial Setup
+
+First, use the **git** program to clone this repository to your workstation.
+
+```
+cd [your-directory-of-choice]
+git clone git@github.com:cjoakim/azure-azdoc.git
+```
 
 ## Option 1: Execute the Pre-Generated Linux/Mac bash scripts
 
@@ -26,14 +34,7 @@ There are four ways to execute the downloads.  It's up to you which you choose.
 
 ## Option 4: Execute a Docker Container
 
-## Setup
 
-First, use the git program to clone this repository to your workstation.
-
-```
-cd [your-directory-of-choice]
-git clone git@github.com:cjoakim/azure-azdoc.git
-```
 
 ## Execute the Pre-Generated Scripts
 
