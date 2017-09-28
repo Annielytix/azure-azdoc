@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Chris Joakim, Microsoft
-# Generated on Tue 2017-09-26
-# 6637 pdf files match path: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/
+# Generated on Thu 2017-09-28
+# 6641 pdf files match path: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/
 
 # Create output directory structure.
 mkdir -p pdf/all/AX.openpublishing-test-reference/MergeAzureContent/
@@ -432,6 +432,7 @@ mkdir -p pdf/all/MSDN.team-services/live/marketplace/
 mkdir -p pdf/all/MSDN.team-services/live/notifications/
 mkdir -p pdf/all/MSDN.team-services/live/report/
 mkdir -p pdf/all/MSDN.team-services/live/report/powerbi/
+mkdir -p pdf/all/MSDN.team-services/live/report/sharepoint-dashboards/
 mkdir -p pdf/all/MSDN.team-services/live/report/sql-reports/
 mkdir -p pdf/all/MSDN.team-services/live/search/
 mkdir -p pdf/all/MSDN.team-services/live/security/
@@ -467,6 +468,7 @@ mkdir -p pdf/all/MSDN.team-services/master/notifications/
 mkdir -p pdf/all/MSDN.team-services/master/release/
 mkdir -p pdf/all/MSDN.team-services/master/report/
 mkdir -p pdf/all/MSDN.team-services/master/report/powerbi/
+mkdir -p pdf/all/MSDN.team-services/master/report/sharepoint-dashboards/
 mkdir -p pdf/all/MSDN.team-services/master/report/sql-reports/
 mkdir -p pdf/all/MSDN.team-services/master/search/
 mkdir -p pdf/all/MSDN.team-services/master/security/
@@ -11685,6 +11687,12 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/powerbi/breadcrumb.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/powerbi/breadcrumb.pdf > pdf/all/MSDN.team-services/live/report/powerbi/azdoc-breadcrumb.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/sharepoint-dashboards.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/sharepoint-dashboards.pdf > pdf/all/MSDN.team-services/live/report/azdoc-sharepoint-dashboards.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/sharepoint-dashboards/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/sharepoint-dashboards/breadcrumb.pdf > pdf/all/MSDN.team-services/live/report/sharepoint-dashboards/azdoc-breadcrumb.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/sql-reports.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/live/report/sql-reports.pdf > pdf/all/MSDN.team-services/live/report/azdoc-sql-reports.pdf
 
@@ -11894,6 +11902,12 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/powerbi/breadcrumb.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/powerbi/breadcrumb.pdf > pdf/all/MSDN.team-services/master/report/powerbi/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/sharepoint-dashboards.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/sharepoint-dashboards.pdf > pdf/all/MSDN.team-services/master/report/azdoc-sharepoint-dashboards.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/sharepoint-dashboards/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/sharepoint-dashboards/breadcrumb.pdf > pdf/all/MSDN.team-services/master/report/sharepoint-dashboards/azdoc-breadcrumb.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/sql-reports.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.team-services/master/report/sql-reports.pdf > pdf/all/MSDN.team-services/master/report/azdoc-sql-reports.pdf

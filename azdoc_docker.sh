@@ -1,11 +1,6 @@
 #!/bin/bash
 
-# This bash script is intended to be executed from your workstation
-# bash terminal, and not from within a Docker container.
-#
-# It will generate the various bash and PowerShell curl scripts,
-# but will not execute them; you must execute these manually.
-#
+# This bash script is intended to be executed from a Docker container.
 # Chris Joakim, Microsoft, 2017/09/28
 
 rm data/response*.xml
