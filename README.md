@@ -89,7 +89,8 @@ from the **DockerHub** container registry.  This approach combines the functiona
 of Option 3 (container querying and script generation) and Option 1 (curl script execution).
 
 This option assumes that the workstation or server you're executing from has
-Docker installed.
+Docker installed.  However, your workstation or server doesn't have to have git,
+python, or curl installed... as those are included in the pre-built Docker container.
 
 ```
 docker run -v ~/azdoc/data:/app/data -v ~/azdoc/pdf/azure:/app/pdf/azure cjoakim/azdoc:latest
