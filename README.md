@@ -15,7 +15,7 @@ There are four ways to execute the downloads.  It's up to you which you choose.
 1. Simply Execute the Pre-Generated Linux/Mac bash script(s).
 2. Simply Execute the Pre-Generated Windows PowerShell script(s).
 3. Execute Python3 to regenerate the download scripts, then execute them manually.
-4. Like option 3, but execute it as a Docker container.
+4. Execute a Docker container.
 
 ## Initial Setup
 
@@ -67,207 +67,198 @@ git pull
 
 ## Option 3: Execute Python3 to regenerate the download scripts
 
+For this option, it is assumed that you have Python3 installed on
+your computer; version 3.6 is recommended.  The advantage of this
+option is that it will query the current contents of the documentation
+blob storage container.
+
+Start by querying the underlying documentation blob container, and
+regenerating the azdoc curl scripts, with the following:
+```
+git pull
+./azdoc_nodocker.sh
+```
+
+Then, execute the freshly-regenerated curl script(s) as described in Options 1 and 2.
+
 ## Option 4: Execute a Docker Container
 
+Lastly, you can execute the process with a pre-created public Docker image
+from the **DockerHub** container registry.  This approach combines the functionality
+of Option 3 (container querying and script generation) and Option 1 (curl script execution).
 
-
-## Execute the Pre-Generated Scripts
-
-To simply execue the scripts that have already been generated and put into this
-repository, execute your choice of the following in a PowerShell/Linux/Mac Terminal.
-
-```
-azdoc_azure_curl_pdfs.ps1
-azdoc_azure_curl_pdfs.sh
-azdoc_complete_curl_pdfs.ps1
-azdoc_complete_curl_pdfs.sh
-```
-
-These bash or PowerShell scripts will invoke the curl program to download PDF
-files to the pdf/azure or pdf/all directories within the root of the repository.
-Currently, there are 150 Azure PDF documents and 6435 in the complete set of PDFs.
-
-I strive to keep this repository updated and generate the above four scripts
-on a weekly basis.
-
-## Execute the "spidering" process
-
-"Advanced users" may want to execute the "spidering" logic to identify the available
-PDF files and generate the above four scripts.  Python 3.6.x is required.
-
-Execute the following steps from the root of the repository.
+This option assumes that the workstation or server you're executing from has
+Docker installed.
 
 ```
-git reset --hard
-git pull                      # get the latest code from this repository
-./venv.sh                     # create the python virtualenv per the requirements.in file
-source bin/activate           # activate the python virtualenv
-./azdoc.sh                    # execute the process
+docker run -v ~/azdoc/data:/app/data -v ~/azdoc/pdf/azure:/app/pdf/azure cjoakim/azdoc:latest
 ```
 
-Then, execute the above script(s) in the "Execute the Pre-Generated Scripts" section.
+The **-v** parameters make filesystem directories on your host computer available
+to the Docker container.  You can modify these as necessary.
 
-The **azdoc.sh** will execute the following logic:
+## What gets Downloaded?
 
-- Use HTTP to query, including pagination, the list of blobs in the 'opbuildstorageprod' container
-- Aggregate the list of all Blobs in this container in the several HTTP response files
-- Generate the bash and PowerShell scripts to download the Azure PDF files with curl
-- Generate a HTML report listing the Azure PDF files
-
-Note: the previous web-scraping version of this logic has been deleted in favor of
-directly HTTP querying of the underlying **opbuildstorageprod** storage container.
-
-## List of 150 Azure PDF files available as of 2017/09/11:
+As of 2017/09/28, the following **158 Azure PDF files** get downloaded.
 
 ```
-Academic-Knowledge.pdf
-Bing-Autosuggest.pdf
-Bing-Custom-Search.pdf
-Bing-Entities-Search.pdf
-Bing-Image-Search.pdf
-Bing-News-Search.pdf
-Bing-Spell-Check.pdf
-Bing-Video-Search.pdf
-Bing-Web-Search.pdf
-Computer-vision.pdf
-Content-Moderator.pdf
-Custom-Speech-Service.pdf
-Custom-Vision-Service.pdf
-Emotion.pdf
-EntityLinking.pdf
-Face.pdf
-KES.pdf
-LUIS.pdf
-LinguisticAnalysisAPI.pdf
-QnAMaker.pdf
-Recommendations.pdf
-Speaker-recognition.pdf
-Speech.pdf
-Text-Analytics.pdf
-Translator.pdf
-Video.pdf
-Web-Language-Model.pdf
-active-directory-b2c.pdf
-active-directory-domain-services.pdf
-active-directory.pdf
-advisor.pdf
-analysis-services.pdf
-api-management.pdf
-app-service-api.pdf
-app-service-mobile.pdf
-app-service-web.pdf
-app-service.pdf
-application-gateway.pdf
-application-insights.pdf
-aspnet.pdf
-automation.pdf
-azure-functions.pdf
-azure-government.pdf
-azure-portal.pdf
-azure-resource-manager.pdf
-azure-stack.pdf
-backup.pdf
-batch.pdf
-billing.pdf
-biztalk-services.pdf
-blobs.pdf
-bread.pdf
-cdn.pdf
-chef.pdf
-classic.pdf
-classic.pdf
-cloud-partner-portal.pdf
-cloud-partner-portal.pdf
-cloud-services.pdf
-cloud-shell.pdf
-cloudfoundry.pdf
-cognitive-services.pdf
-connect-health.pdf
-connect.pdf
-container-instances.pdf
-container-registry.pdf
-container-service.pdf
-containers.pdf
-cosmos-db.pdf
-custom-decision-service.pdf
-data-catalog.pdf
-data-factory.pdf
-data-lake-analytics.pdf
-data-lake-store.pdf
-dcos-swarm.pdf
-develop.pdf
-developer.pdf
-devtest-lab.pdf
-dns.pdf
-docker.pdf
-documentdb.pdf
-dotnet.pdf
-end-user.pdf
-event-grid.pdf
-event-hubs.pdf
-expressroute.pdf
-files.pdf
-germany.pdf
-guidance.pdf
-hdinsight.pdf
-iot-dps.pdf
-iot-hub.pdf
-iot-suite.pdf
-jenkins.pdf
-key-vault.pdf
-kubernetes.pdf
-linux.pdf
-load-balancer.pdf
-log-analytics.pdf
-logic-apps.pdf
-machine-learning.pdf
-marketplace.pdf
-media-services.pdf
-mobile-engagement.pdf
-monitoring-and-diagnostics.pdf
-multi-factor-authentication.pdf
-mysql.pdf
-network-watcher.pdf
-networking.pdf
-notification-hubs.pdf
-openshift.pdf
-operations-management-suite.pdf
-operations.pdf
-oracle.pdf
-php.pdf
-postgresql.pdf
-power-bi-embedded.pdf
-privileged-identity-management.pdf
-queues.pdf
-redis-cache.pdf
-remoteapp.pdf
-resource-health.pdf
-sap.pdf
-scheduler.pdf
-search.pdf
-security-center.pdf
-security.pdf
-service-bus-messaging.pdf
-service-bus-relay.pdf
-service-bus.pdf
-service-fabric.pdf
-service-health.pdf
-site-recovery.pdf
-sql-data-warehouse.pdf
-sql-database.pdf
-sql-server-stretch-database.pdf
-sql.pdf
-sqlclassic.pdf
-storage.pdf
-storsimple.pdf
-stream-analytics.pdf
-time-series-insights.pdf
-traffic-manager.pdf
-video-indexer.pdf
-video-indexer.pdf
-virtual-machine-scale-sets.pdf
-virtual-machines.pdf
-virtual-network.pdf
-vpn-gateway.pdf
-windows.pdf
+azdoc-Academic-Knowledge.pdf
+azdoc-Bing-Autosuggest.pdf
+azdoc-Bing-Custom-Search.pdf
+azdoc-Bing-Entities-Search.pdf
+azdoc-Bing-Image-Search.pdf
+azdoc-Bing-News-Search.pdf
+azdoc-Bing-Spell-Check.pdf
+azdoc-Bing-Video-Search.pdf
+azdoc-Bing-Web-Search.pdf
+azdoc-Computer-vision.pdf
+azdoc-Content-Moderator.pdf
+azdoc-Custom-Speech-Service.pdf
+azdoc-Custom-Vision-Service.pdf
+azdoc-Emotion.pdf
+azdoc-EntityLinking.pdf
+azdoc-Face.pdf
+azdoc-KES.pdf
+azdoc-LUIS.pdf
+azdoc-LinguisticAnalysisAPI.pdf
+azdoc-QnAMaker.pdf
+azdoc-Recommendations.pdf
+azdoc-Speaker-recognition.pdf
+azdoc-Speech.pdf
+azdoc-Text-Analytics.pdf
+azdoc-Translator.pdf
+azdoc-Video.pdf
+azdoc-Web-Language-Model.pdf
+azdoc-active-directory-b2c.pdf
+azdoc-active-directory-domain-services.pdf
+azdoc-active-directory.pdf
+azdoc-advisor.pdf
+azdoc-analysis-services.pdf
+azdoc-api-management.pdf
+azdoc-app-service-api.pdf
+azdoc-app-service-mobile.pdf
+azdoc-app-service-web.pdf
+azdoc-app-service.pdf
+azdoc-application-gateway.pdf
+azdoc-application-insights.pdf
+azdoc-aspnet.pdf
+azdoc-automation.pdf
+azdoc-availability-zones.pdf
+azdoc-azure-functions.pdf
+azdoc-azure-government.pdf
+azdoc-azure-policy.pdf
+azdoc-azure-portal.pdf
+azdoc-azure-resource-manager.pdf
+azdoc-azure-stack.pdf
+azdoc-backup.pdf
+azdoc-batch.pdf
+azdoc-billing.pdf
+azdoc-biztalk-services.pdf
+azdoc-blobs.pdf
+azdoc-bread.pdf
+azdoc-cdn.pdf
+azdoc-chef.pdf
+azdoc-classic.pdf
+azdoc-cloud-partner-portal.pdf
+azdoc-cloud-services.pdf
+azdoc-cloud-shell.pdf
+azdoc-cloudfoundry.pdf
+azdoc-cognitive-services.pdf
+azdoc-connect-health.pdf
+azdoc-connect.pdf
+azdoc-container-instances.pdf
+azdoc-container-registry.pdf
+azdoc-container-service.pdf
+azdoc-containers.pdf
+azdoc-cosmos-db.pdf
+azdoc-cost-management.pdf
+azdoc-custom-decision-service.pdf
+azdoc-data-catalog.pdf
+azdoc-data-factory.pdf
+azdoc-data-lake-analytics.pdf
+azdoc-data-lake-store.pdf
+azdoc-data-science-virtual-machine.pdf
+azdoc-dcos-swarm.pdf
+azdoc-develop.pdf
+azdoc-developer.pdf
+azdoc-devtest-lab.pdf
+azdoc-dns.pdf
+azdoc-docker.pdf
+azdoc-documentdb.pdf
+azdoc-dotnet.pdf
+azdoc-end-user.pdf
+azdoc-environment.pdf
+azdoc-event-grid.pdf
+azdoc-event-hubs.pdf
+azdoc-expressroute.pdf
+azdoc-files.pdf
+azdoc-germany.pdf
+azdoc-guidance.pdf
+azdoc-hdinsight.pdf
+azdoc-iot-dps.pdf
+azdoc-iot-hub.pdf
+azdoc-iot-suite.pdf
+azdoc-jenkins.pdf
+azdoc-key-vault.pdf
+azdoc-kubernetes.pdf
+azdoc-linux.pdf
+azdoc-load-balancer.pdf
+azdoc-log-analytics.pdf
+azdoc-logic-apps.pdf
+azdoc-machine-learning.pdf
+azdoc-marketplace.pdf
+azdoc-media-services.pdf
+azdoc-mobile-engagement.pdf
+azdoc-monitoring-and-diagnostics.pdf
+azdoc-multi-factor-authentication.pdf
+azdoc-mysql.pdf
+azdoc-network-watcher.pdf
+azdoc-networking.pdf
+azdoc-notification-hubs.pdf
+azdoc-openshift.pdf
+azdoc-operations-management-suite.pdf
+azdoc-operations.pdf
+azdoc-oracle.pdf
+azdoc-php.pdf
+azdoc-postgresql.pdf
+azdoc-power-bi-embedded.pdf
+azdoc-preview.pdf
+azdoc-privileged-identity-management.pdf
+azdoc-queues.pdf
+azdoc-redis-cache.pdf
+azdoc-remoteapp.pdf
+azdoc-resource-health.pdf
+azdoc-sap.pdf
+azdoc-scheduler.pdf
+azdoc-search.pdf
+azdoc-security-center.pdf
+azdoc-security.pdf
+azdoc-service-bus-messaging.pdf
+azdoc-service-bus-relay.pdf
+azdoc-service-bus.pdf
+azdoc-service-fabric.pdf
+azdoc-service-health.pdf
+azdoc-site-recovery.pdf
+azdoc-sql-data-warehouse.pdf
+azdoc-sql-database.pdf
+azdoc-sql-server-stretch-database.pdf
+azdoc-sql.pdf
+azdoc-sqlclassic.pdf
+azdoc-storage.pdf
+azdoc-storsimple.pdf
+azdoc-stream-analytics.pdf
+azdoc-studio.pdf
+azdoc-team-data-science-process.pdf
+azdoc-time-series-insights.pdf
+azdoc-traffic-manager.pdf
+azdoc-user.pdf
+azdoc-v1.pdf
+azdoc-video-indexer.pdf
+azdoc-virtual-machine-scale-sets.pdf
+azdoc-virtual-machines.pdf
+azdoc-virtual-network.pdf
+azdoc-vpn-gateway.pdf
+azdoc-windows.pdf
 ```
+
+See the generated curl scripts for more details.
