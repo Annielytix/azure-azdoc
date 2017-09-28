@@ -39,10 +39,11 @@ git pull
 ./azdoc_azure_curl_pdfs.sh
 ```
 
-To download all of the Documentation, execute the following.  
+To download **ALL** of the Documentation, execute the following.  
 **WARNING: this will download over 6000 files.**
 
 ```
+git pull
 ./azdoc_complete_curl_pdfs.sh
 ```
 
@@ -55,6 +56,12 @@ PowerShell window:
 ```
 git pull
 .\azdoc_azure_curl_pdfs.ps1
+```
+
+Or, for **ALL 6000+** files:
+```
+git pull
+.\azdoc_complete_curl_pdfs.ps1
 ```
 
 ## Option 3: Execute Python3 to regenerate the download scripts
