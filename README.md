@@ -14,9 +14,17 @@ There are four ways to execute the downloads.  It's up to you which you choose.
 
 1. Simply Execute the Pre-Generated Linux/Mac bash script(s).
 2. Simply Execute the Pre-Generated Windows PowerShell script(s).
-3. Execute Python3 to generate the download scripts, then execute them manually.
+3. Execute Python3 to regenerate the download scripts, then execute them manually.
 4. Like option 3, but execute it as a Docker container.
 
+
+## Option 1: Execute the Pre-Generated Linux/Mac bash scripts
+
+## Option 2: Execute the Pre-Generated Windows PowerShell script(s)
+
+## Option 3: Execute Python3 to regenerate the download scripts
+
+## Option 4: Execute a Docker Container
 
 ## Setup
 
