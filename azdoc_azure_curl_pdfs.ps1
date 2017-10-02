@@ -1,5 +1,5 @@
 # Chris Joakim, Microsoft
-# Generated on Thu 2017-09-28
+# Generated on Mon 2017-10-02
 # 161 pdf files match path: /output-pdf-files/en-us/Azure.azure-documents/live/
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/active-directory-b2c.pdf ...'
