@@ -120,6 +120,7 @@ oracle.pdf
 php.pdf
 postgresql.pdf
 power-bi-embedded.pdf
+power-bi-workspace-collections.pdf
 preview.pdf
 privileged-identity-management.pdf
 queues.pdf
@@ -140,6 +141,7 @@ site-recovery.pdf
 sql-data-warehouse.pdf
 sql-database.pdf
 sql-server-stretch-database.pdf
+sql.pdf
 sql.pdf
 sqlclassic.pdf
 storage.pdf

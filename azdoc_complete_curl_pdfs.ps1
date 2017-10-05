@@ -1,8 +1,10 @@
 # Chris Joakim, Microsoft
-# Generated on Mon 2017-10-02
-# 6674 pdf files match path: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/
+# Generated on Thu 2017-10-05
+# 6890 pdf files match path: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/
 
 # Create output directory structure.
+New-Item pdf/all/AX.d365F-O/live/ -type directory -force
+New-Item pdf/all/AX.d365F-O/master/ -type directory -force
 New-Item pdf/all/AX.openpublishing-test-reference/MergeAzureContent/ -type directory -force
 New-Item pdf/all/AX.openpublishing-test-starterkit/ -type directory -force
 New-Item pdf/all/AX.openpublishing-test-starterkit/MergeAzureContent/ -type directory -force
@@ -148,6 +150,11 @@ New-Item pdf/all/MSDN.WindowsServerDocs-VSTS/live/remote/ -type directory -force
 New-Item pdf/all/MSDN.WindowsServerDocs-VSTS/master/ -type directory -force
 New-Item pdf/all/MSDN.WindowsServerDocs-VSTS/master/administration/ -type directory -force
 New-Item pdf/all/MSDN.WindowsServerDocs-VSTS/master/remote/ -type directory -force
+New-Item pdf/all/MSDN.analysis-services-dotnet-api/ -type directory -force
+New-Item pdf/all/MSDN.analysis-services-dotnet-api/live/ -type directory -force
+New-Item pdf/all/MSDN.analysis-services-dotnet-api/live/api/ -type directory -force
+New-Item pdf/all/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/ -type directory -force
+New-Item pdf/all/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/ -type directory -force
 New-Item pdf/all/MSDN.aspnet-conceptual/ -type directory -force
 New-Item pdf/all/MSDN.aspnet-conceptual/aspnetmigration/ -type directory -force
 New-Item pdf/all/MSDN.aspnet-conceptual/aspnetmigration/webhooks/ -type directory -force
@@ -182,6 +189,7 @@ New-Item pdf/all/MSDN.contribute/master/help-crr/help-content/ -type directory -
 New-Item pdf/all/MSDN.customer-engagement/live/ -type directory -force
 New-Item pdf/all/MSDN.d365Ops-Core/ -type directory -force
 New-Item pdf/all/MSDN.d365Ops-Core/live/ -type directory -force
+New-Item pdf/all/MSDN.d365Ops-Core/master/ -type directory -force
 New-Item pdf/all/MSDN.d365Ops-DevITPro/ -type directory -force
 New-Item pdf/all/MSDN.d365Ops-Financials/ -type directory -force
 New-Item pdf/all/MSDN.d365Ops-Retail/ -type directory -force
@@ -647,6 +655,15 @@ New-Item pdf/all/SQL.sql-content/master/ssms/ -type directory -force
 New-Item pdf/all/SQL.sql-content/master/t-sql/ -type directory -force
 New-Item pdf/all/SQL.sql-content/master/tools/ -type directory -force
 New-Item pdf/all/SQL.sql-content/master/whitepapers/ -type directory -force
+New-Item pdf/all/SQL.sql-dotnet-api/ -type directory -force
+New-Item pdf/all/SQL.sql-dotnet-api/live/api/ -type directory -force
+New-Item pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/ -type directory -force
+New-Item pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/ -type directory -force
+New-Item pdf/all/SQL.sql-tools-dotnet/ -type directory -force
+New-Item pdf/all/SQL.sql-tools-dotnet/live/ -type directory -force
+New-Item pdf/all/SQL.sql-tools-dotnet/live/api/ -type directory -force
+New-Item pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/ -type directory -force
+New-Item pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/ -type directory -force
 New-Item pdf/all/Security.enterprise-threat-detection/ -type directory -force
 New-Item pdf/all/Security.enterprise-threat-detection/live/ -type directory -force
 New-Item pdf/all/Security.enterprise-threat-detection/master/ -type directory -force
@@ -830,6 +847,9 @@ New-Item pdf/all/Win.wdkdocs/master/ -type directory -force
 New-Item pdf/all/Win.windows-apps/ -type directory -force
 New-Item pdf/all/Win.windows-apps/live/ -type directory -force
 New-Item pdf/all/guides/ -type directory -force
+New-Item pdf/all/office.OfficeDocs-MicrosoftTeams/ -type directory -force
+New-Item pdf/all/office.OfficeDocs-MicrosoftTeams/live/ -type directory -force
+New-Item pdf/all/office.OfficeDocs-SkypeForBusiness/ -type directory -force
 New-Item pdf/all/ope2etest.optest_testdocs/ -type directory -force
 New-Item pdf/all/ope2etest.optestdocs/ -type directory -force
 New-Item pdf/all/test.fenxu_docs_20161118/ -type directory -force
@@ -838,6 +858,18 @@ New-Item pdf/all/test.openpublishing-test-docs/ -type directory -force
 New-Item pdf/all/test.openpublishing-test-docs/MergeAzureContent/ -type directory -force
 
 # 
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/AX.d365F-O/live/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/AX.d365F-O/live/breadcrumb.pdf -OutFile pdf/all/AX.d365F-O/live/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/AX.d365F-O/live/fin-and-ops.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/AX.d365F-O/live/fin-and-ops.pdf -OutFile pdf/all/AX.d365F-O/live/azdoc-fin-and-ops.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/AX.d365F-O/master/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/AX.d365F-O/master/breadcrumb.pdf -OutFile pdf/all/AX.d365F-O/master/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/AX.d365F-O/master/fin-and-ops.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/AX.d365F-O/master/fin-and-ops.pdf -OutFile pdf/all/AX.d365F-O/master/azdoc-fin-and-ops.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/AX.openpublishing-test-reference/MergeAzureContent/api.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/AX.openpublishing-test-reference/MergeAzureContent/api.pdf -OutFile pdf/all/AX.openpublishing-test-reference/MergeAzureContent/azdoc-api.pdf
@@ -1721,6 +1753,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/power-bi-embedded.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/power-bi-embedded.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-power-bi-embedded.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/power-bi-workspace-collections.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/power-bi-workspace-collections.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-power-bi-workspace-collections.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/redis-cache.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/redis-cache.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-redis-cache.pdf
 
@@ -1807,6 +1842,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/virtual-machines/linux/classic.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/virtual-machines/linux/classic.pdf -OutFile pdf/all/Azure.azure-documents/live/virtual-machines/linux/azdoc-classic.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/virtual-machines/linux/sql.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/virtual-machines/linux/sql.pdf -OutFile pdf/all/Azure.azure-documents/live/virtual-machines/linux/azdoc-sql.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/virtual-machines/windows.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/virtual-machines/windows.pdf -OutFile pdf/all/Azure.azure-documents/live/virtual-machines/azdoc-windows.pdf
@@ -2297,6 +2335,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/virtual-machines/linux/classic.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/virtual-machines/linux/classic.pdf -OutFile pdf/all/Azure.azure-documents/master/virtual-machines/linux/azdoc-classic.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/virtual-machines/linux/sql.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/virtual-machines/linux/sql.pdf -OutFile pdf/all/Azure.azure-documents/master/virtual-machines/linux/azdoc-sql.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/virtual-machines/windows.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/virtual-machines/windows.pdf -OutFile pdf/all/Azure.azure-documents/master/virtual-machines/azdoc-windows.pdf
 
@@ -2684,6 +2725,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/power-bi-embedded.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/power-bi-embedded.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/azdoc-power-bi-embedded.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/power-bi-workspace-collections.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/power-bi-workspace-collections.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/azdoc-power-bi-workspace-collections.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/redis-cache.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/redis-cache.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/azdoc-redis-cache.pdf
 
@@ -2764,6 +2808,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/virtual-machines/linux/classic.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/virtual-machines/linux/classic.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/virtual-machines/linux/azdoc-classic.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/virtual-machines/linux/sql.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/virtual-machines/linux/sql.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/virtual-machines/linux/azdoc-sql.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/virtual-machines/windows.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/virtual-machines/windows.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/virtual-machines/azdoc-windows.pdf
@@ -4748,6 +4795,66 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.WindowsServerDocs-VSTS/master/virtualization.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.WindowsServerDocs-VSTS/master/virtualization.pdf -OutFile pdf/all/MSDN.WindowsServerDocs-VSTS/master/azdoc-virtualization.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/azdoc-analysis-services-dotnet-api.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/Microsoft.AnalysisServices.AdomdClient.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/Microsoft.AnalysisServices.AdomdClient.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/azdoc-Microsoft.AnalysisServices.AdomdClient.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/Microsoft.AnalysisServices.Core.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/Microsoft.AnalysisServices.Core.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/azdoc-Microsoft.AnalysisServices.Core.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/Microsoft.AnalysisServices.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/Microsoft.AnalysisServices.Hosting.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/azdoc-Microsoft.AnalysisServices.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/Microsoft.AnalysisServices.SPClient.Interfaces.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/Microsoft.AnalysisServices.SPClient.Interfaces.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/azdoc-Microsoft.AnalysisServices.SPClient.Interfaces.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/Microsoft.AnalysisServices.Tabular.DataRefresh.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/Microsoft.AnalysisServices.Tabular.DataRefresh.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/azdoc-Microsoft.AnalysisServices.Tabular.DataRefresh.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/Microsoft.AnalysisServices.Tabular.Json.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/Microsoft.AnalysisServices.Tabular.Json.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/azdoc-Microsoft.AnalysisServices.Tabular.Json.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/Microsoft.AnalysisServices.Tabular.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/Microsoft.AnalysisServices.Tabular.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/azdoc-Microsoft.AnalysisServices.Tabular.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/Microsoft.AnalysisServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/Microsoft.AnalysisServices.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/analysis-services-dotnet-api/_splitted/azdoc-Microsoft.AnalysisServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/azdoc-sql-as.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/Microsoft.AnalysisServices.AdomdClient.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/Microsoft.AnalysisServices.AdomdClient.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/azdoc-Microsoft.AnalysisServices.AdomdClient.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/Microsoft.AnalysisServices.Core.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/Microsoft.AnalysisServices.Core.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/azdoc-Microsoft.AnalysisServices.Core.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/Microsoft.AnalysisServices.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/Microsoft.AnalysisServices.Hosting.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/azdoc-Microsoft.AnalysisServices.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/Microsoft.AnalysisServices.SPClient.Interfaces.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/Microsoft.AnalysisServices.SPClient.Interfaces.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/azdoc-Microsoft.AnalysisServices.SPClient.Interfaces.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/Microsoft.AnalysisServices.Tabular.DataRefresh.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/Microsoft.AnalysisServices.Tabular.DataRefresh.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/azdoc-Microsoft.AnalysisServices.Tabular.DataRefresh.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/Microsoft.AnalysisServices.Tabular.Json.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/Microsoft.AnalysisServices.Tabular.Json.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/azdoc-Microsoft.AnalysisServices.Tabular.Json.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/Microsoft.AnalysisServices.Tabular.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/Microsoft.AnalysisServices.Tabular.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/azdoc-Microsoft.AnalysisServices.Tabular.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/Microsoft.AnalysisServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/Microsoft.AnalysisServices.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/api/sql-as/_splitted/azdoc-Microsoft.AnalysisServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.analysis-services-dotnet-api/live/breadcrumb.pdf -OutFile pdf/all/MSDN.analysis-services-dotnet-api/live/azdoc-breadcrumb.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.aspnet-conceptual/aspnetmigration.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.aspnet-conceptual/aspnetmigration.pdf -OutFile pdf/all/MSDN.aspnet-conceptual/azdoc-aspnetmigration.pdf
 
@@ -5171,20 +5278,44 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Core/live/media.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Core/live/media.pdf -OutFile pdf/all/MSDN.d365Ops-Core/live/azdoc-media.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Core/master.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Core/master.pdf -OutFile pdf/all/MSDN.d365Ops-Core/azdoc-master.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Core/master/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Core/master/breadcrumb.pdf -OutFile pdf/all/MSDN.d365Ops-Core/master/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Core/master/media.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Core/master/media.pdf -OutFile pdf/all/MSDN.d365Ops-Core/master/azdoc-media.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-DevITPro/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-DevITPro/live.pdf -OutFile pdf/all/MSDN.d365Ops-DevITPro/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-DevITPro/master.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-DevITPro/master.pdf -OutFile pdf/all/MSDN.d365Ops-DevITPro/azdoc-master.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Financials/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Financials/live.pdf -OutFile pdf/all/MSDN.d365Ops-Financials/azdoc-live.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Financials/master.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Financials/master.pdf -OutFile pdf/all/MSDN.d365Ops-Financials/azdoc-master.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Retail/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Retail/live.pdf -OutFile pdf/all/MSDN.d365Ops-Retail/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Retail/master.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Retail/master.pdf -OutFile pdf/all/MSDN.d365Ops-Retail/azdoc-master.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-SCM/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-SCM/live.pdf -OutFile pdf/all/MSDN.d365Ops-SCM/azdoc-live.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-SCM/master.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-SCM/master.pdf -OutFile pdf/all/MSDN.d365Ops-SCM/azdoc-master.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Talent/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Talent/live.pdf -OutFile pdf/all/MSDN.d365Ops-Talent/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Talent/master.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365Ops-Talent/master.pdf -OutFile pdf/all/MSDN.d365Ops-Talent/azdoc-master.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365OpsCore/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.d365OpsCore/live.pdf -OutFile pdf/all/MSDN.d365OpsCore/azdoc-live.pdf
@@ -5597,6 +5728,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/power-bi-embedded.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/power-bi-embedded.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-power-bi-embedded.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/power-bi-workspace-collections.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/power-bi-workspace-collections.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-power-bi-workspace-collections.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/redis-cache.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/redis-cache.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-redis-cache.pdf
 
@@ -5683,6 +5817,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/virtual-machines/linux/classic.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/virtual-machines/linux/classic.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/virtual-machines/linux/azdoc-classic.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/virtual-machines/linux/sql.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/virtual-machines/linux/sql.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/virtual-machines/linux/azdoc-sql.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/virtual-machines/windows.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/virtual-machines/windows.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/virtual-machines/azdoc-windows.pdf
@@ -6163,6 +6300,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/virtual-machines/linux/classic.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/virtual-machines/linux/classic.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/virtual-machines/linux/azdoc-classic.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/virtual-machines/linux/sql.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/virtual-machines/linux/sql.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/virtual-machines/linux/azdoc-sql.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/virtual-machines/windows.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/virtual-machines/windows.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/virtual-machines/azdoc-windows.pdf
@@ -14744,6 +14884,522 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-content/master/xquery.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-content/master/xquery.pdf -OutFile pdf/all/SQL.sql-content/master/azdoc-xquery.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live.pdf -OutFile pdf/all/SQL.sql-dotnet-api/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/azdoc-dotnet-template.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/ADODB.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/ADODB.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-ADODB.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.DataWarehouse.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.DataWarehouse.Design.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.DataWarehouse.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.MasterDataServices.Services.DataContracts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.MasterDataServices.Services.DataContracts.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.MasterDataServices.Services.DataContracts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.MasterDataServices.Services.MessageContracts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.MasterDataServices.Services.MessageContracts.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.MasterDataServices.Services.MessageContracts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.MasterDataServices.Services.ServiceContracts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.MasterDataServices.Services.ServiceContracts.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.MasterDataServices.Services.ServiceContracts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.MasterDataServices.Services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.MasterDataServices.Services.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.MasterDataServices.Services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Design.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.ManagedConnections.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.ManagedConnections.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.ManagedConnections.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.ManagedMsg.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.ManagedMsg.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.ManagedMsg.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Pipeline.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Pipeline.Design.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Pipeline.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Pipeline.Localization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Pipeline.Localization.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Pipeline.Localization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2012.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2012.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2012.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2014.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2014.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2014.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2016.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2016.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2016.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Pipeline.Wrapper.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Pipeline.Wrapper.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Pipeline.Wrapper.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Pipeline.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Pipeline.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Pipeline.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Design.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.FromVar.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.FromVar.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Enumerators.FromVar.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.Item.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.Item.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Enumerators.Item.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.NodeList.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.NodeList.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Enumerators.NodeList.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Interop.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Interop.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Interop.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Localization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Localization.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Localization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.ReferenceId.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.ReferenceId.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.ReferenceId.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2012.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2012.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2012.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2014.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2014.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2014.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2016.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2016.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2016.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Wrapper.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.Wrapper.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Wrapper.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Runtime.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.DMQueryTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.DMQueryTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.DMQueryTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.DataProfilingTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.DataProfilingTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.DataProfilingTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.ExecutePackageTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.ExecutePackageTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.ExecutePackageTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.Connections.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.Connections.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.Connections.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.ExpressionTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.ExpressionTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.ExpressionTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.FileSystemTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.FileSystemTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.FileSystemTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.FtpTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.FtpTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.FtpTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.ScriptTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.ScriptTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.ScriptTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.SendMailTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.SendMailTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.SendMailTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.WebServiceTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.WebServiceTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.WebServiceTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.XMLTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.Tasks.XMLTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.XMLTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dts.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Management.IntegrationServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Management.IntegrationServices.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Management.IntegrationServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.VSTAHosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/Microsoft.SqlServer.VSTAHosting.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.VSTAHosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/ScriptMigration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/ScriptMigration.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/dotnet-template/_splitted/azdoc-ScriptMigration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-dotnet-api.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-dotnet-api.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/azdoc-sql-dotnet-api.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/azdoc-sql-s.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/ADODB.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/ADODB.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-ADODB.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.DataWarehouse.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.DataWarehouse.Design.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.DataWarehouse.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.MasterDataServices.Services.DataContracts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.MasterDataServices.Services.DataContracts.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.MasterDataServices.Services.DataContracts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.MasterDataServices.Services.MessageContracts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.MasterDataServices.Services.MessageContracts.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.MasterDataServices.Services.MessageContracts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.MasterDataServices.Services.ServiceContracts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.MasterDataServices.Services.ServiceContracts.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.MasterDataServices.Services.ServiceContracts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.MasterDataServices.Services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.MasterDataServices.Services.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.MasterDataServices.Services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Design.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.ManagedConnections.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.ManagedConnections.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.ManagedConnections.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.ManagedMsg.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.ManagedMsg.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.ManagedMsg.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Pipeline.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Pipeline.Design.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Pipeline.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Pipeline.Localization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Pipeline.Localization.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Pipeline.Localization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2012.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2012.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2012.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2014.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2014.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2014.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2016.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2016.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Pipeline.Wrapper.Sql2016.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Pipeline.Wrapper.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Pipeline.Wrapper.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Pipeline.Wrapper.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Pipeline.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Pipeline.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Pipeline.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Design.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.FromVar.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.FromVar.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Enumerators.FromVar.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.Item.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.Item.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Enumerators.Item.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.NodeList.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.NodeList.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Enumerators.NodeList.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Enumerators.SMO.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Interop.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Interop.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Interop.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Localization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Localization.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Localization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.ReferenceId.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.ReferenceId.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.ReferenceId.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2012.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2012.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2012.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2014.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2014.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2014.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2016.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2016.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Wrapper.Sql2016.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Wrapper.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.Wrapper.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.Wrapper.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Runtime.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Runtime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.DMQueryTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.DMQueryTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.DMQueryTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.DataProfilingTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.DataProfilingTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.DataProfilingTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.ExecutePackageTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.ExecutePackageTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.ExecutePackageTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.Connections.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.Connections.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.Connections.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.ExpressionTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.ExpressionTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.ExpressionTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.FileSystemTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.FileSystemTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.FileSystemTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.FtpTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.FtpTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.FtpTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.ScriptTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.ScriptTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.ScriptTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.SendMailTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.SendMailTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.SendMailTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.TransferStoredProceduresTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.WebServiceTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.WebServiceTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.WebServiceTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.WmiDataReaderTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.XMLTask.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.Tasks.XMLTask.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.Tasks.XMLTask.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Dts.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Dts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Management.IntegrationServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.Management.IntegrationServices.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.Management.IntegrationServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.VSTAHosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/Microsoft.SqlServer.VSTAHosting.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-Microsoft.SqlServer.VSTAHosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/ScriptMigration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-dotnet-api/live/api/sql-s/_splitted/ScriptMigration.pdf -OutFile pdf/all/SQL.sql-dotnet-api/live/api/sql-s/_splitted/azdoc-ScriptMigration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/azdoc-dotnet-template.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/CatLibrary.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/CatLibrary.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-CatLibrary.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/MRef.Demo.Enumeration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/MRef.Demo.Enumeration.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-MRef.Demo.Enumeration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Data.Tools.Diagnostics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Data.Tools.Diagnostics.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.Data.Tools.Diagnostics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Data.Tools.Schema.Extensibility.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Data.Tools.Schema.Extensibility.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.Data.Tools.Schema.Extensibility.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Data.Tools.Schema.Sql.Compare.Schema.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Data.Tools.Schema.Sql.Compare.Schema.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.Data.Tools.Schema.Sql.Compare.Schema.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Data.Tools.Schema.Sql.Dac.Data.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Data.Tools.Schema.Sql.Dac.Data.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.Data.Tools.Schema.Sql.Dac.Data.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Data.Tools.Schema.Sql.SchemaModel.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Data.Tools.Schema.Sql.SchemaModel.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.Data.Tools.Schema.Sql.SchemaModel.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Data.Tools.Schema.Utilities.Sql.SchemaCompare.DataModel.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Data.Tools.Schema.Utilities.Sql.SchemaCompare.DataModel.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.Data.Tools.Schema.Utilities.Sql.SchemaCompare.DataModel.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Isam.Esent.Interop.Server2003.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Isam.Esent.Interop.Server2003.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.Isam.Esent.Interop.Server2003.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Isam.Esent.Interop.Vista.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Isam.Esent.Interop.Vista.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.Isam.Esent.Interop.Vista.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Isam.Esent.Interop.Windows7.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Isam.Esent.Interop.Windows7.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.Isam.Esent.Interop.Windows7.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Isam.Esent.Interop.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.Isam.Esent.Interop.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.Isam.Esent.Interop.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dac.CodeAnalysis.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dac.CodeAnalysis.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dac.CodeAnalysis.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dac.Compare.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dac.Compare.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dac.Compare.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dac.Deployment.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dac.Deployment.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dac.Deployment.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dac.Extensibility.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dac.Extensibility.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dac.Extensibility.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dac.Extensions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dac.Extensions.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dac.Extensions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dac.KeyVault.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dac.KeyVault.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dac.KeyVault.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dac.Model.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dac.Model.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dac.Model.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dac.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Dac.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Dac.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.TransactSql.ScriptDom.Versioning.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.TransactSql.ScriptDom.Versioning.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.TransactSql.ScriptDom.Versioning.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.TransactSql.ScriptDom.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.TransactSql.ScriptDom.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.TransactSql.ScriptDom.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Types.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/Microsoft.SqlServer.Types.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-Microsoft.SqlServer.Types.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/System.Reflection.Adds.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/System.Reflection.Adds.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/dotnet-template/_splitted/azdoc-System.Reflection.Adds.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/azdoc-sql-t.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/CatLibrary.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/CatLibrary.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-CatLibrary.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/MRef.Demo.Enumeration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/MRef.Demo.Enumeration.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-MRef.Demo.Enumeration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Data.Tools.Diagnostics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Data.Tools.Diagnostics.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.Data.Tools.Diagnostics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Data.Tools.Schema.Extensibility.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Data.Tools.Schema.Extensibility.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.Data.Tools.Schema.Extensibility.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Data.Tools.Schema.Sql.Compare.Schema.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Data.Tools.Schema.Sql.Compare.Schema.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.Data.Tools.Schema.Sql.Compare.Schema.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Data.Tools.Schema.Sql.Dac.Data.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Data.Tools.Schema.Sql.Dac.Data.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.Data.Tools.Schema.Sql.Dac.Data.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Data.Tools.Schema.Sql.SchemaModel.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Data.Tools.Schema.Sql.SchemaModel.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.Data.Tools.Schema.Sql.SchemaModel.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Data.Tools.Schema.Utilities.Sql.SchemaCompare.DataModel.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Data.Tools.Schema.Utilities.Sql.SchemaCompare.DataModel.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.Data.Tools.Schema.Utilities.Sql.SchemaCompare.DataModel.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Isam.Esent.Interop.Server2003.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Isam.Esent.Interop.Server2003.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.Isam.Esent.Interop.Server2003.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Isam.Esent.Interop.Vista.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Isam.Esent.Interop.Vista.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.Isam.Esent.Interop.Vista.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Isam.Esent.Interop.Windows7.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Isam.Esent.Interop.Windows7.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.Isam.Esent.Interop.Windows7.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Isam.Esent.Interop.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.Isam.Esent.Interop.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.Isam.Esent.Interop.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Dac.CodeAnalysis.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Dac.CodeAnalysis.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.SqlServer.Dac.CodeAnalysis.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Dac.Compare.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Dac.Compare.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.SqlServer.Dac.Compare.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Dac.Deployment.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Dac.Deployment.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.SqlServer.Dac.Deployment.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Dac.Extensibility.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Dac.Extensibility.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.SqlServer.Dac.Extensibility.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Dac.Extensions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Dac.Extensions.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.SqlServer.Dac.Extensions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Dac.KeyVault.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Dac.KeyVault.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.SqlServer.Dac.KeyVault.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Dac.Model.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Dac.Model.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.SqlServer.Dac.Model.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Dac.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Dac.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.SqlServer.Dac.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.TransactSql.ScriptDom.Versioning.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.TransactSql.ScriptDom.Versioning.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.SqlServer.TransactSql.ScriptDom.Versioning.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.TransactSql.ScriptDom.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.TransactSql.ScriptDom.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.SqlServer.TransactSql.ScriptDom.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Types.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/Microsoft.SqlServer.Types.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-Microsoft.SqlServer.Types.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/System.Reflection.Adds.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/System.Reflection.Adds.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/api/sql-t/_splitted/azdoc-System.Reflection.Adds.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/SQL.sql-tools-dotnet/live/breadcrumb.pdf -OutFile pdf/all/SQL.sql-tools-dotnet/live/azdoc-breadcrumb.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Security.enterprise-threat-detection/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Security.enterprise-threat-detection/live.pdf -OutFile pdf/all/Security.enterprise-threat-detection/azdoc-live.pdf
 
@@ -20435,6 +21091,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Win
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Win.wdkdocs/duncan_mos_rs3_pdf/gpio.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Win.wdkdocs/duncan_mos_rs3_pdf/gpio.pdf -OutFile pdf/all/Win.wdkdocs/duncan_mos_rs3_pdf/azdoc-gpio.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Win.wdkdocs/duncan_mos_rs3_pdf/gpiobtn.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Win.wdkdocs/duncan_mos_rs3_pdf/gpiobtn.pdf -OutFile pdf/all/Win.wdkdocs/duncan_mos_rs3_pdf/azdoc-gpiobtn.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Win.wdkdocs/duncan_mos_rs3_pdf/hid.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Win.wdkdocs/duncan_mos_rs3_pdf/hid.pdf -OutFile pdf/all/Win.wdkdocs/duncan_mos_rs3_pdf/azdoc-hid.pdf
 
@@ -20839,6 +21498,15 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/gui
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/guides/azure-ops-guide.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/guides/azure-ops-guide.pdf -OutFile pdf/all/guides/azdoc-azure-ops-guide.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/office.OfficeDocs-MicrosoftTeams/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/office.OfficeDocs-MicrosoftTeams/live.pdf -OutFile pdf/all/office.OfficeDocs-MicrosoftTeams/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/office.OfficeDocs-MicrosoftTeams/live/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/office.OfficeDocs-MicrosoftTeams/live/breadcrumb.pdf -OutFile pdf/all/office.OfficeDocs-MicrosoftTeams/live/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/office.OfficeDocs-SkypeForBusiness/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/office.OfficeDocs-SkypeForBusiness/live.pdf -OutFile pdf/all/office.OfficeDocs-SkypeForBusiness/azdoc-live.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/ope2etest.optest_testdocs/master.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/ope2etest.optest_testdocs/master.pdf -OutFile pdf/all/ope2etest.optest_testdocs/azdoc-master.pdf
