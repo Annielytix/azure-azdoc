@@ -1,6 +1,6 @@
 # Chris Joakim, Microsoft
-# Generated on Thu 2017-10-05
-# 163 pdf files match path: /output-pdf-files/en-us/Azure.azure-documents/live/
+# Generated on Fri 2017-10-13
+# 164 pdf files match path: /output-pdf-files/en-us/Azure.azure-documents/live/
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/active-directory-b2c.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/active-directory-b2c.pdf -OutFile pdf/azure/azdoc-active-directory-b2c.pdf
@@ -91,6 +91,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/backup.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/backup.pdf -OutFile pdf/azure/azdoc-backup.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/batch-ai.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/batch-ai.pdf -OutFile pdf/azure/azdoc-batch-ai.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/batch.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/batch.pdf -OutFile pdf/azure/azdoc-batch.pdf

@@ -47,6 +47,7 @@ azure-portal.pdf
 azure-resource-manager.pdf
 azure-stack.pdf
 backup.pdf
+batch-ai.pdf
 batch.pdf
 billing.pdf
 biztalk-services.pdf
