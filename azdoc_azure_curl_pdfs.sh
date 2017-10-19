@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Chris Joakim, Microsoft
-# Generated on Fri 2017-10-13
-# 164 pdf files match path: /output-pdf-files/en-us/Azure.azure-documents/live/
+# Generated on Thu 2017-10-19
+# 165 pdf files match path: /output-pdf-files/en-us/Azure.azure-documents/live/
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/active-directory-b2c.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/active-directory-b2c.pdf > pdf/azure/azdoc-active-directory-b2c.pdf
@@ -234,6 +234,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/container-service/kubernetes.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/container-service/kubernetes.pdf > pdf/azure/azdoc-kubernetes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/containers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/containers.pdf > pdf/azure/azdoc-containers.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/cosmos-db.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/cosmos-db.pdf > pdf/azure/azdoc-cosmos-db.pdf

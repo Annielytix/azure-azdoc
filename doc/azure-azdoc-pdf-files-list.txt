@@ -69,6 +69,7 @@ container-instances.pdf
 container-registry.pdf
 container-service.pdf
 containers.pdf
+containers.pdf
 cosmos-db.pdf
 cost-management.pdf
 custom-decision-service.pdf

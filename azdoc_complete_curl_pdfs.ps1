@@ -1,6 +1,6 @@
 # Chris Joakim, Microsoft
-# Generated on Fri 2017-10-13
-# 6911 pdf files match path: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/
+# Generated on Thu 2017-10-19
+# 8260 pdf files match path: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/
 
 # Create output directory structure.
 New-Item pdf/all/AX.d365F-O/live/ -type directory -force
@@ -130,6 +130,7 @@ New-Item pdf/all/Azure.openpublishing-test-azure/TestPDF_Setting_None/virtual-ma
 New-Item pdf/all/Azure.openpublishing-test-azure/TestPDF_Setting_None/virtual-machines/windows/ -type directory -force
 New-Item pdf/all/BTS.biztalk/ -type directory -force
 New-Item pdf/all/BTS.biztalk/live/ -type directory -force
+New-Item pdf/all/Bing.BingAds/master/ -type directory -force
 New-Item pdf/all/MSDN.CTAS/ -type directory -force
 New-Item pdf/all/MSDN.E2E_RepoConfig_Dynamic_Prod/ -type directory -force
 New-Item pdf/all/MSDN.E2E_RepoConfig_Dynamic_Prod/branchMapping/ -type directory -force
@@ -356,6 +357,7 @@ New-Item pdf/all/MSDN.fenxu_msdn_prod/ -type directory -force
 New-Item pdf/all/MSDN.fenxu_newportal_20170106_prod/ -type directory -force
 New-Item pdf/all/MSDN.fenxu_vs_modern_prod/ -type directory -force
 New-Item pdf/all/MSDN.flow/ -type directory -force
+New-Item pdf/all/MSDN.flow/live/ -type directory -force
 New-Item pdf/all/MSDN.flow/master/ -type directory -force
 New-Item pdf/all/MSDN.gdpr/ -type directory -force
 New-Item pdf/all/MSDN.hellowordsaldana/ -type directory -force
@@ -370,6 +372,8 @@ New-Item pdf/all/MSDN.itpro-hololens-VSTS/ -type directory -force
 New-Item pdf/all/MSDN.itpro-hololens-VSTS/live/ -type directory -force
 New-Item pdf/all/MSDN.itpro-hololens-VSTS/master/ -type directory -force
 New-Item pdf/all/MSDN.itpro-hololens-VSTS/msesdemo/ -type directory -force
+New-Item pdf/all/MSDN.mac/ -type directory -force
+New-Item pdf/all/MSDN.mac/live/ -type directory -force
 New-Item pdf/all/MSDN.mdop-VSTS/ -type directory -force
 New-Item pdf/all/MSDN.mdop-VSTS/live/ -type directory -force
 New-Item pdf/all/MSDN.mdop-VSTS/master/ -type directory -force
@@ -400,6 +404,9 @@ New-Item pdf/all/MSDN.oem-test/live/ -type directory -force
 New-Item pdf/all/MSDN.openrating-service/ -type directory -force
 New-Item pdf/all/MSDN.project-rome/ -type directory -force
 New-Item pdf/all/MSDN.saldanatest12345/ -type directory -force
+New-Item pdf/all/MSDN.scripting-docs/ -type directory -force
+New-Item pdf/all/MSDN.scripting-docs/live/ -type directory -force
+New-Item pdf/all/MSDN.scripting-docs/live/javascript/ -type directory -force
 New-Item pdf/all/MSDN.servicedelivery/ -type directory -force
 New-Item pdf/all/MSDN.sharepoint-test/ -type directory -force
 New-Item pdf/all/MSDN.site_reliability_eng/ -type directory -force
@@ -419,6 +426,8 @@ New-Item pdf/all/MSDN.store-for-business/ -type directory -force
 New-Item pdf/all/MSDN.store-for-business/live/ -type directory -force
 New-Item pdf/all/MSDN.store-for-business/master/ -type directory -force
 New-Item pdf/all/MSDN.store-for-business/msesdemo/ -type directory -force
+New-Item pdf/all/MSDN.subscriptions/ -type directory -force
+New-Item pdf/all/MSDN.subscriptions/live/ -type directory -force
 New-Item pdf/all/MSDN.surface-VSTS/ -type directory -force
 New-Item pdf/all/MSDN.surface-VSTS/live/ -type directory -force
 New-Item pdf/all/MSDN.surface-VSTS/master/ -type directory -force
@@ -508,6 +517,7 @@ New-Item pdf/all/MSDN.teamblog/master/ -type directory -force
 New-Item pdf/all/MSDN.test8151/ -type directory -force
 New-Item pdf/all/MSDN.vba-offline/ -type directory -force
 New-Item pdf/all/MSDN.vba-offline/live/Office-Shared-VBA/ -type directory -force
+New-Item pdf/all/MSDN.vsdata/ -type directory -force
 New-Item pdf/all/MSDN.wdkdocs-test/ -type directory -force
 New-Item pdf/all/MSDN.wdkdocs-test/master/ -type directory -force
 New-Item pdf/all/MSDN.win-access-protection-VSTS/ -type directory -force
@@ -682,6 +692,59 @@ New-Item pdf/all/TechNet.windows-server/live/administration/ -type directory -fo
 New-Item pdf/all/TechNet.windows-server/master/ -type directory -force
 New-Item pdf/all/TechNet.windows-server/master/administration/ -type directory -force
 New-Item pdf/all/TechNet.windows-server/master/management/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/csharp/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/csharp/language-reference/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/framework/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/framework/configure-apps/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/framework/data/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/framework/data/adonet/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/framework/data/adonet/ef/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/framework/data/adonet/sql/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/framework/wcf/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/framework/windows-workflow-foundation/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/framework/winforms/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/framework/wpf/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/standard/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/standard/collections/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/standard/data/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/developing-apps/programming/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/reference/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/csharp/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/csharp/language-reference/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/framework/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/framework/configure-apps/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/framework/data/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/framework/data/adonet/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/framework/data/adonet/ef/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/framework/data/adonet/sql/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/framework/wcf/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/framework/windows-workflow-foundation/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/framework/winforms/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/framework/wpf/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/standard/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/standard/collections/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/standard/data/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/developing-apps/programming/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/ -type directory -force
+New-Item pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/reference/ -type directory -force
 New-Item pdf/all/VS.core-docs/ -type directory -force
 New-Item pdf/all/VS.core-docs/live/ -type directory -force
 New-Item pdf/all/VS.core-docs/live/api/_splitted/ -type directory -force
@@ -789,10 +852,19 @@ New-Item pdf/all/VS.core-docs/master/visual-basic/programming-guide/ -type direc
 New-Item pdf/all/VS.core-docs/master/visual-basic/programming-guide/concepts/ -type directory -force
 New-Item pdf/all/VS.core-docs/master/visual-basic/programming-guide/language-features/ -type directory -force
 New-Item pdf/all/VS.core-docs/master/visual-basic/reference/ -type directory -force
+New-Item pdf/all/VS.docs/ -type directory -force
+New-Item pdf/all/VS.docs/live/ -type directory -force
+New-Item pdf/all/VS.docs/live/debugger/ -type directory -force
+New-Item pdf/all/VS.docs/live/extensibility/debugger/ -type directory -force
+New-Item pdf/all/VS.docs/live/ide/ -type directory -force
 New-Item pdf/all/VS.openpublishing-test-op-technet/ -type directory -force
 New-Item pdf/all/VS.openpublishing-test-op-technet/MergeAzureContent/ -type directory -force
 New-Item pdf/all/VS.openpublishing-test-op/ -type directory -force
 New-Item pdf/all/VS.openpublishing-test-op/MergeAzureContent/ -type directory -force
+New-Item pdf/all/VS.reference-core-docs-prod/live/ -type directory -force
+New-Item pdf/all/VS.reference-core-docs-prod/live/api/_splitted/ -type directory -force
+New-Item pdf/all/VS.reference-core-docs-prod/master/ -type directory -force
+New-Item pdf/all/VS.reference-core-docs-prod/master/api/_splitted/ -type directory -force
 New-Item pdf/all/VS.release-notes/ -type directory -force
 New-Item pdf/all/VS.vcppdocs/ -type directory -force
 New-Item pdf/all/VS.vcppdocs/live/ -type directory -force
@@ -856,6 +928,9 @@ New-Item pdf/all/office.OfficeDocs-MicrosoftTeams/ -type directory -force
 New-Item pdf/all/office.OfficeDocs-MicrosoftTeams/live/ -type directory -force
 New-Item pdf/all/office.OfficeDocs-MicrosoftTeams/master/ -type directory -force
 New-Item pdf/all/office.OfficeDocs-SkypeForBusiness/ -type directory -force
+New-Item pdf/all/office.OfficeEDU-SchoolDataSync/ -type directory -force
+New-Item pdf/all/office.OfficeEDU-SchoolDataSync/live/ -type directory -force
+New-Item pdf/all/office.OfficeEDU-SchoolDataSync/master/ -type directory -force
 New-Item pdf/all/ope2etest.optest_testdocs/ -type directory -force
 New-Item pdf/all/ope2etest.optestdocs/ -type directory -force
 New-Item pdf/all/test.fenxu_docs_20161118/ -type directory -force
@@ -1633,6 +1708,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/container-service/kubernetes.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/container-service/kubernetes.pdf -OutFile pdf/all/Azure.azure-documents/live/container-service/azdoc-kubernetes.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/containers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/containers.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-containers.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/cosmos-db.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/live/cosmos-db.pdf -OutFile pdf/all/Azure.azure-documents/live/azdoc-cosmos-db.pdf
 
@@ -2128,6 +2206,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/container-service/kubernetes.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/container-service/kubernetes.pdf -OutFile pdf/all/Azure.azure-documents/master/container-service/azdoc-kubernetes.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/containers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/containers.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-containers.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/cosmos-db.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/master/cosmos-db.pdf -OutFile pdf/all/Azure.azure-documents/master/azdoc-cosmos-db.pdf
 
@@ -2613,6 +2694,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azu
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/container-service/kubernetes.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/container-service/kubernetes.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/container-service/azdoc-kubernetes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/containers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/containers.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/azdoc-containers.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/cosmos-db.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Azure.azure-documents/release-event-grid/cosmos-db.pdf -OutFile pdf/all/Azure.azure-documents/release-event-grid/azdoc-cosmos-db.pdf
@@ -4669,6 +4753,18 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/BTS
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/BTS.biztalk/live/breadcrumb.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/BTS.biztalk/live/breadcrumb.pdf -OutFile pdf/all/BTS.biztalk/live/azdoc-breadcrumb.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Bing.BingAds/master/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Bing.BingAds/master/breadcrumb.pdf -OutFile pdf/all/Bing.BingAds/master/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Bing.BingAds/master/guides.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Bing.BingAds/master/guides.pdf -OutFile pdf/all/Bing.BingAds/master/azdoc-guides.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Bing.BingAds/master/hotel-ads.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Bing.BingAds/master/hotel-ads.pdf -OutFile pdf/all/Bing.BingAds/master/azdoc-hotel-ads.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Bing.BingAds/master/shopping-content.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Bing.BingAds/master/shopping-content.pdf -OutFile pdf/all/Bing.BingAds/master/azdoc-shopping-content.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.CTAS/master.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.CTAS/master.pdf -OutFile pdf/all/MSDN.CTAS/azdoc-master.pdf
 
@@ -5617,6 +5713,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/container-service/kubernetes.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/container-service/kubernetes.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/container-service/azdoc-kubernetes.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/containers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/containers.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-containers.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/cosmos-db.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/live/cosmos-db.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/live/azdoc-cosmos-db.pdf
 
@@ -6102,6 +6201,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/container-service/kubernetes.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/container-service/kubernetes.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/container-service/azdoc-kubernetes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/containers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/containers.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-containers.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/cosmos-db.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.e2eprod-azure-documents/master/cosmos-db.pdf -OutFile pdf/all/MSDN.e2eprod-azure-documents/master/azdoc-cosmos-db.pdf
@@ -11404,6 +11506,15 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.fenxu_vs_modern_prod/master.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.fenxu_vs_modern_prod/master.pdf -OutFile pdf/all/MSDN.fenxu_vs_modern_prod/azdoc-master.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.flow/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.flow/live.pdf -OutFile pdf/all/MSDN.flow/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.flow/live/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.flow/live/breadcrumb.pdf -OutFile pdf/all/MSDN.flow/live/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.flow/live/guided-learning.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.flow/live/guided-learning.pdf -OutFile pdf/all/MSDN.flow/live/azdoc-guided-learning.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.flow/master.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.flow/master.pdf -OutFile pdf/all/MSDN.flow/azdoc-master.pdf
 
@@ -11472,6 +11583,12 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.itpro-hololens-VSTS/msesdemo/breadcrumb.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.itpro-hololens-VSTS/msesdemo/breadcrumb.pdf -OutFile pdf/all/MSDN.itpro-hololens-VSTS/msesdemo/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.mac/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.mac/live.pdf -OutFile pdf/all/MSDN.mac/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.mac/live/_breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.mac/live/_breadcrumb.pdf -OutFile pdf/all/MSDN.mac/live/azdoc-_breadcrumb.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.mdop-VSTS/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.mdop-VSTS/live.pdf -OutFile pdf/all/MSDN.mdop-VSTS/azdoc-live.pdf
@@ -11677,6 +11794,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.oem-design/live/compatibility/1703.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.oem-design/live/compatibility/1703.pdf -OutFile pdf/all/MSDN.oem-design/live/compatibility/azdoc-1703.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.oem-design/live/compatibility/1709.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.oem-design/live/compatibility/1709.pdf -OutFile pdf/all/MSDN.oem-design/live/compatibility/azdoc-1709.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.oem-get-started/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.oem-get-started/live.pdf -OutFile pdf/all/MSDN.oem-get-started/azdoc-live.pdf
 
@@ -11712,6 +11832,27 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.saldanatest12345/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.saldanatest12345/live.pdf -OutFile pdf/all/MSDN.saldanatest12345/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.scripting-docs/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.scripting-docs/live.pdf -OutFile pdf/all/MSDN.scripting-docs/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.scripting-docs/live/_breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.scripting-docs/live/_breadcrumb.pdf -OutFile pdf/all/MSDN.scripting-docs/live/azdoc-_breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.scripting-docs/live/chakra-hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.scripting-docs/live/chakra-hosting.pdf -OutFile pdf/all/MSDN.scripting-docs/live/azdoc-chakra-hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.scripting-docs/live/javascript.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.scripting-docs/live/javascript.pdf -OutFile pdf/all/MSDN.scripting-docs/live/azdoc-javascript.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.scripting-docs/live/javascript/misc.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.scripting-docs/live/javascript/misc.pdf -OutFile pdf/all/MSDN.scripting-docs/live/javascript/azdoc-misc.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.scripting-docs/live/jswinrt.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.scripting-docs/live/jswinrt.pdf -OutFile pdf/all/MSDN.scripting-docs/live/azdoc-jswinrt.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.scripting-docs/live/winscript.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.scripting-docs/live/winscript.pdf -OutFile pdf/all/MSDN.scripting-docs/live/azdoc-winscript.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.servicedelivery/master.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.servicedelivery/master.pdf -OutFile pdf/all/MSDN.servicedelivery/azdoc-master.pdf
@@ -11814,6 +11955,12 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.store-for-business/msesdemo/education.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.store-for-business/msesdemo/education.pdf -OutFile pdf/all/MSDN.store-for-business/msesdemo/azdoc-education.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.subscriptions/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.subscriptions/live.pdf -OutFile pdf/all/MSDN.subscriptions/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.subscriptions/live/_breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.subscriptions/live/_breadcrumb.pdf -OutFile pdf/all/MSDN.subscriptions/live/azdoc-_breadcrumb.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.surface-VSTS/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.surface-VSTS/live.pdf -OutFile pdf/all/MSDN.surface-VSTS/azdoc-live.pdf
@@ -12309,6 +12456,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSD
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.vba-offline/live/Office-Shared-VBA/articles.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.vba-offline/live/Office-Shared-VBA/articles.pdf -OutFile pdf/all/MSDN.vba-offline/live/Office-Shared-VBA/azdoc-articles.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.vsdata/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.vsdata/live.pdf -OutFile pdf/all/MSDN.vsdata/azdoc-live.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.wdkdocs-test/master.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.wdkdocs-test/master.pdf -OutFile pdf/all/MSDN.wdkdocs-test/azdoc-master.pdf
@@ -15541,6 +15691,1056 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/Tec
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/TechNet.windows-server/master/virtualization.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/TechNet.windows-server/master/virtualization.pdf -OutFile pdf/all/TechNet.windows-server/master/azdoc-virtualization.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/getting-started.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/getting-started.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/azdoc-getting-started.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/language-reference.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/language-reference.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/azdoc-language-reference.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/language-reference/compiler-messages.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/language-reference/compiler-messages.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/language-reference/azdoc-compiler-messages.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/language-reference/compiler-options.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/language-reference/compiler-options.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/language-reference/azdoc-compiler-options.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/language-reference/keywords.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/language-reference/keywords.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/language-reference/azdoc-keywords.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/language-reference/language-specification.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/language-reference/language-specification.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/language-reference/azdoc-language-specification.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/language-reference/operators.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/language-reference/operators.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/language-reference/azdoc-operators.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/language-reference/preprocessor-directives.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/language-reference/preprocessor-directives.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/language-reference/azdoc-preprocessor-directives.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/language-reference/tokens.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/language-reference/tokens.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/language-reference/azdoc-tokens.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/linq.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/linq.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/azdoc-linq.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/azdoc-programming-guide.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/arrays.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/arrays.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-arrays.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/classes-and-structs.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/classes-and-structs.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-classes-and-structs.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-concepts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/assemblies-gac.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/assemblies-gac.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/azdoc-assemblies-gac.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/async.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/async.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/azdoc-async.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/attributes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/attributes.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/azdoc-attributes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/covariance-contravariance.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/covariance-contravariance.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/azdoc-covariance-contravariance.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/expression-trees.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/expression-trees.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/azdoc-expression-trees.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/linq.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/linq.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/azdoc-linq.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/serialization.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/azdoc-serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/threading.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/threading.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/concepts/azdoc-threading.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/delegates.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/delegates.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-delegates.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/events.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/events.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-events.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/exceptions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/exceptions.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-exceptions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/file-system.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/file-system.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-file-system.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/generics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/generics.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-generics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/indexers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/indexers.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-indexers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/inside-a-program.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/inside-a-program.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-inside-a-program.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/interfaces.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/interfaces.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-interfaces.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/interop.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/interop.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-interop.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/main-and-command-args.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/main-and-command-args.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-main-and-command-args.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/namespaces.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/namespaces.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-namespaces.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/nullable-types.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/nullable-types.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-nullable-types.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/statements-expressions-operators.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/statements-expressions-operators.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-statements-expressions-operators.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/strings.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/strings.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-strings.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/types.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/types.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-types.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/unsafe-code-pointers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/unsafe-code-pointers.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-unsafe-code-pointers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/xmldoc.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/programming-guide/xmldoc.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/programming-guide/azdoc-xmldoc.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/quick-starts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/quick-starts.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/azdoc-quick-starts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/tour-of-csharp.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/tour-of-csharp.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/azdoc-tour-of-csharp.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/tutorials.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/csharp/tutorials.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/csharp/azdoc-tutorials.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/docs.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/docs.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/azdoc-docs.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/add-ins.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/add-ins.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-add-ins.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/additional-apis.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/additional-apis.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-additional-apis.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/app-domains.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/app-domains.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-app-domains.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/common-client-technologies.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/common-client-technologies.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-common-client-technologies.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-configure-apps.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/configure-apps/azdoc-file-schema.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/appsettings.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/appsettings.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/azdoc-appsettings.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/compiler.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/compiler.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/azdoc-compiler.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/cryptography.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/cryptography.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/azdoc-cryptography.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/network.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/network.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/azdoc-network.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/runtime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/runtime.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/azdoc-runtime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/startup.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/startup.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/azdoc-startup.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/trace-debug.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/trace-debug.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/azdoc-trace-debug.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/wcf-directive.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/wcf-directive.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/azdoc-wcf-directive.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/wcf.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/wcf.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/azdoc-wcf.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/web.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/web.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/azdoc-web.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/windows-identity-foundation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/windows-identity-foundation.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/azdoc-windows-identity-foundation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/windows-workflow-foundation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/windows-workflow-foundation.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/azdoc-windows-workflow-foundation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/winforms.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/winforms.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/configure-apps/file-schema/azdoc-winforms.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-data.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data/adonet.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data/adonet.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/data/azdoc-adonet.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data/adonet/dataset-datatable-dataview.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data/adonet/dataset-datatable-dataview.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/data/adonet/azdoc-dataset-datatable-dataview.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data/adonet/ef.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data/adonet/ef.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/data/adonet/azdoc-ef.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data/adonet/ef/language-reference.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data/adonet/ef/language-reference.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/data/adonet/ef/azdoc-language-reference.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data/adonet/sql.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data/adonet/sql.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/data/adonet/azdoc-sql.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data/adonet/sql/linq.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data/adonet/sql/linq.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/data/adonet/sql/azdoc-linq.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data/transactions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data/transactions.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/data/azdoc-transactions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data/wcf.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/data/wcf.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/data/azdoc-wcf.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/debug-trace-profile.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/debug-trace-profile.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-debug-trace-profile.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/deployment.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/deployment.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-deployment.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/get-started.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/get-started.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-get-started.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/install.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/install.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-install.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/interop.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/interop.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-interop.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/mef.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/mef.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-mef.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/migration-guide.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/migration-guide.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-migration-guide.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/net-native.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/net-native.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-net-native.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/network-programming.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/network-programming.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-network-programming.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/performance.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/performance.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-performance.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/reflection-and-codedom.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/reflection-and-codedom.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-reflection-and-codedom.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/resources.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/resources.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-resources.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/security.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/security.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-security.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/tools.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/tools.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-tools.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/ui-automation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/ui-automation.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-ui-automation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-unmanaged-api.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/alink.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/alink.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/azdoc-alink.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/authenticode.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/authenticode.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/azdoc-authenticode.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/debugging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/debugging.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/azdoc-debugging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/diagnostics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/diagnostics.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/azdoc-diagnostics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/fusion.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/fusion.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/azdoc-fusion.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/hosting.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/azdoc-hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/metadata.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/metadata.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/azdoc-metadata.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/profiling.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/profiling.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/azdoc-profiling.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/strong-naming.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/strong-naming.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/azdoc-strong-naming.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/tlbexp.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/tlbexp.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/unmanaged-api/azdoc-tlbexp.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-wcf.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/wcf/azdoc-diagnostics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/etw.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/etw.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/azdoc-etw.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/event-logging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/event-logging.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/azdoc-event-logging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/exceptions-reference.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/exceptions-reference.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/azdoc-exceptions-reference.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/performance-counters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/performance-counters.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/azdoc-performance-counters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/tracing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/tracing.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/azdoc-tracing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/wmi.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/wmi.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/wcf/diagnostics/azdoc-wmi.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/extending.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/extending.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/wcf/azdoc-extending.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/feature-details.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/feature-details.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/wcf/azdoc-feature-details.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/samples.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wcf/samples.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/wcf/azdoc-samples.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/whats-new.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/whats-new.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-whats-new.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/windows-services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/windows-services.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-windows-services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/windows-workflow-foundation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/windows-workflow-foundation.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-windows-workflow-foundation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/windows-workflow-foundation/samples.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/windows-workflow-foundation/samples.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/windows-workflow-foundation/azdoc-samples.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/winforms.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/winforms.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-winforms.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/winforms/advanced.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/winforms/advanced.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/winforms/azdoc-advanced.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/winforms/controls.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/winforms/controls.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/winforms/azdoc-controls.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wpf.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wpf.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-wpf.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wpf/advanced.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wpf/advanced.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/wpf/azdoc-advanced.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wpf/app-development.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wpf/app-development.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/wpf/azdoc-app-development.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wpf/controls.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wpf/controls.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/wpf/azdoc-controls.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wpf/data.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wpf/data.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/wpf/azdoc-data.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wpf/getting-started.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wpf/getting-started.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/wpf/azdoc-getting-started.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wpf/graphics-multimedia.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/wpf/graphics-multimedia.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/wpf/azdoc-graphics-multimedia.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/xaml-services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/framework/xaml-services.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/framework/azdoc-xaml-services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/architecture-containerized-lifecycle.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/architecture-containerized-lifecycle.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-architecture-containerized-lifecycle.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/asynchronous-programming-patterns.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/asynchronous-programming-patterns.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-asynchronous-programming-patterns.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/attributes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/attributes.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-attributes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/base-types.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/base-types.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-base-types.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/collections.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/collections.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-collections.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/collections/thread-safe.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/collections/thread-safe.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/collections/azdoc-thread-safe.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/cross-platform.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/cross-platform.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-cross-platform.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/data/xml.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/data/xml.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/data/azdoc-xml.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/datetime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/datetime.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-datetime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/design-guidelines.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/design-guidelines.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-design-guidelines.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/events.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/events.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-events.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/exceptions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/exceptions.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-exceptions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/garbage-collection.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/garbage-collection.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-garbage-collection.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/generics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/generics.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-generics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/globalization-localization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/globalization-localization.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-globalization-localization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/io.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/io.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-io.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/microservices-architecture.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/microservices-architecture.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-microservices-architecture.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/parallel-programming.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/parallel-programming.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-parallel-programming.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/security.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/security.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-security.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/serialization.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/threading.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/standard/threading.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/standard/azdoc-threading.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/developing-apps/programming/app-settings.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/developing-apps/programming/app-settings.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/developing-apps/programming/azdoc-app-settings.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/developing-apps/programming/computer-resources.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/developing-apps/programming/computer-resources.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/developing-apps/programming/azdoc-computer-resources.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/developing-apps/programming/drives-directories-files.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/developing-apps/programming/drives-directories-files.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/developing-apps/programming/azdoc-drives-directories-files.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/developing-apps/programming/log-info.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/developing-apps/programming/log-info.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/developing-apps/programming/azdoc-log-info.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/assemblies-gac.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/assemblies-gac.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/azdoc-assemblies-gac.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/async.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/async.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/azdoc-async.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/attributes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/attributes.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/azdoc-attributes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/covariance-contravariance.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/covariance-contravariance.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/azdoc-covariance-contravariance.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/expression-trees.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/expression-trees.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/azdoc-expression-trees.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/linq.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/linq.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/azdoc-linq.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/serialization.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/azdoc-serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/threading.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/threading.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/concepts/azdoc-threading.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/arrays.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/arrays.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/azdoc-arrays.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/collection-initializers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/collection-initializers.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/azdoc-collection-initializers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/constants-enums.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/constants-enums.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/azdoc-constants-enums.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/control-flow.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/control-flow.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/azdoc-control-flow.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/data-types.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/data-types.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/azdoc-data-types.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/declared-elements.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/declared-elements.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/azdoc-declared-elements.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/delegates.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/delegates.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/azdoc-delegates.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/early-late-binding.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/early-late-binding.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/azdoc-early-late-binding.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/events.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/events.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/azdoc-events.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/linq.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/linq.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/azdoc-linq.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/objects-and-classes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/objects-and-classes.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/azdoc-objects-and-classes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/operators-and-expressions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/operators-and-expressions.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/azdoc-operators-and-expressions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/procedures.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/procedures.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/azdoc-procedures.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/strings.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/strings.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/azdoc-strings.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/variables.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/variables.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/azdoc-variables.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/xml.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/xml.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/language-features/azdoc-xml.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/program-structure.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/program-structure.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/programming-guide/azdoc-program-structure.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/reference/language-specification.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/live/visual-basic/reference/language-specification.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/live/visual-basic/reference/azdoc-language-specification.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/azdoc-master.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/getting-started.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/getting-started.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/azdoc-getting-started.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/language-reference.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/language-reference.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/azdoc-language-reference.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/language-reference/compiler-messages.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/language-reference/compiler-messages.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/language-reference/azdoc-compiler-messages.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/language-reference/compiler-options.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/language-reference/compiler-options.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/language-reference/azdoc-compiler-options.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/language-reference/keywords.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/language-reference/keywords.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/language-reference/azdoc-keywords.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/language-reference/language-specification.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/language-reference/language-specification.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/language-reference/azdoc-language-specification.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/language-reference/operators.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/language-reference/operators.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/language-reference/azdoc-operators.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/language-reference/preprocessor-directives.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/language-reference/preprocessor-directives.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/language-reference/azdoc-preprocessor-directives.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/language-reference/tokens.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/language-reference/tokens.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/language-reference/azdoc-tokens.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/linq.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/linq.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/azdoc-linq.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/azdoc-programming-guide.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/arrays.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/arrays.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-arrays.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/classes-and-structs.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/classes-and-structs.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-classes-and-structs.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-concepts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/assemblies-gac.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/assemblies-gac.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/azdoc-assemblies-gac.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/async.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/async.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/azdoc-async.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/attributes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/attributes.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/azdoc-attributes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/covariance-contravariance.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/covariance-contravariance.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/azdoc-covariance-contravariance.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/expression-trees.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/expression-trees.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/azdoc-expression-trees.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/linq.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/linq.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/azdoc-linq.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/serialization.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/azdoc-serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/threading.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/threading.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/concepts/azdoc-threading.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/delegates.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/delegates.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-delegates.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/events.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/events.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-events.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/exceptions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/exceptions.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-exceptions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/file-system.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/file-system.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-file-system.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/generics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/generics.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-generics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/indexers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/indexers.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-indexers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/inside-a-program.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/inside-a-program.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-inside-a-program.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/interfaces.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/interfaces.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-interfaces.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/interop.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/interop.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-interop.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/main-and-command-args.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/main-and-command-args.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-main-and-command-args.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/namespaces.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/namespaces.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-namespaces.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/nullable-types.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/nullable-types.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-nullable-types.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/statements-expressions-operators.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/statements-expressions-operators.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-statements-expressions-operators.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/strings.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/strings.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-strings.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/types.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/types.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-types.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/unsafe-code-pointers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/unsafe-code-pointers.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-unsafe-code-pointers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/xmldoc.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/programming-guide/xmldoc.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/programming-guide/azdoc-xmldoc.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/quick-starts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/quick-starts.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/azdoc-quick-starts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/tour-of-csharp.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/tour-of-csharp.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/azdoc-tour-of-csharp.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/tutorials.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/csharp/tutorials.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/csharp/azdoc-tutorials.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/docs.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/docs.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/azdoc-docs.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/add-ins.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/add-ins.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-add-ins.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/additional-apis.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/additional-apis.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-additional-apis.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/app-domains.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/app-domains.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-app-domains.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/common-client-technologies.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/common-client-technologies.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-common-client-technologies.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-configure-apps.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/configure-apps/azdoc-file-schema.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/appsettings.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/appsettings.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/azdoc-appsettings.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/compiler.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/compiler.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/azdoc-compiler.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/cryptography.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/cryptography.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/azdoc-cryptography.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/network.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/network.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/azdoc-network.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/runtime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/runtime.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/azdoc-runtime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/startup.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/startup.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/azdoc-startup.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/trace-debug.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/trace-debug.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/azdoc-trace-debug.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/wcf-directive.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/wcf-directive.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/azdoc-wcf-directive.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/wcf.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/wcf.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/azdoc-wcf.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/web.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/web.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/azdoc-web.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/windows-identity-foundation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/windows-identity-foundation.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/azdoc-windows-identity-foundation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/windows-workflow-foundation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/windows-workflow-foundation.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/azdoc-windows-workflow-foundation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/winforms.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/winforms.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/configure-apps/file-schema/azdoc-winforms.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-data.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data/adonet.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data/adonet.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/data/azdoc-adonet.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data/adonet/dataset-datatable-dataview.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data/adonet/dataset-datatable-dataview.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/data/adonet/azdoc-dataset-datatable-dataview.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data/adonet/ef.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data/adonet/ef.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/data/adonet/azdoc-ef.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data/adonet/ef/language-reference.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data/adonet/ef/language-reference.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/data/adonet/ef/azdoc-language-reference.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data/adonet/sql.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data/adonet/sql.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/data/adonet/azdoc-sql.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data/adonet/sql/linq.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data/adonet/sql/linq.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/data/adonet/sql/azdoc-linq.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data/transactions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data/transactions.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/data/azdoc-transactions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data/wcf.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/data/wcf.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/data/azdoc-wcf.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/debug-trace-profile.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/debug-trace-profile.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-debug-trace-profile.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/deployment.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/deployment.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-deployment.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/get-started.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/get-started.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-get-started.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/install.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/install.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-install.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/interop.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/interop.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-interop.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/mef.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/mef.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-mef.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/migration-guide.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/migration-guide.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-migration-guide.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/net-native.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/net-native.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-net-native.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/network-programming.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/network-programming.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-network-programming.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/performance.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/performance.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-performance.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/reflection-and-codedom.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/reflection-and-codedom.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-reflection-and-codedom.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/resources.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/resources.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-resources.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/security.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/security.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-security.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/tools.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/tools.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-tools.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/ui-automation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/ui-automation.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-ui-automation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-unmanaged-api.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/alink.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/alink.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/azdoc-alink.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/authenticode.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/authenticode.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/azdoc-authenticode.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/debugging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/debugging.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/azdoc-debugging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/diagnostics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/diagnostics.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/azdoc-diagnostics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/fusion.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/fusion.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/azdoc-fusion.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/hosting.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/azdoc-hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/metadata.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/metadata.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/azdoc-metadata.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/profiling.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/profiling.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/azdoc-profiling.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/strong-naming.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/strong-naming.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/azdoc-strong-naming.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/tlbexp.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/tlbexp.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/unmanaged-api/azdoc-tlbexp.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-wcf.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/wcf/azdoc-diagnostics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/etw.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/etw.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/azdoc-etw.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/event-logging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/event-logging.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/azdoc-event-logging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/exceptions-reference.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/exceptions-reference.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/azdoc-exceptions-reference.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/performance-counters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/performance-counters.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/azdoc-performance-counters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/tracing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/tracing.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/azdoc-tracing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/wmi.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/wmi.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/wcf/diagnostics/azdoc-wmi.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/extending.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/extending.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/wcf/azdoc-extending.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/feature-details.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/feature-details.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/wcf/azdoc-feature-details.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/samples.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wcf/samples.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/wcf/azdoc-samples.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/whats-new.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/whats-new.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-whats-new.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/windows-services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/windows-services.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-windows-services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/windows-workflow-foundation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/windows-workflow-foundation.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-windows-workflow-foundation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/windows-workflow-foundation/samples.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/windows-workflow-foundation/samples.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/windows-workflow-foundation/azdoc-samples.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/winforms.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/winforms.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-winforms.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/winforms/advanced.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/winforms/advanced.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/winforms/azdoc-advanced.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/winforms/controls.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/winforms/controls.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/winforms/azdoc-controls.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wpf.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wpf.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-wpf.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wpf/advanced.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wpf/advanced.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/wpf/azdoc-advanced.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wpf/app-development.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wpf/app-development.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/wpf/azdoc-app-development.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wpf/controls.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wpf/controls.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/wpf/azdoc-controls.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wpf/data.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wpf/data.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/wpf/azdoc-data.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wpf/getting-started.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wpf/getting-started.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/wpf/azdoc-getting-started.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wpf/graphics-multimedia.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/wpf/graphics-multimedia.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/wpf/azdoc-graphics-multimedia.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/xaml-services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/framework/xaml-services.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/framework/azdoc-xaml-services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/architecture-containerized-lifecycle.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/architecture-containerized-lifecycle.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-architecture-containerized-lifecycle.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/asynchronous-programming-patterns.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/asynchronous-programming-patterns.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-asynchronous-programming-patterns.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/attributes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/attributes.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-attributes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/base-types.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/base-types.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-base-types.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/collections.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/collections.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-collections.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/collections/thread-safe.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/collections/thread-safe.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/collections/azdoc-thread-safe.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/cross-platform.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/cross-platform.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-cross-platform.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/data/xml.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/data/xml.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/data/azdoc-xml.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/datetime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/datetime.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-datetime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/design-guidelines.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/design-guidelines.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-design-guidelines.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/events.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/events.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-events.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/exceptions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/exceptions.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-exceptions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/garbage-collection.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/garbage-collection.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-garbage-collection.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/generics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/generics.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-generics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/globalization-localization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/globalization-localization.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-globalization-localization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/io.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/io.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-io.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/microservices-architecture.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/microservices-architecture.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-microservices-architecture.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/parallel-programming.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/parallel-programming.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-parallel-programming.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/security.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/security.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-security.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/serialization.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/threading.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/standard/threading.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/standard/azdoc-threading.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/developing-apps/programming/app-settings.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/developing-apps/programming/app-settings.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/developing-apps/programming/azdoc-app-settings.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/developing-apps/programming/computer-resources.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/developing-apps/programming/computer-resources.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/developing-apps/programming/azdoc-computer-resources.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/developing-apps/programming/drives-directories-files.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/developing-apps/programming/drives-directories-files.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/developing-apps/programming/azdoc-drives-directories-files.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/developing-apps/programming/log-info.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/developing-apps/programming/log-info.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/developing-apps/programming/azdoc-log-info.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/assemblies-gac.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/assemblies-gac.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/azdoc-assemblies-gac.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/async.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/async.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/azdoc-async.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/attributes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/attributes.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/azdoc-attributes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/covariance-contravariance.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/covariance-contravariance.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/azdoc-covariance-contravariance.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/expression-trees.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/expression-trees.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/azdoc-expression-trees.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/linq.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/linq.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/azdoc-linq.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/serialization.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/azdoc-serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/threading.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/threading.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/concepts/azdoc-threading.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/arrays.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/arrays.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/azdoc-arrays.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/collection-initializers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/collection-initializers.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/azdoc-collection-initializers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/constants-enums.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/constants-enums.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/azdoc-constants-enums.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/control-flow.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/control-flow.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/azdoc-control-flow.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/data-types.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/data-types.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/azdoc-data-types.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/declared-elements.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/declared-elements.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/azdoc-declared-elements.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/delegates.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/delegates.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/azdoc-delegates.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/early-late-binding.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/early-late-binding.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/azdoc-early-late-binding.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/events.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/events.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/azdoc-events.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/linq.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/linq.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/azdoc-linq.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/objects-and-classes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/objects-and-classes.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/azdoc-objects-and-classes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/operators-and-expressions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/operators-and-expressions.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/azdoc-operators-and-expressions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/procedures.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/procedures.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/azdoc-procedures.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/strings.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/strings.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/azdoc-strings.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/variables.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/variables.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/azdoc-variables.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/xml.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/xml.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/language-features/azdoc-xml.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/program-structure.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/program-structure.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/programming-guide/azdoc-program-structure.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/reference/language-specification.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.conceptual-core-docs-prod/master/visual-basic/reference/language-specification.pdf -OutFile pdf/all/VS.conceptual-core-docs-prod/master/visual-basic/reference/azdoc-language-specification.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/live.pdf -OutFile pdf/all/VS.core-docs/azdoc-live.pdf
 
@@ -17907,6 +19107,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/live/standard/collections/thread-safe.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/live/standard/collections/thread-safe.pdf -OutFile pdf/all/VS.core-docs/live/standard/collections/azdoc-thread-safe.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/live/standard/containerized-lifecycle-architecture.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/live/standard/containerized-lifecycle-architecture.pdf -OutFile pdf/all/VS.core-docs/live/standard/azdoc-containerized-lifecycle-architecture.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/live/standard/cross-platform.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/live/standard/cross-platform.pdf -OutFile pdf/all/VS.core-docs/live/standard/azdoc-cross-platform.pdf
@@ -20410,6 +21613,9 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/master/standard/collections/thread-safe.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/master/standard/collections/thread-safe.pdf -OutFile pdf/all/VS.core-docs/master/standard/collections/azdoc-thread-safe.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/master/standard/containerized-lifecycle-architecture.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/master/standard/containerized-lifecycle-architecture.pdf -OutFile pdf/all/VS.core-docs/master/standard/azdoc-containerized-lifecycle-architecture.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/master/standard/cross-platform.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/master/standard/cross-platform.pdf -OutFile pdf/all/VS.core-docs/master/standard/azdoc-cross-platform.pdf
 
@@ -20545,6 +21751,78 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/master/visual-basic/reference/language-specification.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.core-docs/master/visual-basic/reference/language-specification.pdf -OutFile pdf/all/VS.core-docs/master/visual-basic/reference/azdoc-language-specification.pdf
 
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live.pdf -OutFile pdf/all/VS.docs/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/_breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/_breadcrumb.pdf -OutFile pdf/all/VS.docs/live/azdoc-_breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/code-quality.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/code-quality.pdf -OutFile pdf/all/VS.docs/live/azdoc-code-quality.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/cross-platform.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/cross-platform.pdf -OutFile pdf/all/VS.docs/live/azdoc-cross-platform.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/csharp-ide.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/csharp-ide.pdf -OutFile pdf/all/VS.docs/live/azdoc-csharp-ide.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/data-tools.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/data-tools.pdf -OutFile pdf/all/VS.docs/live/azdoc-data-tools.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/debugger.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/debugger.pdf -OutFile pdf/all/VS.docs/live/azdoc-debugger.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/debugger/debug-interface-access.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/debugger/debug-interface-access.pdf -OutFile pdf/all/VS.docs/live/debugger/azdoc-debug-interface-access.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/deployment.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/deployment.pdf -OutFile pdf/all/VS.docs/live/azdoc-deployment.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/designers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/designers.pdf -OutFile pdf/all/VS.docs/live/azdoc-designers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/extensibility.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/extensibility.pdf -OutFile pdf/all/VS.docs/live/azdoc-extensibility.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/extensibility/debugger/reference.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/extensibility/debugger/reference.pdf -OutFile pdf/all/VS.docs/live/extensibility/debugger/azdoc-reference.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/ide.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/ide.pdf -OutFile pdf/all/VS.docs/live/azdoc-ide.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/ide/reference.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/ide/reference.pdf -OutFile pdf/all/VS.docs/live/ide/azdoc-reference.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/modeling.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/modeling.pdf -OutFile pdf/all/VS.docs/live/azdoc-modeling.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/msbuild.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/msbuild.pdf -OutFile pdf/all/VS.docs/live/azdoc-msbuild.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/profiling.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/profiling.pdf -OutFile pdf/all/VS.docs/live/azdoc-profiling.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/python.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/python.pdf -OutFile pdf/all/VS.docs/live/azdoc-python.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/rtvs.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/rtvs.pdf -OutFile pdf/all/VS.docs/live/azdoc-rtvs.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/test.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/test.pdf -OutFile pdf/all/VS.docs/live/azdoc-test.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/vb-ide.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/vb-ide.pdf -OutFile pdf/all/VS.docs/live/azdoc-vb-ide.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/vsto.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/vsto.pdf -OutFile pdf/all/VS.docs/live/azdoc-vsto.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/workflow-designer.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/workflow-designer.pdf -OutFile pdf/all/VS.docs/live/azdoc-workflow-designer.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/xml-tools.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.docs/live/xml-tools.pdf -OutFile pdf/all/VS.docs/live/azdoc-xml-tools.pdf
+
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.openpublishing-test-op-technet/MergeAzureContent.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.openpublishing-test-op-technet/MergeAzureContent.pdf -OutFile pdf/all/VS.openpublishing-test-op-technet/azdoc-MergeAzureContent.pdf
 
@@ -20562,6 +21840,2838 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.openpublishing-test-op/MergeAzureContent/restapi.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.openpublishing-test-op/MergeAzureContent/restapi.pdf -OutFile pdf/all/VS.openpublishing-test-op/MergeAzureContent/azdoc-restapi.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/azdoc-api.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Accessibility.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Accessibility.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Accessibility.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/DbLinq.Util.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/DbLinq.Util.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-DbLinq.Util.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Activities.Build.Debugger.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Activities.Build.Debugger.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Activities.Build.Debugger.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Activities.Build.Expressions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Activities.Build.Expressions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Activities.Build.Expressions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Activities.Build.Validation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Activities.Build.Validation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Activities.Build.Validation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Activities.Build.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Activities.Build.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Activities.Build.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.BuildEngine.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.BuildEngine.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Build.BuildEngine.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Construction.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Construction.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Build.Construction.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Conversion.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Conversion.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Build.Conversion.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Debugging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Debugging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Build.Debugging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Evaluation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Evaluation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Build.Evaluation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Exceptions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Exceptions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Build.Exceptions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Execution.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Execution.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Build.Execution.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Framework.XamlTypes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Framework.XamlTypes.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Build.Framework.XamlTypes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Framework.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Framework.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Build.Framework.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Logging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Logging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Build.Logging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Tasks.Deployment.Bootstrapper.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Tasks.Deployment.Bootstrapper.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Build.Tasks.Deployment.Bootstrapper.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Tasks.Deployment.ManifestUtilities.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Tasks.Deployment.ManifestUtilities.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Build.Tasks.Deployment.ManifestUtilities.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Tasks.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Tasks.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Build.Tasks.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Tasks.Windows.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Tasks.Windows.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Build.Tasks.Windows.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Tasks.Xaml.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Tasks.Xaml.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Build.Tasks.Xaml.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Tasks.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Tasks.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Build.Tasks.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Utilities.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Build.Utilities.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Build.Utilities.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.CSharp.Activities.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.CSharp.Activities.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.CSharp.Activities.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.CSharp.RuntimeBinder.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.CSharp.RuntimeBinder.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.CSharp.RuntimeBinder.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.CSharp.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.CSharp.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.CSharp.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.JScript.Vsa.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.JScript.Vsa.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.JScript.Vsa.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.JScript.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.JScript.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.JScript.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.SqlServer.Server.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.SqlServer.Server.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.SqlServer.Server.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.Activities.XamlIntegration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.Activities.XamlIntegration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.VisualBasic.Activities.XamlIntegration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.Activities.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.Activities.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.VisualBasic.Activities.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.ApplicationServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.ApplicationServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.VisualBasic.ApplicationServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.Compatibility.VB6.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.Compatibility.VB6.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.VisualBasic.Compatibility.VB6.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.CompilerServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.CompilerServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.VisualBasic.CompilerServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.Devices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.Devices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.VisualBasic.Devices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.FileIO.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.FileIO.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.VisualBasic.FileIO.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.Logging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.Logging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.VisualBasic.Logging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.MyServices.Internal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.MyServices.Internal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.VisualBasic.MyServices.Internal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.MyServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.MyServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.VisualBasic.MyServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualBasic.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.VisualBasic.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualC.StlClr.Generic.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualC.StlClr.Generic.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.VisualC.StlClr.Generic.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualC.StlClr.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualC.StlClr.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.VisualC.StlClr.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualC.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.VisualC.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.VisualC.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Win32.SafeHandles.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Win32.SafeHandles.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Win32.SafeHandles.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Win32.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Win32.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Win32.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Windows.Input.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Windows.Input.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Windows.Input.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Windows.Themes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Microsoft.Windows.Themes.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Microsoft.Windows.Themes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Mono.CodeGeneration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Mono.CodeGeneration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Mono.CodeGeneration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Mono.Security.Interface.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Mono.Security.Interface.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Mono.Security.Interface.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Mono.Security.Protocol.Ntlm.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Mono.Security.Protocol.Ntlm.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Mono.Security.Protocol.Ntlm.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Mono.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/Mono.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-Mono.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Core.Presentation.Factories.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Core.Presentation.Factories.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Core.Presentation.Factories.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Core.Presentation.Themes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Core.Presentation.Themes.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Core.Presentation.Themes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Core.Presentation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Core.Presentation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Core.Presentation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Debugger.Symbol.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Debugger.Symbol.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Debugger.Symbol.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Debugger.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Debugger.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Debugger.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.DurableInstancing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.DurableInstancing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.DurableInstancing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.DynamicUpdate.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.DynamicUpdate.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.DynamicUpdate.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.ExpressionParser.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.ExpressionParser.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.ExpressionParser.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Expressions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Expressions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Expressions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Persistence.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Persistence.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Persistence.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Annotations.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Annotations.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Presentation.Annotations.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Converters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Converters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Presentation.Converters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Debug.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Debug.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Presentation.Debug.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Expressions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Expressions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Presentation.Expressions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Presentation.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Metadata.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Metadata.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Presentation.Metadata.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Model.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Model.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Presentation.Model.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.PropertyEditing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.PropertyEditing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Presentation.PropertyEditing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Services.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Presentation.Services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Sqm.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Sqm.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Presentation.Sqm.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Toolbox.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Toolbox.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Presentation.Toolbox.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Validation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.Validation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Presentation.Validation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.View.OutlineView.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.View.OutlineView.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Presentation.View.OutlineView.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.View.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.View.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Presentation.View.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.ViewState.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.ViewState.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Presentation.ViewState.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Presentation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Presentation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Statements.Tracking.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Statements.Tracking.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Statements.Tracking.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Statements.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Statements.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Statements.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Tracking.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Tracking.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Tracking.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Validation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.Validation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.Validation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.XamlIntegration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.XamlIntegration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.XamlIntegration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Activities.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Activities.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.AddIn.Contract.Automation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.AddIn.Contract.Automation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.AddIn.Contract.Automation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.AddIn.Contract.Collections.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.AddIn.Contract.Collections.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.AddIn.Contract.Collections.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.AddIn.Contract.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.AddIn.Contract.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.AddIn.Contract.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.AddIn.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.AddIn.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.AddIn.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.AddIn.Pipeline.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.AddIn.Pipeline.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.AddIn.Pipeline.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.AddIn.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.AddIn.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.AddIn.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Buffers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Buffers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Buffers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.CodeDom.Compiler.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.CodeDom.Compiler.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.CodeDom.Compiler.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.CodeDom.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.CodeDom.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.CodeDom.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Collections.Concurrent.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Collections.Concurrent.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Collections.Concurrent.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Collections.Generic.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Collections.Generic.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Collections.Generic.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Collections.Immutable.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Collections.Immutable.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Collections.Immutable.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Collections.ObjectModel.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Collections.ObjectModel.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Collections.ObjectModel.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Collections.Specialized.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Collections.Specialized.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Collections.Specialized.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Collections.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Collections.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Collections.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.Composition.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.Composition.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ComponentModel.Composition.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.Composition.Primitives.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.Composition.Primitives.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ComponentModel.Composition.Primitives.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.Composition.ReflectionModel.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.Composition.ReflectionModel.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ComponentModel.Composition.ReflectionModel.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.Composition.Registration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.Composition.Registration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ComponentModel.Composition.Registration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.Composition.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.Composition.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ComponentModel.Composition.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.DataAnnotations.Schema.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.DataAnnotations.Schema.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ComponentModel.DataAnnotations.Schema.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.DataAnnotations.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.DataAnnotations.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ComponentModel.DataAnnotations.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.Design.Data.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.Design.Data.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ComponentModel.Design.Data.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.Design.Serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.Design.Serialization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ComponentModel.Design.Serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ComponentModel.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ComponentModel.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ComponentModel.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Composition.Convention.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Composition.Convention.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Composition.Convention.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Composition.Hosting.Core.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Composition.Hosting.Core.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Composition.Hosting.Core.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Composition.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Composition.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Composition.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Composition.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Composition.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Composition.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Configuration.Assemblies.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Configuration.Assemblies.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Configuration.Assemblies.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Configuration.Install.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Configuration.Install.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Configuration.Install.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Configuration.Internal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Configuration.Internal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Configuration.Internal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Configuration.Provider.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Configuration.Provider.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Configuration.Provider.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Common.CommandTrees.ExpressionBuilder.Spatial.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Common.CommandTrees.ExpressionBuilder.Spatial.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Common.CommandTrees.ExpressionBuilder.Spatial.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Common.CommandTrees.ExpressionBuilder.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Common.CommandTrees.ExpressionBuilder.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Common.CommandTrees.ExpressionBuilder.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Common.CommandTrees.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Common.CommandTrees.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Common.CommandTrees.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Common.EntitySql.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Common.EntitySql.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Common.EntitySql.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Common.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Common.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Common.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Entity.Design.AspNet.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Entity.Design.AspNet.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Entity.Design.AspNet.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Entity.Design.PluralizationServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Entity.Design.PluralizationServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Entity.Design.PluralizationServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Entity.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Entity.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Entity.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.EntityClient.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.EntityClient.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.EntityClient.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Linq.Mapping.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Linq.Mapping.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Linq.Mapping.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Linq.SqlClient.Implementation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Linq.SqlClient.Implementation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Linq.SqlClient.Implementation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Linq.SqlClient.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Linq.SqlClient.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Linq.SqlClient.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Linq.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Linq.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Linq.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Mapping.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Mapping.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Mapping.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Metadata.Edm.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Metadata.Edm.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Metadata.Edm.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Objects.DataClasses.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Objects.DataClasses.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Objects.DataClasses.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Objects.SqlClient.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Objects.SqlClient.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Objects.SqlClient.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Objects.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Objects.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Objects.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Odbc.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Odbc.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Odbc.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.OleDb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.OleDb.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.OleDb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.OracleClient.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.OracleClient.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.OracleClient.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Services.BuildProvider.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Services.BuildProvider.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Services.BuildProvider.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Services.Client.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Services.Client.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Services.Client.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Services.Common.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Services.Common.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Services.Common.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Services.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Services.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Services.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Services.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Services.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Services.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Services.Internal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Services.Internal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Services.Internal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Services.Providers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Services.Providers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Services.Providers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Services.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Spatial.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Spatial.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Spatial.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Sql.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.Sql.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.Sql.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.SqlClient.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.SqlClient.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.SqlClient.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.SqlTypes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.SqlTypes.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.SqlTypes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Data.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Data.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Deployment.Application.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Deployment.Application.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Deployment.Application.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Deployment.Internal.CodeSigning.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Deployment.Internal.CodeSigning.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Deployment.Internal.CodeSigning.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Deployment.Internal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Deployment.Internal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Deployment.Internal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Device.Location.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Device.Location.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Device.Location.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.CodeAnalysis.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.CodeAnalysis.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Diagnostics.CodeAnalysis.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.Contracts.Internal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.Contracts.Internal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Diagnostics.Contracts.Internal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.Contracts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.Contracts.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Diagnostics.Contracts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Diagnostics.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.Eventing.Reader.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.Eventing.Reader.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Diagnostics.Eventing.Reader.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.Eventing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.Eventing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Diagnostics.Eventing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.PerformanceData.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.PerformanceData.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Diagnostics.PerformanceData.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.SymbolStore.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.SymbolStore.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Diagnostics.SymbolStore.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.Tracing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.Tracing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Diagnostics.Tracing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Diagnostics.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Diagnostics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.DirectoryServices.AccountManagement.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.DirectoryServices.AccountManagement.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.DirectoryServices.AccountManagement.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.DirectoryServices.ActiveDirectory.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.DirectoryServices.ActiveDirectory.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.DirectoryServices.ActiveDirectory.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.DirectoryServices.Protocols.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.DirectoryServices.Protocols.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.DirectoryServices.Protocols.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.DirectoryServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.DirectoryServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.DirectoryServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Drawing.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Drawing.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Drawing.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Drawing.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Drawing.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Drawing.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Drawing.Drawing2D.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Drawing.Drawing2D.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Drawing.Drawing2D.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Drawing.Imaging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Drawing.Imaging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Drawing.Imaging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Drawing.Printing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Drawing.Printing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Drawing.Printing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Drawing.Text.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Drawing.Text.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Drawing.Text.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Drawing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Drawing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Drawing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Dynamic.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Dynamic.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Dynamic.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.EnterpriseServices.CompensatingResourceManager.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.EnterpriseServices.CompensatingResourceManager.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.EnterpriseServices.CompensatingResourceManager.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.EnterpriseServices.Internal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.EnterpriseServices.Internal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.EnterpriseServices.Internal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.EnterpriseServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.EnterpriseServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.EnterpriseServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Globalization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Globalization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Globalization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IO.Compression.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IO.Compression.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IO.Compression.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IO.IsolatedStorage.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IO.IsolatedStorage.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IO.IsolatedStorage.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IO.Log.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IO.Log.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IO.Log.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IO.MemoryMappedFiles.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IO.MemoryMappedFiles.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IO.MemoryMappedFiles.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IO.Packaging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IO.Packaging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IO.Packaging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IO.Pipes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IO.Pipes.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IO.Pipes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IO.Ports.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IO.Ports.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IO.Ports.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IO.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IO.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IO.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Claims.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Claims.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IdentityModel.Claims.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IdentityModel.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Metadata.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Metadata.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IdentityModel.Metadata.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Policy.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Policy.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IdentityModel.Policy.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Protocols.WSTrust.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Protocols.WSTrust.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IdentityModel.Protocols.WSTrust.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Selectors.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Selectors.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IdentityModel.Selectors.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Services.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Services.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IdentityModel.Services.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Services.Tokens.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Services.Tokens.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IdentityModel.Services.Tokens.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Services.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IdentityModel.Services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Tokens.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.Tokens.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IdentityModel.Tokens.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.IdentityModel.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.IdentityModel.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Json.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Json.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Json.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Linq.Expressions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Linq.Expressions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Linq.Expressions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Linq.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Linq.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Linq.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Management.Instrumentation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Management.Instrumentation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Management.Instrumentation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Management.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Management.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Management.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Media.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Media.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Media.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Messaging.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Messaging.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Messaging.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Messaging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Messaging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Messaging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.Cache.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.Cache.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Net.Cache.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Net.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.Http.Headers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.Http.Headers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Net.Http.Headers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.Http.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.Http.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Net.Http.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.Mail.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.Mail.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Net.Mail.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.Mime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.Mime.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Net.Mime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.NetworkInformation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.NetworkInformation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Net.NetworkInformation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.PeerToPeer.Collaboration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.PeerToPeer.Collaboration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Net.PeerToPeer.Collaboration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.PeerToPeer.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.PeerToPeer.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Net.PeerToPeer.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.Security.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.Security.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Net.Security.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.Sockets.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.Sockets.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Net.Sockets.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.WebSockets.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.WebSockets.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Net.WebSockets.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Net.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Net.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Numerics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Numerics.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Numerics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Printing.IndexedProperties.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Printing.IndexedProperties.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Printing.IndexedProperties.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Printing.Interop.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Printing.Interop.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Printing.Interop.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Printing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Printing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Printing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Reflection.Context.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Reflection.Context.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Reflection.Context.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Reflection.Emit.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Reflection.Emit.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Reflection.Emit.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Reflection.Metadata.Ecma335.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Reflection.Metadata.Ecma335.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Reflection.Metadata.Ecma335.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Reflection.Metadata.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Reflection.Metadata.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Reflection.Metadata.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Reflection.PortableExecutable.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Reflection.PortableExecutable.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Reflection.PortableExecutable.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Reflection.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Reflection.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Reflection.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Resources.Tools.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Resources.Tools.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Resources.Tools.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Resources.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Resources.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Resources.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Caching.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Caching.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Caching.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Caching.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Caching.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Caching.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Caching.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Caching.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Caching.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.CompilerServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.CompilerServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.CompilerServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.ConstrainedExecution.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.ConstrainedExecution.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.ConstrainedExecution.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.DesignerServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.DesignerServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.DesignerServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.DurableInstancing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.DurableInstancing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.DurableInstancing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.ExceptionServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.ExceptionServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.ExceptionServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.InteropServices.ComTypes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.InteropServices.ComTypes.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.InteropServices.ComTypes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.InteropServices.CustomMarshalers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.InteropServices.CustomMarshalers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.InteropServices.CustomMarshalers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.InteropServices.Expando.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.InteropServices.Expando.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.InteropServices.Expando.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.InteropServices.WindowsRuntime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.InteropServices.WindowsRuntime.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.InteropServices.WindowsRuntime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.InteropServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.InteropServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.InteropServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Loader.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Loader.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Loader.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Activation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Activation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Remoting.Activation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Channels.Http.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Channels.Http.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Remoting.Channels.Http.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Channels.Ipc.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Channels.Ipc.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Remoting.Channels.Ipc.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Channels.Tcp.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Channels.Tcp.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Remoting.Channels.Tcp.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Channels.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Channels.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Remoting.Channels.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Contexts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Contexts.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Remoting.Contexts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Lifetime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Lifetime.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Remoting.Lifetime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Messaging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Messaging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Remoting.Messaging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Metadata.W3cXsd2001.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Metadata.W3cXsd2001.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Remoting.Metadata.W3cXsd2001.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Metadata.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Metadata.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Remoting.Metadata.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.MetadataServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.MetadataServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Remoting.MetadataServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Proxies.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Proxies.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Remoting.Proxies.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.Services.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Remoting.Services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Remoting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Remoting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Serialization.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Serialization.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Serialization.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Serialization.Formatters.Binary.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Serialization.Formatters.Binary.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Serialization.Formatters.Binary.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Serialization.Formatters.Soap.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Serialization.Formatters.Soap.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Serialization.Formatters.Soap.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Serialization.Formatters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Serialization.Formatters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Serialization.Formatters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Serialization.Json.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Serialization.Json.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Serialization.Json.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Serialization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Versioning.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.Versioning.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.Versioning.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Runtime.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Runtime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.AccessControl.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.AccessControl.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Security.AccessControl.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Authentication.ExtendedProtection.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Authentication.ExtendedProtection.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Security.Authentication.ExtendedProtection.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Authentication.ExtendedProtection.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Authentication.ExtendedProtection.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Security.Authentication.ExtendedProtection.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Authentication.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Authentication.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Security.Authentication.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Claims.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Claims.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Security.Claims.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Cryptography.Pkcs.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Cryptography.Pkcs.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Security.Cryptography.Pkcs.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Cryptography.X509Certificates.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Cryptography.X509Certificates.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Security.Cryptography.X509Certificates.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Cryptography.Xml.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Cryptography.Xml.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Security.Cryptography.Xml.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Cryptography.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Cryptography.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Security.Cryptography.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Permissions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Permissions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Security.Permissions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Policy.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Policy.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Security.Policy.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Principal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.Principal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Security.Principal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.RightsManagement.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.RightsManagement.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Security.RightsManagement.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Security.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Security.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activation.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activation.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Activation.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Activation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activities.Activation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activities.Activation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Activities.Activation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activities.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activities.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Activities.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activities.Description.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activities.Description.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Activities.Description.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activities.Presentation.Factories.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activities.Presentation.Factories.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Activities.Presentation.Factories.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activities.Presentation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activities.Presentation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Activities.Presentation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activities.Tracking.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activities.Tracking.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Activities.Tracking.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activities.Tracking.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activities.Tracking.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Activities.Tracking.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activities.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Activities.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Activities.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Channels.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Channels.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Channels.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.ComIntegration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.ComIntegration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.ComIntegration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Description.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Description.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Description.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Diagnostics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Diagnostics.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Diagnostics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Discovery.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Discovery.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Discovery.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Discovery.Version11.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Discovery.Version11.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Discovery.Version11.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Discovery.VersionApril2005.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Discovery.VersionApril2005.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Discovery.VersionApril2005.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Discovery.VersionCD1.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Discovery.VersionCD1.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Discovery.VersionCD1.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Discovery.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Discovery.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Discovery.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Dispatcher.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Dispatcher.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Dispatcher.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.MsmqIntegration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.MsmqIntegration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.MsmqIntegration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.PeerResolvers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.PeerResolvers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.PeerResolvers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Persistence.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Persistence.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Persistence.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Routing.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Routing.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Routing.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Routing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Routing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Routing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Security.Tokens.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Security.Tokens.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Security.Tokens.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Security.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Security.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Security.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Syndication.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Syndication.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Syndication.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Web.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.Web.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.Web.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.XamlIntegration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.XamlIntegration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.XamlIntegration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceModel.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceModel.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceProcess.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceProcess.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceProcess.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceProcess.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.ServiceProcess.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.ServiceProcess.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Speech.AudioFormat.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Speech.AudioFormat.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Speech.AudioFormat.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Speech.Recognition.SrgsGrammar.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Speech.Recognition.SrgsGrammar.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Speech.Recognition.SrgsGrammar.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Speech.Recognition.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Speech.Recognition.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Speech.Recognition.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Speech.Synthesis.TtsEngine.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Speech.Synthesis.TtsEngine.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Speech.Synthesis.TtsEngine.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Speech.Synthesis.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Speech.Synthesis.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Speech.Synthesis.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Text.Encodings.Web.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Text.Encodings.Web.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Text.Encodings.Web.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Text.RegularExpressions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Text.RegularExpressions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Text.RegularExpressions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Text.Unicode.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Text.Unicode.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Text.Unicode.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Text.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Text.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Text.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Threading.Tasks.Dataflow.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Threading.Tasks.Dataflow.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Threading.Tasks.Dataflow.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Threading.Tasks.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Threading.Tasks.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Threading.Tasks.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Threading.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Threading.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Threading.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Timers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Timers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Timers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Transactions.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Transactions.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Transactions.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Transactions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Transactions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Transactions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.ApplicationServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.ApplicationServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.ApplicationServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Caching.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Caching.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Caching.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.ClientServices.Providers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.ClientServices.Providers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.ClientServices.Providers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.ClientServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.ClientServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.ClientServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Compilation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Compilation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Compilation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Configuration.Internal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Configuration.Internal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Configuration.Internal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.DynamicData.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.DynamicData.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.DynamicData.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.DynamicData.ModelProviders.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.DynamicData.ModelProviders.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.DynamicData.ModelProviders.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.DynamicData.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.DynamicData.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.DynamicData.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Globalization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Globalization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Globalization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Handlers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Handlers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Handlers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Instrumentation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Instrumentation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Instrumentation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Mail.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Mail.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Mail.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Management.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Management.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Management.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Mobile.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Mobile.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Mobile.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.ModelBinding.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.ModelBinding.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.ModelBinding.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Profile.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Profile.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Profile.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Query.Dynamic.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Query.Dynamic.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Query.Dynamic.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.RegularExpressions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.RegularExpressions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.RegularExpressions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Routing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Routing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Routing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Script.Serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Script.Serialization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Script.Serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Script.Services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Script.Services.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Script.Services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Script.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Script.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Script.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Security.AntiXss.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Security.AntiXss.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Security.AntiXss.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Security.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Security.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Security.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Services.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Services.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Services.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Services.Description.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Services.Description.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Services.Description.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Services.Discovery.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Services.Discovery.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Services.Discovery.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Services.Protocols.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Services.Protocols.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Services.Protocols.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Services.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.SessionState.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.SessionState.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.SessionState.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.Adapters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.Adapters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.UI.Adapters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.DataVisualization.Charting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.DataVisualization.Charting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.UI.DataVisualization.Charting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.Design.Directives.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.Design.Directives.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.UI.Design.Directives.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.Design.MobileControls.Converters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.Design.MobileControls.Converters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.UI.Design.MobileControls.Converters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.Design.MobileControls.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.Design.MobileControls.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.UI.Design.MobileControls.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.Design.WebControls.WebParts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.Design.WebControls.WebParts.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.UI.Design.WebControls.WebParts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.Design.WebControls.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.Design.WebControls.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.UI.Design.WebControls.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.UI.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.HtmlControls.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.HtmlControls.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.UI.HtmlControls.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.MobileControls.Adapters.XhtmlAdapters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.MobileControls.Adapters.XhtmlAdapters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.UI.MobileControls.Adapters.XhtmlAdapters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.MobileControls.Adapters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.MobileControls.Adapters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.UI.MobileControls.Adapters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.MobileControls.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.MobileControls.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.UI.MobileControls.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.WebControls.Adapters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.WebControls.Adapters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.UI.WebControls.Adapters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.WebControls.Expressions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.WebControls.Expressions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.UI.WebControls.Expressions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.WebControls.WebParts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.WebControls.WebParts.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.UI.WebControls.WebParts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.WebControls.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.WebControls.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.UI.WebControls.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.UI.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.UI.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Util.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.Util.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.Util.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.WebSockets.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.WebSockets.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.WebSockets.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Web.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Web.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Annotations.Storage.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Annotations.Storage.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Annotations.Storage.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Annotations.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Annotations.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Annotations.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Automation.Peers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Automation.Peers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Automation.Peers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Automation.Provider.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Automation.Provider.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Automation.Provider.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Automation.Text.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Automation.Text.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Automation.Text.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Automation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Automation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Automation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Baml2006.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Baml2006.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Baml2006.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Controls.Primitives.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Controls.Primitives.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Controls.Primitives.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Controls.Ribbon.Primitives.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Controls.Ribbon.Primitives.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Controls.Ribbon.Primitives.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Controls.Ribbon.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Controls.Ribbon.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Controls.Ribbon.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Controls.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Controls.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Controls.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Converters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Converters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Converters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Data.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Data.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Data.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Diagnostics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Diagnostics.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Diagnostics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Documents.DocumentStructures.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Documents.DocumentStructures.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Documents.DocumentStructures.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Documents.Serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Documents.Serialization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Documents.Serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Documents.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Documents.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Documents.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.ComponentModel.Com2Interop.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.ComponentModel.Com2Interop.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Forms.ComponentModel.Com2Interop.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.DataVisualization.Charting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.DataVisualization.Charting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Forms.DataVisualization.Charting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.Design.Behavior.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.Design.Behavior.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Forms.Design.Behavior.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Forms.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.Integration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.Integration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Forms.Integration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.Layout.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.Layout.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Forms.Layout.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.PropertyGridInternal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.PropertyGridInternal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Forms.PropertyGridInternal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.VisualStyles.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.VisualStyles.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Forms.VisualStyles.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Forms.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Forms.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Ink.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Ink.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Ink.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Input.Manipulations.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Input.Manipulations.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Input.Manipulations.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Input.StylusPlugIns.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Input.StylusPlugIns.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Input.StylusPlugIns.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Input.StylusWisp.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Input.StylusWisp.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Input.StylusWisp.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Input.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Input.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Input.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Interop.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Interop.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Interop.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Markup.Localizer.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Markup.Localizer.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Markup.Localizer.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Markup.Primitives.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Markup.Primitives.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Markup.Primitives.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Markup.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Markup.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Markup.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Media.Animation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Media.Animation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Media.Animation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Media.Converters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Media.Converters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Media.Converters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Media.Effects.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Media.Effects.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Media.Effects.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Media.Imaging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Media.Imaging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Media.Imaging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Media.Media3D.Converters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Media.Media3D.Converters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Media.Media3D.Converters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Media.Media3D.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Media.Media3D.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Media.Media3D.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Media.TextFormatting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Media.TextFormatting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Media.TextFormatting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Media.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Media.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Media.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Navigation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Navigation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Navigation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Resources.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Resources.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Resources.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Shapes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Shapes.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Shapes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Shell.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Shell.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Shell.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Threading.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Threading.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Threading.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Xps.Packaging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Xps.Packaging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Xps.Packaging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Xps.Serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Xps.Serialization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Xps.Serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Xps.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.Xps.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.Xps.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Windows.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Windows.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Activities.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Activities.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Workflow.Activities.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Activities.Rules.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Activities.Rules.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Workflow.Activities.Rules.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Activities.Rules.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Activities.Rules.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Workflow.Activities.Rules.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Activities.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Activities.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Workflow.Activities.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.ComponentModel.Compiler.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.ComponentModel.Compiler.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Workflow.ComponentModel.Compiler.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.ComponentModel.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.ComponentModel.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Workflow.ComponentModel.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.ComponentModel.Serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.ComponentModel.Serialization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Workflow.ComponentModel.Serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.ComponentModel.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.ComponentModel.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Workflow.ComponentModel.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Runtime.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Runtime.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Workflow.Runtime.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Runtime.DebugEngine.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Runtime.DebugEngine.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Workflow.Runtime.DebugEngine.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Runtime.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Runtime.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Workflow.Runtime.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Runtime.Tracking.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Runtime.Tracking.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Workflow.Runtime.Tracking.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Runtime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Workflow.Runtime.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Workflow.Runtime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xaml.Permissions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xaml.Permissions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Xaml.Permissions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xaml.Schema.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xaml.Schema.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Xaml.Schema.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xaml.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xaml.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Xaml.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.Linq.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.Linq.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Xml.Linq.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.Resolvers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.Resolvers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Xml.Resolvers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.Schema.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.Schema.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Xml.Schema.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.Serialization.Advanced.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.Serialization.Advanced.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Xml.Serialization.Advanced.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.Serialization.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.Serialization.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Xml.Serialization.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.Serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.Serialization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Xml.Serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.XPath.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.XPath.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Xml.XPath.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.XmlConfiguration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.XmlConfiguration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Xml.XmlConfiguration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.Xsl.Runtime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.Xsl.Runtime.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Xml.Xsl.Runtime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.Xsl.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.Xsl.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Xml.Xsl.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.Xml.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.Xml.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/System.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-System.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/UIAutomationClientsideProviders.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/UIAutomationClientsideProviders.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-UIAutomationClientsideProviders.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/XamlGeneratedNamespace.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/live/api/_splitted/XamlGeneratedNamespace.pdf -OutFile pdf/all/VS.reference-core-docs-prod/live/api/_splitted/azdoc-XamlGeneratedNamespace.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/azdoc-api.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Accessibility.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Accessibility.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Accessibility.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/DbLinq.Util.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/DbLinq.Util.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-DbLinq.Util.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Activities.Build.Debugger.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Activities.Build.Debugger.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Activities.Build.Debugger.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Activities.Build.Expressions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Activities.Build.Expressions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Activities.Build.Expressions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Activities.Build.Validation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Activities.Build.Validation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Activities.Build.Validation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Activities.Build.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Activities.Build.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Activities.Build.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.BuildEngine.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.BuildEngine.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Build.BuildEngine.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Construction.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Construction.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Build.Construction.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Conversion.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Conversion.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Build.Conversion.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Debugging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Debugging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Build.Debugging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Evaluation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Evaluation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Build.Evaluation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Exceptions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Exceptions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Build.Exceptions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Execution.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Execution.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Build.Execution.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Framework.XamlTypes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Framework.XamlTypes.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Build.Framework.XamlTypes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Framework.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Framework.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Build.Framework.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Logging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Logging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Build.Logging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Tasks.Deployment.Bootstrapper.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Tasks.Deployment.Bootstrapper.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Build.Tasks.Deployment.Bootstrapper.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Tasks.Deployment.ManifestUtilities.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Tasks.Deployment.ManifestUtilities.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Build.Tasks.Deployment.ManifestUtilities.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Tasks.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Tasks.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Build.Tasks.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Tasks.Windows.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Tasks.Windows.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Build.Tasks.Windows.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Tasks.Xaml.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Tasks.Xaml.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Build.Tasks.Xaml.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Tasks.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Tasks.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Build.Tasks.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Utilities.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Build.Utilities.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Build.Utilities.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.CSharp.Activities.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.CSharp.Activities.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.CSharp.Activities.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.CSharp.RuntimeBinder.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.CSharp.RuntimeBinder.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.CSharp.RuntimeBinder.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.CSharp.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.CSharp.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.CSharp.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.JScript.Vsa.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.JScript.Vsa.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.JScript.Vsa.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.JScript.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.JScript.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.JScript.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.SqlServer.Server.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.SqlServer.Server.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.SqlServer.Server.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.Activities.XamlIntegration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.Activities.XamlIntegration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.VisualBasic.Activities.XamlIntegration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.Activities.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.Activities.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.VisualBasic.Activities.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.ApplicationServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.ApplicationServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.VisualBasic.ApplicationServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.Compatibility.VB6.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.Compatibility.VB6.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.VisualBasic.Compatibility.VB6.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.CompilerServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.CompilerServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.VisualBasic.CompilerServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.Devices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.Devices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.VisualBasic.Devices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.FileIO.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.FileIO.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.VisualBasic.FileIO.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.Logging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.Logging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.VisualBasic.Logging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.MyServices.Internal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.MyServices.Internal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.VisualBasic.MyServices.Internal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.MyServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.MyServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.VisualBasic.MyServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualBasic.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.VisualBasic.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualC.StlClr.Generic.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualC.StlClr.Generic.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.VisualC.StlClr.Generic.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualC.StlClr.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualC.StlClr.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.VisualC.StlClr.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualC.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.VisualC.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.VisualC.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Win32.SafeHandles.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Win32.SafeHandles.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Win32.SafeHandles.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Win32.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Win32.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Win32.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Windows.Input.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Windows.Input.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Windows.Input.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Windows.Themes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Microsoft.Windows.Themes.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Microsoft.Windows.Themes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Mono.CodeGeneration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Mono.CodeGeneration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Mono.CodeGeneration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Mono.Security.Interface.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Mono.Security.Interface.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Mono.Security.Interface.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Mono.Security.Protocol.Ntlm.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Mono.Security.Protocol.Ntlm.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Mono.Security.Protocol.Ntlm.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Mono.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/Mono.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-Mono.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Core.Presentation.Factories.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Core.Presentation.Factories.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Core.Presentation.Factories.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Core.Presentation.Themes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Core.Presentation.Themes.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Core.Presentation.Themes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Core.Presentation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Core.Presentation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Core.Presentation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Debugger.Symbol.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Debugger.Symbol.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Debugger.Symbol.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Debugger.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Debugger.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Debugger.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.DurableInstancing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.DurableInstancing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.DurableInstancing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.DynamicUpdate.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.DynamicUpdate.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.DynamicUpdate.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.ExpressionParser.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.ExpressionParser.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.ExpressionParser.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Expressions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Expressions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Expressions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Persistence.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Persistence.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Persistence.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Annotations.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Annotations.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Presentation.Annotations.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Converters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Converters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Presentation.Converters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Debug.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Debug.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Presentation.Debug.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Expressions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Expressions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Presentation.Expressions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Presentation.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Metadata.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Metadata.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Presentation.Metadata.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Model.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Model.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Presentation.Model.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.PropertyEditing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.PropertyEditing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Presentation.PropertyEditing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Services.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Presentation.Services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Sqm.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Sqm.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Presentation.Sqm.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Toolbox.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Toolbox.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Presentation.Toolbox.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Validation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.Validation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Presentation.Validation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.View.OutlineView.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.View.OutlineView.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Presentation.View.OutlineView.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.View.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.View.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Presentation.View.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.ViewState.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.ViewState.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Presentation.ViewState.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Presentation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Presentation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Statements.Tracking.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Statements.Tracking.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Statements.Tracking.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Statements.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Statements.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Statements.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Tracking.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Tracking.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Tracking.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Validation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.Validation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.Validation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.XamlIntegration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.XamlIntegration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.XamlIntegration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Activities.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Activities.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.AddIn.Contract.Automation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.AddIn.Contract.Automation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.AddIn.Contract.Automation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.AddIn.Contract.Collections.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.AddIn.Contract.Collections.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.AddIn.Contract.Collections.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.AddIn.Contract.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.AddIn.Contract.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.AddIn.Contract.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.AddIn.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.AddIn.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.AddIn.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.AddIn.Pipeline.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.AddIn.Pipeline.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.AddIn.Pipeline.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.AddIn.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.AddIn.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.AddIn.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Buffers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Buffers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Buffers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.CodeDom.Compiler.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.CodeDom.Compiler.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.CodeDom.Compiler.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.CodeDom.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.CodeDom.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.CodeDom.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Collections.Concurrent.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Collections.Concurrent.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Collections.Concurrent.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Collections.Generic.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Collections.Generic.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Collections.Generic.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Collections.Immutable.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Collections.Immutable.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Collections.Immutable.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Collections.ObjectModel.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Collections.ObjectModel.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Collections.ObjectModel.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Collections.Specialized.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Collections.Specialized.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Collections.Specialized.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Collections.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Collections.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Collections.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.Composition.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.Composition.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ComponentModel.Composition.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.Composition.Primitives.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.Composition.Primitives.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ComponentModel.Composition.Primitives.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.Composition.ReflectionModel.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.Composition.ReflectionModel.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ComponentModel.Composition.ReflectionModel.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.Composition.Registration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.Composition.Registration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ComponentModel.Composition.Registration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.Composition.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.Composition.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ComponentModel.Composition.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.DataAnnotations.Schema.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.DataAnnotations.Schema.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ComponentModel.DataAnnotations.Schema.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.DataAnnotations.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.DataAnnotations.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ComponentModel.DataAnnotations.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.Design.Data.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.Design.Data.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ComponentModel.Design.Data.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.Design.Serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.Design.Serialization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ComponentModel.Design.Serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ComponentModel.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ComponentModel.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ComponentModel.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Composition.Convention.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Composition.Convention.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Composition.Convention.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Composition.Hosting.Core.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Composition.Hosting.Core.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Composition.Hosting.Core.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Composition.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Composition.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Composition.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Composition.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Composition.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Composition.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Configuration.Assemblies.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Configuration.Assemblies.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Configuration.Assemblies.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Configuration.Install.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Configuration.Install.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Configuration.Install.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Configuration.Internal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Configuration.Internal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Configuration.Internal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Configuration.Provider.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Configuration.Provider.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Configuration.Provider.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Common.CommandTrees.ExpressionBuilder.Spatial.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Common.CommandTrees.ExpressionBuilder.Spatial.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Common.CommandTrees.ExpressionBuilder.Spatial.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Common.CommandTrees.ExpressionBuilder.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Common.CommandTrees.ExpressionBuilder.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Common.CommandTrees.ExpressionBuilder.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Common.CommandTrees.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Common.CommandTrees.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Common.CommandTrees.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Common.EntitySql.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Common.EntitySql.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Common.EntitySql.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Common.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Common.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Common.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Entity.Design.AspNet.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Entity.Design.AspNet.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Entity.Design.AspNet.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Entity.Design.PluralizationServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Entity.Design.PluralizationServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Entity.Design.PluralizationServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Entity.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Entity.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Entity.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.EntityClient.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.EntityClient.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.EntityClient.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Linq.Mapping.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Linq.Mapping.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Linq.Mapping.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Linq.SqlClient.Implementation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Linq.SqlClient.Implementation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Linq.SqlClient.Implementation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Linq.SqlClient.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Linq.SqlClient.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Linq.SqlClient.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Linq.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Linq.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Linq.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Mapping.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Mapping.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Mapping.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Metadata.Edm.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Metadata.Edm.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Metadata.Edm.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Objects.DataClasses.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Objects.DataClasses.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Objects.DataClasses.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Objects.SqlClient.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Objects.SqlClient.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Objects.SqlClient.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Objects.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Objects.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Objects.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Odbc.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Odbc.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Odbc.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.OleDb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.OleDb.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.OleDb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.OracleClient.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.OracleClient.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.OracleClient.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Services.BuildProvider.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Services.BuildProvider.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Services.BuildProvider.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Services.Client.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Services.Client.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Services.Client.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Services.Common.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Services.Common.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Services.Common.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Services.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Services.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Services.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Services.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Services.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Services.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Services.Internal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Services.Internal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Services.Internal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Services.Providers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Services.Providers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Services.Providers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Services.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Spatial.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Spatial.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Spatial.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Sql.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.Sql.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.Sql.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.SqlClient.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.SqlClient.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.SqlClient.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.SqlTypes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.SqlTypes.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.SqlTypes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Data.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Data.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Deployment.Application.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Deployment.Application.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Deployment.Application.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Deployment.Internal.CodeSigning.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Deployment.Internal.CodeSigning.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Deployment.Internal.CodeSigning.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Deployment.Internal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Deployment.Internal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Deployment.Internal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Device.Location.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Device.Location.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Device.Location.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.CodeAnalysis.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.CodeAnalysis.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Diagnostics.CodeAnalysis.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.Contracts.Internal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.Contracts.Internal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Diagnostics.Contracts.Internal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.Contracts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.Contracts.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Diagnostics.Contracts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Diagnostics.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.Eventing.Reader.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.Eventing.Reader.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Diagnostics.Eventing.Reader.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.Eventing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.Eventing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Diagnostics.Eventing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.PerformanceData.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.PerformanceData.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Diagnostics.PerformanceData.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.SymbolStore.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.SymbolStore.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Diagnostics.SymbolStore.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.Tracing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.Tracing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Diagnostics.Tracing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Diagnostics.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Diagnostics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.DirectoryServices.AccountManagement.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.DirectoryServices.AccountManagement.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.DirectoryServices.AccountManagement.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.DirectoryServices.ActiveDirectory.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.DirectoryServices.ActiveDirectory.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.DirectoryServices.ActiveDirectory.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.DirectoryServices.Protocols.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.DirectoryServices.Protocols.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.DirectoryServices.Protocols.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.DirectoryServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.DirectoryServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.DirectoryServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Drawing.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Drawing.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Drawing.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Drawing.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Drawing.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Drawing.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Drawing.Drawing2D.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Drawing.Drawing2D.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Drawing.Drawing2D.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Drawing.Imaging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Drawing.Imaging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Drawing.Imaging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Drawing.Printing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Drawing.Printing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Drawing.Printing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Drawing.Text.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Drawing.Text.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Drawing.Text.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Drawing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Drawing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Drawing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Dynamic.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Dynamic.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Dynamic.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.EnterpriseServices.CompensatingResourceManager.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.EnterpriseServices.CompensatingResourceManager.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.EnterpriseServices.CompensatingResourceManager.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.EnterpriseServices.Internal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.EnterpriseServices.Internal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.EnterpriseServices.Internal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.EnterpriseServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.EnterpriseServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.EnterpriseServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Globalization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Globalization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Globalization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IO.Compression.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IO.Compression.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IO.Compression.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IO.IsolatedStorage.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IO.IsolatedStorage.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IO.IsolatedStorage.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IO.Log.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IO.Log.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IO.Log.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IO.MemoryMappedFiles.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IO.MemoryMappedFiles.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IO.MemoryMappedFiles.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IO.Packaging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IO.Packaging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IO.Packaging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IO.Pipes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IO.Pipes.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IO.Pipes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IO.Ports.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IO.Ports.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IO.Ports.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IO.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IO.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IO.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Claims.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Claims.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IdentityModel.Claims.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IdentityModel.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Metadata.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Metadata.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IdentityModel.Metadata.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Policy.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Policy.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IdentityModel.Policy.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Protocols.WSTrust.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Protocols.WSTrust.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IdentityModel.Protocols.WSTrust.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Selectors.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Selectors.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IdentityModel.Selectors.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Services.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Services.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IdentityModel.Services.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Services.Tokens.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Services.Tokens.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IdentityModel.Services.Tokens.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Services.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IdentityModel.Services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Tokens.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.Tokens.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IdentityModel.Tokens.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.IdentityModel.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.IdentityModel.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Json.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Json.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Json.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Linq.Expressions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Linq.Expressions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Linq.Expressions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Linq.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Linq.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Linq.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Management.Instrumentation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Management.Instrumentation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Management.Instrumentation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Management.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Management.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Management.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Media.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Media.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Media.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Messaging.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Messaging.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Messaging.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Messaging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Messaging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Messaging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.Cache.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.Cache.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Net.Cache.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Net.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.Http.Headers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.Http.Headers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Net.Http.Headers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.Http.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.Http.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Net.Http.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.Mail.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.Mail.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Net.Mail.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.Mime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.Mime.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Net.Mime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.NetworkInformation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.NetworkInformation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Net.NetworkInformation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.PeerToPeer.Collaboration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.PeerToPeer.Collaboration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Net.PeerToPeer.Collaboration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.PeerToPeer.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.PeerToPeer.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Net.PeerToPeer.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.Security.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.Security.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Net.Security.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.Sockets.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.Sockets.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Net.Sockets.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.WebSockets.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.WebSockets.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Net.WebSockets.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Net.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Net.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Numerics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Numerics.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Numerics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Printing.IndexedProperties.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Printing.IndexedProperties.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Printing.IndexedProperties.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Printing.Interop.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Printing.Interop.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Printing.Interop.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Printing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Printing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Printing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Reflection.Context.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Reflection.Context.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Reflection.Context.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Reflection.Emit.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Reflection.Emit.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Reflection.Emit.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Reflection.Metadata.Ecma335.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Reflection.Metadata.Ecma335.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Reflection.Metadata.Ecma335.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Reflection.Metadata.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Reflection.Metadata.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Reflection.Metadata.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Reflection.PortableExecutable.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Reflection.PortableExecutable.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Reflection.PortableExecutable.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Reflection.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Reflection.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Reflection.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Resources.Tools.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Resources.Tools.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Resources.Tools.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Resources.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Resources.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Resources.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Caching.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Caching.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Caching.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Caching.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Caching.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Caching.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Caching.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Caching.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Caching.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.CompilerServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.CompilerServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.CompilerServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.ConstrainedExecution.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.ConstrainedExecution.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.ConstrainedExecution.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.DesignerServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.DesignerServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.DesignerServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.DurableInstancing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.DurableInstancing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.DurableInstancing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.ExceptionServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.ExceptionServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.ExceptionServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.InteropServices.ComTypes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.InteropServices.ComTypes.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.InteropServices.ComTypes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.InteropServices.CustomMarshalers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.InteropServices.CustomMarshalers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.InteropServices.CustomMarshalers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.InteropServices.Expando.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.InteropServices.Expando.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.InteropServices.Expando.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.InteropServices.WindowsRuntime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.InteropServices.WindowsRuntime.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.InteropServices.WindowsRuntime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.InteropServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.InteropServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.InteropServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Loader.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Loader.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Loader.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Activation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Activation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Remoting.Activation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Channels.Http.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Channels.Http.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Remoting.Channels.Http.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Channels.Ipc.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Channels.Ipc.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Remoting.Channels.Ipc.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Channels.Tcp.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Channels.Tcp.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Remoting.Channels.Tcp.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Channels.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Channels.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Remoting.Channels.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Contexts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Contexts.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Remoting.Contexts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Lifetime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Lifetime.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Remoting.Lifetime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Messaging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Messaging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Remoting.Messaging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Metadata.W3cXsd2001.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Metadata.W3cXsd2001.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Remoting.Metadata.W3cXsd2001.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Metadata.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Metadata.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Remoting.Metadata.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.MetadataServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.MetadataServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Remoting.MetadataServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Proxies.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Proxies.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Remoting.Proxies.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.Services.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Remoting.Services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Remoting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Remoting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Serialization.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Serialization.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Serialization.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Serialization.Formatters.Binary.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Serialization.Formatters.Binary.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Serialization.Formatters.Binary.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Serialization.Formatters.Soap.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Serialization.Formatters.Soap.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Serialization.Formatters.Soap.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Serialization.Formatters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Serialization.Formatters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Serialization.Formatters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Serialization.Json.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Serialization.Json.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Serialization.Json.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Serialization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Versioning.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.Versioning.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.Versioning.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Runtime.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Runtime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.AccessControl.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.AccessControl.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Security.AccessControl.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Authentication.ExtendedProtection.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Authentication.ExtendedProtection.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Security.Authentication.ExtendedProtection.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Authentication.ExtendedProtection.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Authentication.ExtendedProtection.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Security.Authentication.ExtendedProtection.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Authentication.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Authentication.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Security.Authentication.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Claims.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Claims.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Security.Claims.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Cryptography.Pkcs.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Cryptography.Pkcs.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Security.Cryptography.Pkcs.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Cryptography.X509Certificates.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Cryptography.X509Certificates.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Security.Cryptography.X509Certificates.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Cryptography.Xml.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Cryptography.Xml.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Security.Cryptography.Xml.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Cryptography.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Cryptography.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Security.Cryptography.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Permissions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Permissions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Security.Permissions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Policy.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Policy.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Security.Policy.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Principal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.Principal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Security.Principal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.RightsManagement.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.RightsManagement.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Security.RightsManagement.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Security.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Security.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activation.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activation.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Activation.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Activation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activities.Activation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activities.Activation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Activities.Activation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activities.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activities.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Activities.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activities.Description.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activities.Description.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Activities.Description.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activities.Presentation.Factories.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activities.Presentation.Factories.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Activities.Presentation.Factories.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activities.Presentation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activities.Presentation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Activities.Presentation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activities.Tracking.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activities.Tracking.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Activities.Tracking.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activities.Tracking.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activities.Tracking.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Activities.Tracking.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activities.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Activities.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Activities.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Channels.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Channels.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Channels.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.ComIntegration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.ComIntegration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.ComIntegration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Description.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Description.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Description.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Diagnostics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Diagnostics.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Diagnostics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Discovery.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Discovery.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Discovery.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Discovery.Version11.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Discovery.Version11.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Discovery.Version11.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Discovery.VersionApril2005.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Discovery.VersionApril2005.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Discovery.VersionApril2005.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Discovery.VersionCD1.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Discovery.VersionCD1.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Discovery.VersionCD1.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Discovery.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Discovery.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Discovery.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Dispatcher.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Dispatcher.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Dispatcher.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.MsmqIntegration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.MsmqIntegration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.MsmqIntegration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.PeerResolvers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.PeerResolvers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.PeerResolvers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Persistence.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Persistence.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Persistence.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Routing.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Routing.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Routing.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Routing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Routing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Routing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Security.Tokens.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Security.Tokens.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Security.Tokens.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Security.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Security.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Security.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Syndication.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Syndication.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Syndication.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Web.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.Web.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.Web.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.XamlIntegration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.XamlIntegration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.XamlIntegration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceModel.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceModel.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceProcess.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceProcess.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceProcess.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceProcess.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.ServiceProcess.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.ServiceProcess.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Speech.AudioFormat.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Speech.AudioFormat.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Speech.AudioFormat.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Speech.Recognition.SrgsGrammar.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Speech.Recognition.SrgsGrammar.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Speech.Recognition.SrgsGrammar.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Speech.Recognition.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Speech.Recognition.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Speech.Recognition.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Speech.Synthesis.TtsEngine.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Speech.Synthesis.TtsEngine.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Speech.Synthesis.TtsEngine.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Speech.Synthesis.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Speech.Synthesis.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Speech.Synthesis.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Text.Encodings.Web.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Text.Encodings.Web.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Text.Encodings.Web.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Text.RegularExpressions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Text.RegularExpressions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Text.RegularExpressions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Text.Unicode.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Text.Unicode.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Text.Unicode.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Text.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Text.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Text.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Threading.Tasks.Dataflow.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Threading.Tasks.Dataflow.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Threading.Tasks.Dataflow.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Threading.Tasks.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Threading.Tasks.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Threading.Tasks.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Threading.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Threading.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Threading.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Timers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Timers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Timers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Transactions.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Transactions.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Transactions.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Transactions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Transactions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Transactions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.ApplicationServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.ApplicationServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.ApplicationServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Caching.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Caching.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Caching.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.ClientServices.Providers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.ClientServices.Providers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.ClientServices.Providers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.ClientServices.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.ClientServices.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.ClientServices.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Compilation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Compilation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Compilation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Configuration.Internal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Configuration.Internal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Configuration.Internal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.DynamicData.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.DynamicData.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.DynamicData.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.DynamicData.ModelProviders.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.DynamicData.ModelProviders.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.DynamicData.ModelProviders.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.DynamicData.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.DynamicData.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.DynamicData.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Globalization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Globalization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Globalization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Handlers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Handlers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Handlers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Instrumentation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Instrumentation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Instrumentation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Mail.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Mail.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Mail.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Management.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Management.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Management.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Mobile.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Mobile.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Mobile.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.ModelBinding.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.ModelBinding.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.ModelBinding.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Profile.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Profile.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Profile.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Query.Dynamic.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Query.Dynamic.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Query.Dynamic.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.RegularExpressions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.RegularExpressions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.RegularExpressions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Routing.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Routing.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Routing.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Script.Serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Script.Serialization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Script.Serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Script.Services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Script.Services.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Script.Services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Script.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Script.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Script.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Security.AntiXss.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Security.AntiXss.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Security.AntiXss.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Security.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Security.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Security.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Services.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Services.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Services.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Services.Description.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Services.Description.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Services.Description.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Services.Discovery.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Services.Discovery.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Services.Discovery.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Services.Protocols.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Services.Protocols.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Services.Protocols.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Services.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Services.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Services.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.SessionState.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.SessionState.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.SessionState.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.Adapters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.Adapters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.UI.Adapters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.DataVisualization.Charting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.DataVisualization.Charting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.UI.DataVisualization.Charting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.Design.Directives.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.Design.Directives.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.UI.Design.Directives.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.Design.MobileControls.Converters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.Design.MobileControls.Converters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.UI.Design.MobileControls.Converters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.Design.MobileControls.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.Design.MobileControls.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.UI.Design.MobileControls.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.Design.WebControls.WebParts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.Design.WebControls.WebParts.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.UI.Design.WebControls.WebParts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.Design.WebControls.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.Design.WebControls.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.UI.Design.WebControls.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.UI.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.HtmlControls.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.HtmlControls.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.UI.HtmlControls.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.MobileControls.Adapters.XhtmlAdapters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.MobileControls.Adapters.XhtmlAdapters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.UI.MobileControls.Adapters.XhtmlAdapters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.MobileControls.Adapters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.MobileControls.Adapters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.UI.MobileControls.Adapters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.MobileControls.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.MobileControls.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.UI.MobileControls.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.WebControls.Adapters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.WebControls.Adapters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.UI.WebControls.Adapters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.WebControls.Expressions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.WebControls.Expressions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.UI.WebControls.Expressions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.WebControls.WebParts.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.WebControls.WebParts.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.UI.WebControls.WebParts.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.WebControls.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.WebControls.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.UI.WebControls.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.UI.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.UI.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Util.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.Util.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.Util.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.WebSockets.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.WebSockets.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.WebSockets.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Web.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Web.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Annotations.Storage.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Annotations.Storage.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Annotations.Storage.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Annotations.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Annotations.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Annotations.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Automation.Peers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Automation.Peers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Automation.Peers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Automation.Provider.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Automation.Provider.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Automation.Provider.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Automation.Text.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Automation.Text.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Automation.Text.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Automation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Automation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Automation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Baml2006.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Baml2006.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Baml2006.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Controls.Primitives.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Controls.Primitives.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Controls.Primitives.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Controls.Ribbon.Primitives.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Controls.Ribbon.Primitives.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Controls.Ribbon.Primitives.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Controls.Ribbon.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Controls.Ribbon.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Controls.Ribbon.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Controls.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Controls.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Controls.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Converters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Converters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Converters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Data.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Data.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Data.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Diagnostics.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Diagnostics.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Diagnostics.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Documents.DocumentStructures.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Documents.DocumentStructures.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Documents.DocumentStructures.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Documents.Serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Documents.Serialization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Documents.Serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Documents.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Documents.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Documents.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.ComponentModel.Com2Interop.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.ComponentModel.Com2Interop.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Forms.ComponentModel.Com2Interop.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.DataVisualization.Charting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.DataVisualization.Charting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Forms.DataVisualization.Charting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.Design.Behavior.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.Design.Behavior.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Forms.Design.Behavior.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Forms.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.Integration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.Integration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Forms.Integration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.Layout.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.Layout.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Forms.Layout.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.PropertyGridInternal.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.PropertyGridInternal.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Forms.PropertyGridInternal.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.VisualStyles.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.VisualStyles.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Forms.VisualStyles.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Forms.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Forms.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Ink.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Ink.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Ink.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Input.Manipulations.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Input.Manipulations.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Input.Manipulations.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Input.StylusPlugIns.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Input.StylusPlugIns.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Input.StylusPlugIns.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Input.StylusWisp.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Input.StylusWisp.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Input.StylusWisp.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Input.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Input.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Input.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Interop.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Interop.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Interop.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Markup.Localizer.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Markup.Localizer.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Markup.Localizer.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Markup.Primitives.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Markup.Primitives.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Markup.Primitives.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Markup.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Markup.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Markup.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Media.Animation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Media.Animation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Media.Animation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Media.Converters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Media.Converters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Media.Converters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Media.Effects.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Media.Effects.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Media.Effects.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Media.Imaging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Media.Imaging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Media.Imaging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Media.Media3D.Converters.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Media.Media3D.Converters.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Media.Media3D.Converters.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Media.Media3D.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Media.Media3D.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Media.Media3D.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Media.TextFormatting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Media.TextFormatting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Media.TextFormatting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Media.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Media.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Media.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Navigation.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Navigation.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Navigation.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Resources.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Resources.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Resources.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Shapes.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Shapes.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Shapes.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Shell.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Shell.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Shell.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Threading.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Threading.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Threading.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Xps.Packaging.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Xps.Packaging.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Xps.Packaging.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Xps.Serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Xps.Serialization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Xps.Serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Xps.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.Xps.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.Xps.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Windows.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Windows.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Activities.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Activities.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Workflow.Activities.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Activities.Rules.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Activities.Rules.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Workflow.Activities.Rules.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Activities.Rules.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Activities.Rules.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Workflow.Activities.Rules.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Activities.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Activities.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Workflow.Activities.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.ComponentModel.Compiler.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.ComponentModel.Compiler.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Workflow.ComponentModel.Compiler.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.ComponentModel.Design.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.ComponentModel.Design.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Workflow.ComponentModel.Design.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.ComponentModel.Serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.ComponentModel.Serialization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Workflow.ComponentModel.Serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.ComponentModel.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.ComponentModel.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Workflow.ComponentModel.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Runtime.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Runtime.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Workflow.Runtime.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Runtime.DebugEngine.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Runtime.DebugEngine.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Workflow.Runtime.DebugEngine.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Runtime.Hosting.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Runtime.Hosting.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Workflow.Runtime.Hosting.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Runtime.Tracking.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Runtime.Tracking.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Workflow.Runtime.Tracking.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Runtime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Workflow.Runtime.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Workflow.Runtime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xaml.Permissions.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xaml.Permissions.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Xaml.Permissions.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xaml.Schema.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xaml.Schema.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Xaml.Schema.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xaml.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xaml.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Xaml.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.Linq.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.Linq.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Xml.Linq.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.Resolvers.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.Resolvers.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Xml.Resolvers.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.Schema.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.Schema.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Xml.Schema.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.Serialization.Advanced.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.Serialization.Advanced.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Xml.Serialization.Advanced.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.Serialization.Configuration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.Serialization.Configuration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Xml.Serialization.Configuration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.Serialization.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.Serialization.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Xml.Serialization.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.XPath.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.XPath.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Xml.XPath.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.XmlConfiguration.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.XmlConfiguration.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Xml.XmlConfiguration.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.Xsl.Runtime.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.Xsl.Runtime.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Xml.Xsl.Runtime.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.Xsl.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.Xsl.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Xml.Xsl.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.Xml.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.Xml.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/System.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-System.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/UIAutomationClientsideProviders.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/UIAutomationClientsideProviders.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-UIAutomationClientsideProviders.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/XamlGeneratedNamespace.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.reference-core-docs-prod/master/api/_splitted/XamlGeneratedNamespace.pdf -OutFile pdf/all/VS.reference-core-docs-prod/master/api/_splitted/azdoc-XamlGeneratedNamespace.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.release-notes/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/VS.release-notes/live.pdf -OutFile pdf/all/VS.release-notes/azdoc-live.pdf
@@ -21576,6 +25686,18 @@ curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/off
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/office.OfficeDocs-SkypeForBusiness/live.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/office.OfficeDocs-SkypeForBusiness/live.pdf -OutFile pdf/all/office.OfficeDocs-SkypeForBusiness/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/office.OfficeEDU-SchoolDataSync/live.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/office.OfficeEDU-SchoolDataSync/live.pdf -OutFile pdf/all/office.OfficeEDU-SchoolDataSync/azdoc-live.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/office.OfficeEDU-SchoolDataSync/live/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/office.OfficeEDU-SchoolDataSync/live/breadcrumb.pdf -OutFile pdf/all/office.OfficeEDU-SchoolDataSync/live/azdoc-breadcrumb.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/office.OfficeEDU-SchoolDataSync/master.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/office.OfficeEDU-SchoolDataSync/master.pdf -OutFile pdf/all/office.OfficeEDU-SchoolDataSync/azdoc-master.pdf
+
+echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/office.OfficeEDU-SchoolDataSync/master/breadcrumb.pdf ...'
+curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/office.OfficeEDU-SchoolDataSync/master/breadcrumb.pdf -OutFile pdf/all/office.OfficeEDU-SchoolDataSync/master/azdoc-breadcrumb.pdf
 
 echo 'fetching: https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/ope2etest.optest_testdocs/master.pdf ...'
 curl https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/ope2etest.optest_testdocs/master.pdf -OutFile pdf/all/ope2etest.optest_testdocs/azdoc-master.pdf
